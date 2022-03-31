@@ -1,0 +1,1729 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <title>Naruvi Hospitals</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/hover.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="icon" type="image/x-icon" href="image/fav-icon.png" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Raleway:300,400,500,600,700|Roboto+Condensed:300,400|Poppins:300,400,500,600,700,800,900"
+        rel="stylesheet" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113714538-1"></script>
+
+
+<link rel="stylesheet" href="css/new.css" />
+<link rel="stylesheet" type="text/css" href="css/slider.css" />
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+<link rel="stylesheet" href="css/jquery-ui.css">
+<link href="css/mdtimepicker.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery.js"></script>
+<style>
+    .form-control[readonly] {
+      cursor: pointer !important;
+      background: transparent !important;
+    }
+  </style>
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-113714538-1');
+    </script>
+    <style>
+.form-control[readonly] {
+  cursor: pointer !important;
+  background: transparent !important;
+}
+ .error {
+  font-size: 12px;
+  color: red;
+}
+        .nav-home > .right {
+    width: 25%;
+        }
+        @media (max-width:804px) {
+            .nav-home > .right
+	{
+		width: 43%;
+	}
+        }
+        @media (max-width:674px) {
+            .nav-home > .right
+	{
+		width: 55%;
+	}
+        }
+</style>
+</head>
+<body>
+    <form id="formreg" runat="server">
+         <header>
+        <div class="n-header">
+            <div class="headerLeft">
+                <div class="logo1">
+                    <a href="/"><img src="image/naruvi-logo-new.png" alt="logo" /></a>
+                  </div>
+                  <!-- <div class="logo2">
+                    <a href="/"><img src="image/naruvi-sb-logo.jpg" alt="logo" /></a>
+                  </div> -->
+            </div>
+            <div class="headerRight">
+                <div class="nav-home d-flex justify-content-end">
+                    <div class="insurance-menu"><a href="http://www.naruvihospitals.com/contact.aspx">Contact</a></div>
+                    <div class="right">
+                        <div class="bg">
+                            <ul class="nav-right">
+                                <!-- <li><a href="careers.aspx">Career</a></li> -->
+                                <li><a data-toggle="modal" data-target="#myModal" class="text-white">Quick Appointment</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="nav-wrap">
+                    <div class="mobileIcon">☰ Menu</div>
+                    <ul class="menuBar hvr-underline-from-center">
+                        <li><a href="/">Home</a></li>
+                        <li class="dropDownHover">
+                            <a class="active" href="javascript:void(0);">About</a><span class="dropicon"><i
+                                    class="fa fa-angle-down" aria-hidden="true"></i></span>
+                            <ul class="dropDown hvr-sweep-to-bottom">
+                                <li><span><img src="image/arrow.png"></span><a href="about-naruvi.aspx">Naruvi</a></li>
+                                <li><span><img src="image/arrow.png"></span><a href="the-board.aspx">The Board</a></li>
+                                <li><span><img src="image/arrow.png"></span><a href="about-hfhs.aspx">Henry Ford Health
+                                        System</a></li>
+                                <li><span><img src="image/arrow.png"></span><a href="about-vellore.aspx">Vellore</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropDownHover">
+                            <a href="javascript:void(0);">Departments</a><span class="dropicon"><i class="fa fa-angle-down"
+                                aria-hidden="true"></i></span>
+                            <ul class="dropDown hvr-sweep-to-bottom">
+                              <li>
+                                <span><img src="image/arrow.png" /></span><a href="clinical-departments.aspx">Clinical Departments</a>
+                              </li>
+                              <li>
+                                <span><img src="image/arrow.png" /></span><a href="nonclinical-departments.aspx">Non-Clinical Departments</a>
+                              </li>
+                           
+                            </ul>
+                          </li>                        <li><span></span><a href="doctors.aspx">Doctors</a></li>
+                        <li><a href="/#news-pg">News update</a></li>
+
+                        <li class="dropDownHover1">
+                            <a href="javascript:void(0);">Gallery</a><span class="dropicon"><i class="fa fa-angle-down"
+                                    aria-hidden="true"></i></span>
+                            <ul class="dropDown1 gdown hvr-sweep-to-bottom">
+                                <li><span><img src="image/arrow.png"></span><a href="photos.aspx">Photos</a></li>
+                                <li><span><img src="image/arrow.png"></span><a href="videos.aspx">Videos</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="insurance.aspx">Insurance</a></li>
+                        <!-- <li class="mbl"><a href="careers.aspx">Career</a></li> 
+                        <li class="mbl"><a href="contact.aspx">Contact</a></li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="clear"></div>
+    <section class="divClear">
+        <div class="innerBanner career"></div>
+        <div class="container">
+            <div class="pageContainer">
+                <div class="pageTitle">
+                    <h2 class="wow fadeInDown" data-wow-duration="1.3s" data-wow-delay="0.3s">Privacy Policy</h2>
+                </div>
+                <div class="mar-top30"></div>
+
+                   
+                   
+                   
+                   
+               <div class="container my-3 bg-white shadow rounded py-4">
+<div class="row">
+<div class="col-12 col-lg-10 offset-lg-1">
+<!-- <h1>Privacy Policy</h1> -->
+<!-- &#13;&#10;<p><strong>Effective Date: 25-02-2022</strong></p> -->
+<p>We are committed to protecting Your privacy. This Privacy Policy describes how We collect, use, store, share and protect the information collected through https://www.naruvihospitals.com/default.aspx (the &ldquo;<strong>Website</strong>&rdquo;).<br /> In this Privacy Policy, "We", "Us", and "Our" refer to NARUVI Hospitals. For more information about Us, see &ldquo;Our Details&rdquo; at the end of this Policy.</p>
+<p>This Privacy Policy is incorporated into and subject to Our <strong>Terms and Conditions</strong>. Capitalized words used but not defined in this Privacy Policy have the meaning given to them in the Terms and Conditions.</p>
+<p>Please be advised that the practices described in this Privacy Policy apply only to information gathered online through the Website. This Privacy Policy applies where We are acting as a data controller with respect to the Personal Data of visitors, users, clients and customers (&ldquo;You,&rdquo; or &ldquo;Your&rdquo;); in other words, where We determine the purposes and means of the processing of that Personal Data.</p>
+<p>PLEASE READ THIS PRIVACY POLICY CAREFULLY because it affects Your rights under the law. You confirm that You have read and agreed to be bound by this Privacy Policy. If You do not agree with this Privacy Policy, You cannot use, access, create or publish in the Website. This Privacy Policy may change as We continuously improve the Website, so please check it periodically.</p>
+<p>We reserve the right to modify or amend the Privacy Policy from time to time without notice. Your continued use of the Website following the posting of changes to these terms will mean You accept those changes. If We intend to apply the modifications or amendments to this Privacy Policy retroactively or to Personal Data already in Our possession, We will provide You with notice of the modifications or amendments.</p>
+<h2 id='tableofcontents'>Contents</h2>
+<p>Click below to jump to any section of this privacy policy</p>
+<ol type='1'>
+<li><a href='#nonpersonal'><strong>Your Data</strong></a>&#13;&#10;</li>&#13;&#10; <li><a href='#personaldata'><strong>Personal Data</strong></a>&#13;&#10; <ol>&#13;&#10; <li><a href='#personaldata-1'>Data We Collect</a></li>&#13;&#10;  <li><a href='#personaldata-2'>How We Collect Data</a></li>&#13;&#10; </ol>&#13;&#10;</li>&#13;&#10; <li><a href='#personaldatause'><strong>Use of Personal Data</strong></a>&#13;&#10;</li>&#13;&#10; <li><a href='#datashare'><strong>Sharing Of Personal Data</strong></a>&#13;&#10;</li>&#13;&#10; <li><a href='#dataretention'><strong>Retaining and Deleting Personal Data</strong></a>&#13;&#10;</li>&#13;&#10; <li><a href='#datasecurity'><strong>Data Security</strong></a>&#13;&#10;</li>&#13;&#10; <li><a href='#nonpersonaldata'><strong>Non-Personal Data</strong></a>&#13;&#10; <ol>&#13;&#10; <li><a href='#nonpersonaldata-1'>Generally, We collect and store the following Non-Personal Data:</a></li>&#13;&#10; </ol>&#13;&#10;</li>&#13;&#10; <li><a href='#nonpersonaldatause'><strong>Use of Non-Personal Data</strong></a>&#13;&#10;</li>&#13;&#10; <li><a href='#nonpersonalfromother'><strong>Personal & Non-Personal Data From Other Sources</strong></a>&#13;&#10;</li>&#13;&#10; <li><a href='#transactionsdata'><strong>Transactions And Payment Data</strong></a>&#13;&#10;</li>&#13;&#10; <li><a href='#correspondencedata'><strong>Correspondence Data</strong></a>&#13;&#10;</li>&#13;&#10; <li><a href='#combinationdata'><strong>Combination Of Data</strong></a>&#13;&#10;</li>&#13;&#10; <li><a href='#yourchoices'><strong>Your Choices</strong></a>&#13;&#10;</li>&#13;&#10; <li><a href='#access'><strong>Your Right to Access</strong></a>&#13;&#10;</li>&#13;&#10; <li><a href='#withdraw'><strong>Your Right to Withdraw Consent</strong></a>&#13;&#10;</li>&#13;&#10; <li><a href='#CUD'><strong>Your Right to Update, Correct or Delete</strong></a>&#13;&#10;</li>&#13;&#10; <li><a href='#nochildren'><strong>No Personal Data From Children</strong></a>&#13;&#10;</li>&#13;&#10; <li><a href='#cookieinformation'><strong>Cookie Policy</strong></a>&#13;&#10; <ol>&#13;&#10; <li><a href='#cookieinformation-1'>Cookie We Use</a></li>&#13;&#10; <li><a href='#cookieinformation-2'>Purpose Of Using Cookies</a></li>&#13;&#10; <li><a href='#cookieinformation-3'>Cookies Used by Our Service Providers</a></li>&#13;&#10; <li><a href='#cookieinformation-4'>Managing Cookies</a></li>&#13;&#10; </ol>&#13;&#10;</li>&#13;&#10; <li><a href='#hyperlinks'><strong>Links To Or From Another Website</strong></a>&#13;&#10;</li>&#13;&#10; <li><a href='#publicarea'><strong>Public Areas</strong></a>&#13;&#10;</li>&#13;&#10; <li><a href='#interestbasedad'><strong>Interest Based Advertising</strong></a>&#13;&#10;</li>&#13;&#10; <li><a href='#changesandupdates'><strong>Changes And Updates</strong></a>&#13;&#10;</li>&#13;&#10; <li><a href='#assignment'><strong>Assignment</strong></a>&#13;&#10;</li>&#13;&#10;
+</ol>
+<h2 id='nonpersonal'>1 Your Data</h2><p>NARUVI Hospitals strives to provide you with the best possible service. In order to provide this service we may need to collect information from you from time to time. At all times we try to only collect the information we need for the particular function or activity we are carrying out and use it in accordance with this privacy policy.</p>
+<p>We collect two basic types of information from You from Your use of the Website: Personal Data and Non-Personal Data.</p>&#13;&#10;&#13;&#10;<p><a href='#tableofcontents'>Back to table of contents</a></p><h2 id='personaldata'>2 Personal Data</h2>
+<p>"<strong>Personal Data</strong>" means any information relating to an identified or identifiable natural person; an identifiable natural person is one who can be identified, directly or indirectly, in particular by reference to an identifier such as a name, an identification number, location data, an online identifier or to one or more factors specific to the physical, physiological, genetic, mental, economic, cultural or social identity of that natural person.</p>
+<p>As a general matter, You can browse the Website without submitting Your Personal Data to Us. However, there are a number of circumstances in which You may supply Us with Your Personal Data.</p>&#13;&#10;<h3 id='personaldata-1'>2.1 Data We Collect</h3>
+<p>We collect the following Personal Data from You:</p>
+<ul>
+<li>Full Name;</li>&#13;&#10;<li>E-mail;</li>&#13;&#10;<li>Phone Number;</li>&#13;&#10;<li>Date of Birth;</li>&#13;&#10;<li>Residential Address;</li>&#13;&#10;<li>Mailing Address;</li>&#13;&#10;
+</ul>&#13;&#10;<h3 id='personaldata-2'>2.2 How We Collect Data</h3>
+<p><strong>The following are the most common ways in which You give Your Personal Data:</strong></p>
+<ul>
+<li>Participating in communities, chat rooms and comment threads, other fora, and other interactive services in the Website;</li>&#13;&#10;<li>Submission of User Content on any part of the Website that permit it;</li>&#13;&#10;<li>Any other place in the Website where You knowingly volunteer to give Personal Data.</li>&#13;&#10;<li>Registration for an Account on the Website;</li>&#13;&#10;<li>Signing up to receive e-mail newsletters or e-mail alerts from Us;</li>&#13;&#10;<li>Signing up to receive e-mail offers from Us or Our partners;</li>&#13;&#10;<li>Requesting for service or other assistance;</li>&#13;&#10;
+</ul>
+&#13;&#10;&#13;&#10;<p><a href='#tableofcontents'>Back to table of contents</a></p><h2 id='personaldatause'>3 Use of Personal Data</h2>
+<p>We do NOT sell or license Your Personal Data to any third party.</p>
+<p>We may process any of Your Personal Data identified in this Privacy Policy where necessary for the establishment, exercise or defense of legal claims, whether in court proceedings or in an administrative or out-of-court procedure. The legal basis for this processing is Our legitimate interests, namely the protection and assertion of Our legal rights, Your legal rights and the legal rights of others.</p>
+<p>In addition to the specific purposes for which We may process Your Personal Data set out in this clause, We may also process any of Your Personal Data where such processing is necessary for compliance with a legal obligation to which We are subject, or in order to protect Your vital interests or the vital interests of another natural person.</p>
+<p>Specifically, We use Your Personal Data for the following:</p>
+<ul>
+<li>responding to Your queries and requests;</li>&#13;&#10;<li>investigating complaints;</li>&#13;&#10;<li>enforcing Our Terms and Conditions;</li>&#13;&#10;<li>as otherwise required or authorized by law or government agency.</li>&#13;&#10;<li>providing Goods and Services to You;</li>&#13;&#10;<li>improving and developing Our Website;</li>&#13;&#10;<li>verifying Your identity;</li>&#13;&#10;<li>processing Your requests or instructions;</li>&#13;&#10;<li>customizing Services;</li>&#13;&#10;<li>recognizing You when Your return to Our website;</li>&#13;&#10;<li>tracking sales data;</li>&#13;&#10;
+</ul>&#13;&#10;&#13;&#10;<p><a href='#tableofcontents'>Back to table of contents</a></p><h2 id='datashare'>4 Sharing Of Personal Data</h2>
+<p>We may share your Personal Data with the following:</p>
+<p><strong>Insurers</strong>. We may disclose Your <strong>Personal Data</strong> to Our insurers and/or professional advisers insofar as reasonably necessary for the purposes of obtaining or maintaining insurance coverage, managing risks, obtaining professional advice, or the establishment, exercise or defence of legal claims, whether in court proceedings or in an administrative or out-of-court procedure.</p>&#13;&#10;&#13;&#10;
+<p><strong>Third-Party Suppliers</strong>. We may disclose Your <strong>Enquiry Data</strong> to one or more of those selected third-party suppliers of Goods and Services identified on Our Website for the purpose of enabling them to contact You so that they can offer, market and sell relevant Goods and/or Services to You. Each such third party will act as a data controller in relation to the Enquiry Data that We supply to it; and upon contacting You, each such third party will supply to You a copy of its own privacy policy, which will govern that third party's use of Your Personal Data. The suppliers and providers with whom We may share Your information include:</p>
+<ul>
+<li>Social networking sites</li>&#13;&#10;<li>Analytics services</li>&#13;&#10;<li>IT service providers and web hosting companies</li>&#13;&#10;<li>Legal, auditing and other professional advisors or consultants</li>&#13;&#10;<li>Billing or data storage services</li>&#13;&#10;
+</ul>
+<p><strong>Other Purposes</strong>. In addition to the specific disclosures of Personal Data set out in this Section, We may disclose Your <strong>Personal Data</strong> where such disclosure is necessary for compliance with a legal obligation to which We are subject, or in order to protect Our vital interests, Your vital interests, or the vital interests of another natural person. We may also disclose Your Personal Data where such disclosure is necessary for the establishment, exercise or defense of legal claims, whether in court proceedings or in an administrative or out-of-court procedure.</p>&#13;&#10;&#13;&#10;<p><a href='#tableofcontents'>Back to table of contents</a></p><h2 id='dataretention'>5 Retaining and Deleting Personal Data</h2>
+<p>Personal Data that We process for any purpose shall not be kept for longer than is necessary for that purpose or those purposes.</p>
+<p>We will retain Your Personal Data for a maximum period of <em>6 months</em>.</p>
+<p>In some cases, it is not possible for Us to specify in advance the periods for which Your Personal Data will be retained. In such cases, We will determine the period of retention based on our legitimate interests, namely the proper administration of Our Website and business.</p>
+<p>Notwithstanding the other provisions of this Section, We may retain Your Personal Data where such retention is necessary for compliance with a legal obligation to which We are subject, or in order to protect Your vital interests or the vital interests of another natural person.</p>&#13;&#10;&#13;&#10;<p><a href='#tableofcontents'>Back to table of contents</a></p><h2 id='datasecurity'>6 Data Security</h2>
+<p>We follow generally accepted industry standards to protect the information submitted to Us, both during transmission and once We receive it. We maintain appropriate administrative, technical and physical safeguards to protect Personal Data against accidental or unlawful destruction, accidental loss, unauthorized alteration, unauthorized disclosure or access, misuse, and any other unlawful form of processing of the Personal Data in Our possession. This includes, for example, firewalls, password protection and other access and authentication controls.</p>
+<p>We use <strong>HTTPS</strong></p>
+<p>HTTPS (Hypertext Transfer Protocol Secure) is an internet communication protocol that protects the integrity and confidentiality of data between your computer and www.naruvihospitals.com/default.aspx. The use of HTTPS makes sure your communication with us is:</p>
+<p><strong>Encrypted</strong> &mdash; The data you exchange with us is secure from eavesdroppers. That means that when you are browsing www.naruvihospitals.com/default.aspx, nobody can track your activities across multiple pages, or steal the data exchange between your computer and www.naruvihospitals.com/default.aspx.</p>
+<p><strong>Integral</strong> &mdash; The use of HTTPS preserves the integrity of data. Your data cannot be modified or corrupted during transfer.</p>
+<p><strong>Authenticated</strong> &mdash; HTTPS protocol authenticates your communication with us. This ensures that you are always communicating with our servers.</p>
+<p>However, no method of transmission over the Internet, or method of electronic storage, is 100% secure. We cannot ensure or warrant the security of any information You transmit to Us or store on the Website, and You do so at Your own risk. We also cannot guarantee that such information may not be accessed, disclosed, altered, or destroyed by breach of any of Our physical, technical, or managerial safeguards. If You believe Your Personal Data has been compromised, please contact Us at <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="89eaf9ffc9f9fbe8fae8e7e7e8e5e8feefe0fbe4a7eae6e4a7">[email&#160;protected]</a></p>
+<p>If We learn of a security systems breach, then We attempt to notify You electronically so that You can take appropriate protective steps. We may post a notice through the Website if a security breach occurs.</p>&#13;&#10;&#13;&#10;<p><a href='#tableofcontents'>Back to table of contents</a></p><h2 id='nonpersonaldata'>7 Non-Personal Data</h2>
+<p>Non-Personal Data includes information that does not personally identify You, but may include tracking and usage information about Your location, demographics, use of the Website and the internet.</p>
+<p>When You interact with the Website, We may collect Non-Personal Data and Our servers may automatically keep an activity log of Your use of the Website.</p>&#13;&#10;<h3 id='nonpersonaldata-1'>7.1 Generally, We collect and store the following Non-Personal Data:</h3>
+<ul>
+<li>Demographic information such as age, gender, and five-digit zip code as part of collecting Personal Data;</li>&#13;&#10;<li>Device information about Your computer, mobile device, or other device that You use to access the Website. This information may include IP address, geolocation information, unique device identifiers, browser type, browser language, and other transactional information;</li>&#13;&#10;<li>Usage information about Your use of the Website. This information includes a reading history of the pages You view.</li>&#13;&#10;<li>Additional &ldquo;traffic information&rdquo; such as time of access, date of access, software crash reports, application errors, session identification number, access times, and referring site addresses.</li>&#13;&#10;<li>Your search terms and search results.</li>&#13;&#10;<li>Other information regarding Your use of the Website.</li>&#13;&#10;
+</ul>&#13;&#10;&#13;&#10;<p><a href='#tableofcontents'>Back to table of contents</a></p><h2 id='nonpersonaldatause'>8 Use of Non-Personal Data</h2>
+<p>We may disclose or share Non-Personal Data (or other information, other than Personal Data) in any other manner that We deem appropriate or necessary.</p>
+<p>Among other things, We will disclose Non-Personal Data to third parties to help Us determine how users use parts of the Website and who Our users are so We can improve the Website.</p>
+<p>We will also disclose Non-Personal Data to Our partners and other third parties about how Our users collectively use the Website.</p>&#13;&#10;&#13;&#10;<p><a href='#tableofcontents'>Back to table of contents</a></p><h2 id='nonpersonalfromother'>9 Personal & Non-Personal Data From Other Sources</h2>
+<p>We may also collect and store information about You that We receive from other sources to, among other things, enable Us to update and correct the information contained in Our database and to better customize Your experience on the Website.</p>&#13;&#10;&#13;&#10;<p><a href='#tableofcontents'>Back to table of contents</a></p><h2 id='transactionsdata'>10 Transactions And Payment Data</h2>
+<p>We may process information relating to transactions, including purchases of Goods and Services, that You enter into with Us and/or through Our Website (&ldquo;<strong>Transaction Data</strong>&rdquo;). The Transaction Data may include Your contact details, Your card details, the transaction details, and/or your ICICI BANK authentication details. The Transaction Data may be processed for the purpose of supplying the purchased Goods and Services and keeping proper records of those transactions.
+The legal basis for this processing is our legitimate interests, namely the proper administration of Our Website and business and a contract between user and you or taking steps at user request to enter a contract.</p>&#13;&#10;&#13;&#10;<p><a href='#tableofcontents'>Back to table of contents</a></p><h2 id='correspondencedata'>11 Correspondence Data</h2>
+<p>We may process information contained in or relating to any communication that You send to Us ("<strong>Correspondence Data</strong>"). The Correspondence Data may include the communication content and metadata associated with the communication. Our Website will generate the metadata associated with communications made using the Website contact forms. The Correspondence Data may be processed for the purposes of communicating with You and record-keeping.
+The legal basis for this processing is Our legitimate interests, namely the proper administration of Our Website and business and communications with users.</p>&#13;&#10;&#13;&#10;<p><a href='#tableofcontents'>Back to table of contents</a></p><h2 id='combinationdata'>12 Combination Of Data</h2>
+<p>We use the information from different portions of the Website, all of which are owned and operated by Us, and We may combine information gathered from multiple portions of the Website into a single user record. We also use and/or combine information that We collect or receive from third party sources to enhance, expand, and check the accuracy of Your user records.</p>&#13;&#10;&#13;&#10;<p><a href='#tableofcontents'>Back to table of contents</a></p><h2 id='yourchoices'>13 Your Choices</h2>
+<p>In general, if You register on the Website, You may update the information You have provided to Us.</p>
+<p>When You register on the Website, You may be able to indicate Your preferences regarding marketing communications. You may be able to change those preferences and select the categories of communications that interest You.</p>
+<p>You will not be able to opt-out of receiving certain service-related or transactional communications relating to the Website unless You cancel Your registration or subscription.</p>
+<p>Even after Your account is cancelled, We may retain Your information for the purposes set forth in this Privacy Policy.</p>&#13;&#10;&#13;&#10;<p><a href='#tableofcontents'>Back to table of contents</a></p><h2 id='access'>14 Your Right to Access</h2>
+<p>We provide You with reasonable access to the Personal Data that You may provide through the Website.</p>&#13;&#10;&#13;&#10;<p><a href='#tableofcontents'>Back to table of contents</a></p><h2 id='withdraw'>15 Your Right to Withdraw Consent</h2>
+<p>At any time, You may legitimately object to the processing of Your Personal Data, except if otherwise provided by applicable law. You may decline to share certain Personal Data with Us, in which case We may not be able to provide to You some of the features and functionality of the Website.</p>&#13;&#10;&#13;&#10;<p><a href='#tableofcontents'>Back to table of contents</a></p><h2 id='CUD'>16 Your Right to Update, Correct or Delete</h2>
+<p>You may update, correct, or delete Your Account Data and preferences at any time by accessing Your Account settings page on the Website. If You wish to access or amend any other Personal Data We hold about You, or to request that We delete any information about You that We have obtained from an Integrated Service, You may contact Us. Please note that while any changes You make will be reflected in active user databases instantly or within a reasonable period of time, We may retain all information You submit for backups, archiving, prevention of fraud and abuse, analytics, satisfaction of legal obligations, or where We otherwise reasonably believe that We have a legitimate reason to do so.</p>
+<p>We will however retain Your information needed for administrative and transactional communications.</p>&#13;&#10;&#13;&#10;<p><a href='#tableofcontents'>Back to table of contents</a></p><h2 id='nochildren'>17 No Personal Data From Children</h2>
+<p>We do not knowingly collect Personal Data from children under 13 years of age in the USA or 16 years of age in the European Union. The Website is not directed to children under the age of 13 in the USA or 16 in the European Union. We will not knowingly allow children under 13 in the USA or 16 in the European Union to register for or become users of the Website.</p>
+<p>If You are under 13 in the USA or 16 in the European Union years of age, You should not provide Personal Data to Us.</p>
+<p>If We discover that a child under the age of 13 in the USA or 16 in the European Union has provided Us with Personal Data and We do not have parental consent, We will immediately delete that child&rsquo;s information.</p>&#13;&#10;&#13;&#10;<p><a href='#tableofcontents'>Back to table of contents</a></p><h2 id='cookieinformation'>18 Cookie Policy</h2>
+<p>A cookie is a file containing an identifier (a string of letters and numbers) that is sent by a web server to a web browser and is stored by the browser. The identifier is then sent back to the server each time the browser requests a page from the server.</p>
+<p>Cookies may be either "persistent" cookies or "session" cookies: a persistent cookie will be stored by a web browser and will remain valid until its set expiry date, unless deleted by the user before the expiry date; a session cookie, on the other hand, will expire at the end of the user session, when the web browser is closed.</p>
+<p>Cookies do not typically contain any information that personally identifies a user, but Personal Data that We store about You may be linked to the information stored in and obtained from cookies.</p>&#13;&#10;<h3 id='cookieinformation-1'>18.1 Cookie We Use</h3><h4>Session Cookies</h4>&#13;&#10;<p>These are temporary cookies that contain no expiration date and  are deleted after the users browser is closed. You will be required to log in again at the next session, where you will be treated as a new user</p>&#13;&#10;<p><strong>Session cookies examples:</strong> Shopping cart, remembering previous actions, managing and passing security tokens, multimedia content player session cookies, load balancing session cookies and third party social content plug in sharing cookies</p>&#13;&#10;<h4>Persistent Cookies</h4>&#13;&#10;<p>These are cookies which are saved in your browser until they are deleted by the you or are deleted by your browser after they reach their expiration date.</p>&#13;&#10;<p><strong>Persistent cookies examples:</strong> Authentication, language selection, theme selection, favorites, internal site bookmarks, menu preferences, address and payment information.</p>&#13;&#10;<h4>Functionality Cookies</h4>&#13;&#10;<p>Functionality cookies allow us to remember choices that have been made by you in order to create an experience that’s made to fit. These cookies safely store authentication and identification information, for example your language selection or region.</p>&#13;&#10;<h4>Performance Cookies</h4>&#13;&#10;<p>Performance cookies allow us to collect information, such as the most used pages or error messages, in order to understand how you use our website and enable us to create a better user experience. All information collected by performance cookies in anonymous.</p>&#13;&#10;&#13;&#10;<h3 id='cookieinformation-2'>18.2 Purpose Of Using Cookies</h3><p><strong>Authentication</strong> - We use cookies to identify You when You visit Our Website and as You navigate Our Website;</p>&#13;&#10;<p><strong>Status</strong> - We use cookies to help Us determine if You are logged into Our Website;</p>&#13;&#10;<p><strong>Personalization</strong> - We use cookies to store information about Your preferences and to personalize the Website for You;</p>&#13;&#10;<p><strong>Security</strong> - We use cookies as an element of the security measures used to protect user accounts, including preventing fraudulent use of login credentials, and to protect Our Website and Services generally;</p>&#13;&#10;<p><strong>Analysis</strong> - We use cookies to help Us to analyze the use and performance of Our Website and Services;</p>&#13;&#10;<p><strong>Cookie Consent</strong> - We use cookies to store Your preferences in relation to the use of cookies more generally.</p>&#13;&#10;&#13;&#10;<h3 id='cookieinformation-3'>18.3 Cookies Used by Our Service Providers</h3>
+<p>Our service providers use cookies and those cookies may be stored on Your computer when You visit Our Website.</p>
+<p><strong>Google Analytics</strong>. We use Google Analytics to analyze the use of Our Website. Google Analytics gathers information about Website use by means of cookies. The information gathered relating to Our Website is used to create reports about the use of Our Website. Google's privacy policy is available at: <a href="https://www.google.com/policies/privacy/">https://www.google.com/policies/privacy/</a>.</p>
+&#13;&#10;<h3 id='cookieinformation-4'>18.4 Managing Cookies</h3>
+<p>You can disable cookie tracking and learn more about the privacy policies of the third parties We use by visiting the following links:</p>
+<table style='width: 100%'>
+<colgroup>
+<col span='1' style='width: 30%;'>
+<col span='1' style='width: 35%;'>
+<col span='1' style='width: 35%;'>
+</colgroup>
+<thead>
+<tr>
+<th>Third Party</th>
+<th>Opt Out Page</th>
+<th>Privacy Policy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Google Analytics</strong></td>
+<td><a target='_blank' href='https://tools.google.com/dlpage/gaoptout'>Opt Out</a></td>
+<td><a target='_blank' href='https://policies.google.com/privacy'>Privacy Policy</a></td>
+</tr>&#13;&#10;
+</tbody>
+</table>&#13;&#10;&#13;&#10;<p><a href='#tableofcontents'>Back to table of contents</a></p><h2 id='hyperlinks'>19 Links To Or From Another Website</h2>
+<p>The Website may contain links to other sites operated by Our affiliates or third parties. Please be advised that the practices described in this Privacy Policy do not apply to information gathered through these other sites. We are not responsible for the actions and privacy policies of third parties and other sites.</p>&#13;&#10;&#13;&#10;<p><a href='#tableofcontents'>Back to table of contents</a></p><h2 id='publicarea'>20 Public Areas</h2>
+<p>Please remember that any information You share in public areas, such as message boards or feedback sections, becomes public and anyone may take and use that information. Please be careful about what You disclose and do not post any Personal Data that You expect to keep private. Please consult the applicable guidelines, if any, for use of Our chat rooms and other community areas for more information.</p>&#13;&#10;&#13;&#10;<p><a href='#tableofcontents'>Back to table of contents</a></p><h2 id='interestbasedad'>21 Interest Based Advertising</h2>
+<p>To help ensure that You receive ads that are relevant to Your interests on the Website, Our advertisers&rsquo; services, and elsewhere on the Internet, We and third parties (including service providers, advertisers, and advertising companies) may collect information about Your online activities over time and across different sites, apps, and devices. We and third parties may use that information to help understand audience segments. Advertisers may use the segments to determine the audience groups to which they wish to deliver particular ads. Through this process, We do not use information that directly identifies You.</p>
+<p><strong>Opt Out</strong>. You can opt out of receiving interest-based advertising on Your computer or laptop from some companies, including Us and Our service providers.&nbsp;</p>
+<p>If You wish to opt out of receiving interest-based advertising on Your mobile device, please see the advertising preferences information on support.apple.com for iOS devices or support.google.com for Android devices.</p>
+<p>Opting out does not mean You will no longer receive advertising. It means that the company or companies from which You opted out will no longer deliver ads tailored to Your web preferences and usage patterns.</p>&#13;&#10;&#13;&#10;<p><a href='#tableofcontents'>Back to table of contents</a></p><h2 id='changesandupdates'>22 Changes And Updates</h2>
+<p>Please revisit this page periodically to stay aware of any changes to this Privacy Policy, which We may update from time to time. If We modify the Privacy Policy, We will make it available through the Website, and indicate the date of the latest revision. Any material changes will be posted on this Website and will come into effect 30 Days after their posting.</p>
+<p>In the event that the modifications materially alter Your rights or obligations hereunder, We will make reasonable efforts to notify You of the change. For example, We may send a message to Your email address, if We have one on file, or generate a pop-up or similar notification when You access the Website for the first time after such material changes are made. If You do not refuse the changes in writing before they become effective, this shall mean that You have consented to the Privacy Policy as changed. Your continued use of the Website after the revised Privacy Policy has become effective indicates that You have read, understood and agreed to the current version of the Privacy Policy.</p>&#13;&#10;&#13;&#10;<p><a href='#tableofcontents'>Back to table of contents</a></p><h2 id='assignment'>23 Assignment</h2>
+<p>We may change Our ownership or corporate organization while providing the Website and Services. We may also sell certain assets associated with the Website. As a result, please be aware that in such event, We may transfer some or all of Your information to a company acquiring all or part of Our assets or to another company with which We have merged. Under such circumstances We would, to the extent possible, require the acquiring party to follow the practices described in this Privacy Policy, as it may be amended from time to time. Nevertheless, We cannot promise that an acquiring company or the merged company will have the same privacy practices or treat Your information the same as described in this Privacy Policy.</p>&#13;&#10;&#13;&#10;<p><a href='#tableofcontents'>Back to table of contents</a></p> </div>
+</div>
+</div>    
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                </div>
+            </div>
+     
+    </section>
+    <div class="clearfix"></div>
+    <section class="divClear">
+        <div class="footerBlack">
+            <div class="fter-txt">
+                <p>
+                    <i class="fa fa-map-marker l-icn"></i> <span>
+                        72/1B2, Collector Office Road,
+                        Bangalore - Chennai National Highway (NH 48),
+                        Vellore – 632 004.
+                    </span> <a href="#"> <i class="fa fa-envelope m-icn"></i> <span>info@naruvi.com</span> </a>
+                </p>
+            </div>
+        </div>
+    </section>
+        <div class="clear"></div>
+    <div class="social-icon-section my-5 mx-auto">
+            <h4>Stay Connected</h4>
+            <ul class="p-0 mx-auto mb-auto mt-3 socialIcon">
+                <li><a href="https://www.facebook.com/naruvihospital" target="_blank"><i class="fa fa-facebook facebook"></i> </a></li>
+                <li><a href="https://www.instagram.com/naruvi_hospitals/" target="_blank"><i class="fa fa-instagram instagram"></i> </a></li>
+                <li><a href="https://twitter.com/NaruviHospitals" target="_blank"><i class="fa fa-twitter twitter"></i> </a></li>
+                <li><a href="https://www.youtube.com/c/NaruviHospitals" target="_blank"><i class="fa fa-youtube-play youtube"></i> </a></li>
+                <li><a href="https://www.linkedin.com/company/naruvi-hospitals" target="_blank"><i class="fa fa-linkedin linkedin"></i></a></li>
+            </ul>
+        </div>
+        <div class="h-fter">
+            <div class="container-page">
+                <div class="wid-50">
+                    <p><span>&#169;</span>
+							<script type="text/javascript">
+								var today = new Date()
+								var year = today.getFullYear()
+								document.write(year)
+							</script> Naruvi Hospitals</p>
+                </div>
+                <div class="wid-50 Rgt">
+                     <p><a href="pdf/BMW.pdf" target="_blank" class="letterSpacing">BMW Report</a></p>
+                </div>
+            </div>
+        </div>
+
+
+<!--============ BOOK AN APPOINTMENT FORM =============-->
+
+<!-- <input type="button" value="Book an Appointment" data-toggle="modal" data-target="#bookAppointmentModal"
+    class="appointment btn"> -->
+       <div class=" modal fade" id="myModal" style="background: rgba(0,0,0,.7);">
+            <div class="modal-dialog" style="border: 5px solid #1576de;">
+              <div class="modal-content">
+              <input type="hidden" id="regDate" name="Registered Date" />
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h6 class="modal-title font-weight-bold text-dark">- Book an Appointment -</h6>
+                  <button type="button" class="close" data-dismiss="modal" style="position: unset;">&times;</button>
+                </div>
+                
+                <!-- Modal body -->
+                <div class="modal-body px-4">
+                    <div class="form-group">
+                         <label for="name">Name <span style="color: red;font-size: 13px;">*</span></label>
+                          <asp:TextBox ID="Name" class="form-control text-capitalize" name="Name" runat="server"></asp:TextBox>
+                         <span class="error" id="reqName" style="display:none;">Enter your name</span> 
+                      </div>
+                      <div class="form-group">
+                         <label for="email">Email ID <span style="color: red;font-size: 13px;">*</span></label>
+                             <asp:TextBox id ="EmailId" name="Email Id" class="form-control" runat="server"></asp:TextBox>
+                           <span class="error" id="reqEmailId" style="display:none;">Enter your email id</span>
+                            <span class="error" id="reqfvValidEmail" style="display:none;">Enter your Valid email id</span>
+                    </div> 
+                    <div class="form-group">
+                        <label for="phonenumber">Mobile Number <span style="font-size:12px;">(without country code)</span><span style="color: red;font-size: 13px;">*</span></label>
+                        <div class="form-inline">
+                             <asp:TextBox id="MobileNo" name="Mobile No" class="form-control" runat="server" clientidmode="static" MaxLength="10" style="width: 96%;"></asp:TextBox>
+                             <input type="button" id="send_otp" class="btn btn-primary w-auto pb-4 pt-0" value="Send OTP" style="position: absolute; right: 8%; height: 37px;
+                            line-height: 34px;">
+                        </div>
+                        <span class="error" id="reqMobileNo" style="display:none;">Enter your mobile number</span>
+                        <span class="error" id="reqValidMobileNo" style="display:none;">Enter valid mobile number</span>
+                    </div>  
+                    <div class="form-group" id="otp-field" style="display: none;">
+                        <input type="text" class="form-control" id="otp" maxlength="6" placeholder="Enter your OTP">
+                         <span class="error" id="reqOTP" style="display:none;">Enter OTP Code</span>
+                             <span class="error" id="reqValidOTP" style="display:none;">Enter valid OTP code</span>
+                    </div>
+                    <div class="second-sec-form" id="second-sec-form" style="display: none;">
+                        <div class="form-group">
+                            
+                            <%--<div class="row mt-0" style="position: relative; top: 0px;">--%>
+                                 <label for="birthday">Date of Birth <span style="color: red;font-size: 13px;">*</span></label>
+                            <input type="text" class="form-control py-2" placeholder="dd/mm/yyyy" id="birthday"  name="DOB" autocomplete="off">
+                             <input type="hidden" id="hdnDOB" runat="server" />
+                         
+                           <%-- </div>--%>
+                             <span class="error"  id="reqDOB" style="display:none;">Enter your date of birth</span> 
+                            <span class="error" id="reqValidDOB" style="display:none;">Enter date of birth in dd/mm/yyyy format ONLY.</span>
+                        </div>
+                        <div class="form-group">
+                            <select class="custom-select" id="Consultation" name="Consultationtype">
+                                <option selected>Select Consultation Type</option>
+                                <option>Telemedicine Consultation</option>
+                                <option>Out-patient Consultation</option>
+                            </select>
+                             <span class="error" style="display:none;" id="reqConsultation">Select Consultation</span>
+                            <input type="hidden" id="hdnConsultation" runat="server" />
+                        </div>
+                        <div class="form-group">
+                            <select class="custom-select" id="Department" name="Department">
+                                <option selected>Select Department</option>
+                                <option value="Anaesthesiology & Pain Medicine">Anaesthesiology & Pain Medicine</option>
+                                <option value="Cardiology">Cardiology</option>
+                                <option value="Cardio Thoracic & Vascular Surgery">Cardio Thoracic & Vascular Surgery</option>
+                                <option value="Critical Care & Emergency">Critical Care & Emergency</option>
+                                <option value="Dental Medicine">Dental Medicine</option>
+                                <option value="Dermatology">Dermatology</option>
+                                <option value="Endocrine Surgery">Endocrine Surgery</option>
+                                <option value="Endocrinology">Endocrinology</option>
+                                <option value="ENT">ENT</option>
+                                <option value="Gastroenterology (Medical)">Gastroenterology (Medical)</option>
+                                <option value="General Medicine">General Medicine</option>
+                                <option value="General Surgery">General Surgery</option>
+                                <option value="Nephrology">Nephrology</option>
+                                <option value="Neurology">Neurology</option>
+                                <option value="Neurosurgery">Neurosurgery</option>
+                                <option value="Obstetrics & Gynaecology">Obstetrics & Gynaecology</option>
+                                 <option value="Ophthalmology">Ophthalmology</option>
+                                 <option value="Oral and Maxillofacial Surgery">Oral and Maxillofacial Surgery</option>
+                                <option value="Orthopaedics">Orthopaedics</option>
+                                <option value="Paediatrics">Paediatrics</option>
+				<option value="Paediatrics Clinic">Paediatrics Clinic</option>
+                                <option value="Pediatrics Intensive care">Pediatrics Intensive care</option>
+                                <option value="Paediatric Surgery">Paediatric Surgery</option>
+                                <option value="Physical Medicine & Rehabilitation">Physical Medicine & Rehabilitation</option>
+                                <option value="Plastic, Hand & Reconstructive surgery">Plastic, Hand & Reconstructive surgery</option>
+                                <option value="Psychiatry">Psychiatry</option>
+                                <option value="Pulmonology">Pulmonology</option>
+                                <option value="Radiology">Radiology</option>
+                                <option value="Rheumatology">Rheumatology</option>
+                                 <option value="Spine Surgery">Spine Surgery</option>
+                                <option value="Urology">Urology</option>
+                            </select>
+                            <input type="hidden" id="hdnDepartment" runat="server" />
+                            <span class="error" style="display:none;" id="reqDepartment">Select department</span>
+                        </div>
+                        <div class="form-group">
+                            <select class="custom-select" id="dlDoctor" name="Doctor">
+                                <option selected>Select Doctor</option>
+<!--
+                                <option value="Dr. Rohit Sethi">Dr. Rohit Sethi</option>
+                                <option value="Dr. N. Tejaswi Shashikanth">Dr. N. Tejaswi Shashikanth</option>
+-->
+<!--                                <option value="Prof. Nitin Kekre">Prof. Nitin Kekre</option>-->
+                            </select>
+                             <input type="hidden" id="hdnDoctor" runat="server" />
+                            <span class="error" style="display:none;" id="reqDoctor">Select doctor</span>
+                        </div>
+                        <div class="form-group">
+                            <input type="hidden" id="txtAppointmentDate" name="Appointment Date" />
+                             <input type="hidden" id="txtAppointmentDate1" runat="server" />
+                            <label for="appointmentDate">Appointment Date <span style="color: red;font-size: 13px;">*</span></label>
+                            <div class="row mt-0" style="position: relative; top: 0px;">
+                                <div class="col-md-4 py-md-0 py-2">
+                                    <asp:DropDownList ID="ddlDay" runat="server" CssClass="custom-select">
+                                       <asp:ListItem>- Day -</asp:ListItem>
+                                        <asp:ListItem value="1">1</asp:ListItem>
+                                        <asp:ListItem value="2">2</asp:ListItem>
+                                       <asp:ListItem value="3">3</asp:ListItem>
+                                       <asp:ListItem value="4">4</asp:ListItem>
+                                       <asp:ListItem value="5">5</asp:ListItem>
+                                       <asp:ListItem value="6">6</asp:ListItem>
+                                       <asp:ListItem value="7">7</asp:ListItem>
+                                       <asp:ListItem value="8">8</asp:ListItem>
+                                       <asp:ListItem value="9">9</asp:ListItem>
+                                       <asp:ListItem value="10">10</asp:ListItem>
+                                       <asp:ListItem value="11">11</asp:ListItem>
+                                       <asp:ListItem value="12">12</asp:ListItem>
+                                       <asp:ListItem value="13">13</asp:ListItem>
+                                       <asp:ListItem value="14">14</asp:ListItem>
+                                       <asp:ListItem value="15">15</asp:ListItem>
+                                       <asp:ListItem value="16">16</asp:ListItem>
+                                       <asp:ListItem value="17">17</asp:ListItem>
+                                       <asp:ListItem value="18">18</asp:ListItem>
+                                       <asp:ListItem value="19">19</asp:ListItem>
+                                       <asp:ListItem value="20">20</asp:ListItem>
+                                       <asp:ListItem value="21">21</asp:ListItem>
+                                       <asp:ListItem value="22">22</asp:ListItem>
+                                       <asp:ListItem value="23">23</asp:ListItem>
+                                       <asp:ListItem value="24">24</asp:ListItem>
+                                       <asp:ListItem value="25">25</asp:ListItem>
+                                       <asp:ListItem value="26">26</asp:ListItem>
+                                       <asp:ListItem value="27">27</asp:ListItem>
+                                       <asp:ListItem value="28">28</asp:ListItem>
+                                       <asp:ListItem value="29">29</asp:ListItem>
+                                       <asp:ListItem value="30">30</asp:ListItem>
+                                       <asp:ListItem value="31">31</asp:ListItem>
+                                    </asp:DropDownList>
+                                    <%--<select class="custom-select" id="ddlDay">
+                                       <asp:ListItem>- Day -</asp:ListItem>
+                                       <asp:ListItem value="1">1</asp:ListItem>
+                                       <asp:ListItem value="2">2</asp:ListItem>
+                                       <asp:ListItem value="3">3</asp:ListItem>
+                                       <asp:ListItem value="4">4</asp:ListItem>
+                                       <asp:ListItem value="5">5</asp:ListItem>
+                                       <asp:ListItem value="6">6</asp:ListItem>
+                                       <asp:ListItem value="7">7</asp:ListItem>
+                                       <asp:ListItem value="8">8</asp:ListItem>
+                                       <asp:ListItem value="9">9</asp:ListItem>
+                                       <asp:ListItem value="10">10</asp:ListItem>
+                                       <asp:ListItem value="11">11</asp:ListItem>
+                                       <asp:ListItem value="12">12</asp:ListItem>
+                                       <asp:ListItem value="13">13</asp:ListItem>
+                                       <asp:ListItem value="14">14</asp:ListItem>
+                                       <asp:ListItem value="15">15</asp:ListItem>
+                                       <asp:ListItem value="16">16</asp:ListItem>
+                                       <asp:ListItem value="17">17</asp:ListItem>
+                                       <asp:ListItem value="18">18</asp:ListItem>
+                                       <asp:ListItem value="19">19</asp:ListItem>
+                                       <asp:ListItem value="20">20</asp:ListItem>
+                                       <asp:ListItem value="21">21</asp:ListItem>
+                                       <asp:ListItem value="22">22</asp:ListItem>
+                                       <asp:ListItem value="23">23</asp:ListItem>
+                                       <asp:ListItem value="24">24</asp:ListItem>
+                                       <asp:ListItem value="25">25</asp:ListItem>
+                                       <asp:ListItem value="26">26</asp:ListItem>
+                                       <asp:ListItem value="27">27</asp:ListItem>
+                                       <asp:ListItem value="28">28</asp:ListItem>
+                                       <asp:ListItem value="29">29</asp:ListItem>
+                                       <asp:ListItem value="30">30</asp:ListItem>
+                                       <asp:ListItem value="31">31</asp:ListItem>
+                                    </select>--%>
+                                    <span class="error"  id="reqAppDate" style="display:none;">choose appointment date</span> 
+                                     <span class="error"  id="reqAppValidDay" style="display:none;">Enter the valid day</span> 
+                                </div>
+                            <div class="col-md-4 py-md-0 py-2">
+                                 <asp:DropDownList ID="ddlMonth" runat="server" CssClass="custom-select">
+                                       <asp:ListItem>- Month -</asp:ListItem>
+                                     
+                                   <asp:ListItem value="01">January</asp:ListItem>
+                                   <asp:ListItem value="02">Febuary</asp:ListItem>
+                                   <asp:ListItem value="03">March</asp:ListItem>
+                                   <asp:ListItem value="04">April</asp:ListItem>
+                                   <asp:ListItem value="05">May</asp:ListItem>
+                                   <asp:ListItem value="06">June</asp:ListItem>
+                                   <asp:ListItem value="07">July</asp:ListItem>
+                                   <asp:ListItem value="08">August</asp:ListItem>
+                                   <asp:ListItem value="09">September</asp:ListItem>
+                                   <asp:ListItem value="10">October</asp:ListItem>
+                                   <asp:ListItem value="11">November</asp:ListItem>
+                                   <asp:ListItem value="12">December</asp:ListItem>
+                                    </asp:DropDownList>
+                               
+                                   <span class="error"  id="reqAppMon" style="display:none;">choose appointment month</span> 
+                                </div>
+                                <div class="col-md-4 py-md-0 py-2">
+                                      <asp:DropDownList ID="ddlYear" runat="server" CssClass="custom-select">
+                                       <asp:ListItem>- Year -</asp:ListItem>
+                                      
+                                       <asp:ListItem value="2022">2022</asp:ListItem>
+                                    </asp:DropDownList>
+                                 <%--   <select class="custom-select" id="ddlYear">
+                                       <asp:ListItem>- Year -</asp:ListItem>
+                                       <asp:ListItem value="2021">2020</asp:ListItem>
+                                       <asp:ListItem value="2022">2022</asp:ListItem>
+                                    </select>--%>
+                                       <span class="error"  id="reqAppYear" style="display:none;">choose appointment year</span> 
+                                </div>
+                            </div>
+                           <span class="error"  id="reqAppDate1" style="display:none;">Choose your appointment date</span> 
+                            <span class="error"  id="reqAppDate21" style="display:none;">Enter valid appointment date</span>
+                             <span class="error"  id="reqAppValidSunDay" style="display:none;">Sorry, No appointments on Sunday. Pls choose another day</span> 
+                        </div>
+                        <div class="form-group">
+                            <label for="appointmentTime">Appointment Time <span style="color: red;font-size: 13px;">*</span></label>
+                             <input type="hidden" id="hdnAppointmentTime" name="Appointment Time" />
+                              <input type="hidden" id="hdnAppointmentTime1" runat="server" />
+                            <div class="row mt-0" style="position: relative; top: 0px;">
+                                <div class="col-md-4 col-4 py-md-0 py-2 pr-0">
+                                    <select class="custom-select" style="height: 50px;" id="ddlHours">
+                                        <option selected>Hours</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                        <option>9</option>
+                                        <option>10</option>
+                                        <option>11</option>
+                                        <option>12</option>
+                                    </select>
+<!--                                        <input type="text" class="form-control py-2 text-center" placeholder="Hours" id="txtHours" maxlength="2" style="height: 50px;">-->
+                                 <span class="error" id="reqHours" style="display:none;">Enter Hours</span>
+                                     <span class="error" id="reqValidHours" style="display:none;">Enter valid hours</span>
+                                </div>
+                                
+                                <div class="col-md-4 col-4 py-md-0 py-2 pr-0">
+                                     <select class="custom-select" style="height: 50px;" id="ddlMinutes">
+                                        <option selected>Minutes</option>
+                                        <option>00</option>
+                                        <option>30</option>
+                                    </select>
+<!--                                    <input type="text" class="form-control py-2 text-center" id="txtMinutes" placeholder="Minutes" maxlength="2"  style="height: 50px;">-->
+                                <span class="error"  id="reqValidMinutes"  style="display:none;">Enter Minutes</span>
+                                    </div>
+<!--
+                                <div class="col-md-2 col-4 py-md-0 py-2 pr-0">
+                                    <input type="text" class="form-control py-2 text-center" id="" placeholder="00" maxlength="2"  style="height: 50px;">
+                                <span class="error"  id=""  style="display:none;">Enter Minutes</span>
+                                    </div>
+-->
+                                <div class="col-md-4 col-4 py-md-0 py-2">
+                                    <div class="switch-field">
+                                        <input type="radio" id="radio-one" name="switch-one" value="AM" checked/>
+                                        <label for="radio-one">AM</label>
+                                        <input type="radio" id="radio-two" name="switch-one" value="PM" />
+                                        <label for="radio-two">PM</label>
+                                    </div>
+                                </div> 
+                            </div>
+                           
+                        </div>
+                        <div class="form-group">
+                            <label for="appointment">Purpose of appointment <span></span></label>
+                              <asp:TextBox id="Purpose" class="form-control py-2" runat="server"></asp:TextBox>
+                           <%-- <input type="text" class="form-control text-capitalize" id="txtPurpose" name="Purpose">--%>
+                           <span class="error" id="reqPurpose" style="display:none;">Enter your purpose of appointment</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="remarks">Remarks</label>
+                              <asp:TextBox id="Remarks"  class="form-control py-2" runat="server"></asp:TextBox>
+                          <%--  <input type="text" class="form-control text-capitalize" id="txtremarks" name="Remarks">--%>
+                  
+                    </div>
+                        <div class="form-group">
+                        <div class="col-lg-12 p-0 captcha d-flex">
+                              <img src="/Captcha2.aspx" id="imgCaptcha" width="120px" height="29px" /><button style="background-color:white;border: none;box-shadow:none" onclick="javascript:RefreshCaptcha();return false;"><img src="image/refreshicon.png"></button>
+                        </div>
+                        <div class="col-lg-12 px-0">
+                             <asp:TextBox ID="txtCode" CssClass="form-control" runat="server" placeholder="Verification Code"  clientidmode="static" autocomplete="off" style="text-transform: none;"></asp:TextBox>
+<%--                            <input type="text" class="form-control" placeholder="Verification Code" id="txtCode" runat="server" clientidmode="static" style="text-transform: none;">--%>
+                            <span class="error" id="reqCode" style="display:none;">Enter verification code</span>
+                            <span class="error" id="reqValidCode" style="display:none;">Enter valid verification code</span>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="mt-2 mb-3 mx-auto" id="dvsubmtFirst">
+                   <input type="button" id="submit_otp" class="btn btn-primary w-auto pb-4 pt-0" value="Submit">
+                    <%--<input type="button" id="submit_otp" class="btn btn-primary w-auto pb-4 pt-0" value="Submit">--%>
+                </div>
+                   <div class="mt-2 mb-3 mx-auto" id="dvsubmtSecond" style="display:none">
+                   <asp:Button ID="buttonsubmit" runat="server" CssClass="btn btn-submit w-auto" Text="submit" OnClientClick="return addform();"
+                                                    OnClick="btnSend_Click" ClientIDMode="Static"/>
+                </div>
+                <!-- Modal footer -->
+                <!-- <div class="mt-2 mb-3 mx-auto">
+                <input type="button" id="send_otp" class="btn btn-primary w-auto pb-4 pt-0" value="Send OTP">
+                </div> -->
+               
+                
+              </div>
+            </div>
+          </div>
+        <div id="thankyou" class="overlay">
+        <div class="book-appointment-thank">
+            
+           <a class="close" id="close" href="#">&times;</a>
+            <div class="content" style="padding-top:5px">
+            Thank you for your appointment request. We will get back to you on the status of your appointment.
+             
+            </div>
+        </div>
+    </div> 
+<!--============ END OF BOOK AN APPOINTMENT FORM =============-->
+    </form>
+     <script type="text/javascript" src="https://use.fontawesome.com/5ecf78f4a4.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/comman.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/owl.carousel.js"></script>
+<script type="text/javascript" src="js/SmoothScroll.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+<script type="text/javascript" src="js/popper.min.js"></script>
+<script src="js/jquery.counterup.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/mdtimepicker.js"></script>
+   <script type="text/javascript">
+function RefreshCaptcha() {
+var img = document.getElementById("imgCaptcha");
+img.src = "/Captcha2.aspx?query=" + Math.random();
+}
+</script>
+<script>
+        //Put our input DOM element into a jQuery Object
+        var $jqDate = jQuery('input[name="DOB"]');
+
+        //Bind keyup/keydown to the input
+        $jqDate.bind('keyup','keydown', function(e){
+
+          //To accomdate for backspacing, we detect which key was pressed - if backspace, do nothing:
+            if(e.which !== 8) {	
+                var numChars = $jqDate.val().length;
+                if(numChars === 2 || numChars === 5){
+                    var thisVal = $jqDate.val();
+                    thisVal += '/';
+                    $jqDate.val(thisVal);
+                }
+          }
+        });
+    </script>
+
+<script>
+    var stateObject = {
+      "India": {
+        "Delhi": ["new Delhi", "North Delhi"],
+        "Kerala": ["Thiruvananthapuram", "Palakkad"],
+        "Goa": ["North Goa", "South Goa"],
+      },
+      "Australia": {
+        "South Australia": ["Dunstan", "Mitchell"],
+        "Victoria": ["Altona", "Euroa"]
+      }, "Canada": {
+        "Alberta": ["Acadia", "Bighorn"],
+        "Columbia": ["Washington", ""]
+      },
+    }
+    window.onload = function () {
+      var countySel = document.getElementById("countySel"),
+        stateSel = document.getElementById("stateSel"),
+        districtSel = document.getElementById("districtSel");
+      for (var country in stateObject) {
+        countySel.options[countySel.options.length] = new Option(country, country);
+      }
+      countySel.onchange = function () {
+        stateSel.length = 1; // remove all options bar first
+        districtSel.length = 1; // remove all options bar first
+        if (this.selectedIndex < 1) return; // done 
+        for (var state in stateObject[this.value]) {
+          stateSel.options[stateSel.options.length] = new Option(state, state);
+        }
+      }
+      countySel.onchange(); // reset in case page is reloaded
+      stateSel.onchange = function () {
+        districtSel.length = 1; // remove all options bar first
+        if (this.selectedIndex < 1) return; // done 
+        var district = stateObject[countySel.value][this.value];
+        for (var i = 0; i < district.length; i++) {
+          districtSel.options[districtSel.options.length] = new Option(district[i], district[i]);
+        }
+      }
+    }
+  </script>
+ 
+  <script>
+    function PopUp(hideOrshow) {
+      if (hideOrshow == 'hide') document.getElementById('ac-wrapper').style.display = "none";
+      else document.getElementById('ac-wrapper').removeAttribute('style');
+    }
+    window.onload = function () {
+      setTimeout(function () {
+        PopUp('show');
+      }, 1000);
+    }
+  </script>
+  <script>
+    $(window).load(function () {
+      $(".noti").addClass("right0");
+    });
+
+    /*	$(document).on("click",".simplePopupClose",function(e){
+                $(".noti").addClass("right0");
+              
+                });*/
+    $(document).on("click", ".noti", function (e) { $(this).removeClass("right0"); });
+
+    jQuery(document).ready(function ($) {
+      $('.counter').counterUp({
+        delay: 10,
+        time: 1000
+      });
+
+
+
+    });
+  </script>
+  <script>
+    $(function () {
+      "use strict";
+      $('#clients').owlCarousel({
+        loop: false,
+        margin: 10,
+        smartSpeed: 800,
+        nav: true,
+        autoplay: false,
+        responsive: {
+          0: {
+            items: 1
+          },
+          510: {
+            items: 2
+          },
+
+          600: {
+            items: 3
+          },
+
+          1030: {
+            items: 4
+          },
+          1680: {
+            items: 5
+          }
+        }
+      });
+
+
+    });
+  </script>
+  <script type="text/javascript">
+    function ValidateDOB() {
+      
+        //Get the date from the TextBox.
+        var dateString = document.getElementById("birthday").value;
+        var regex = /(((0|1)[0-9]|2[0-9]|3[0-1])\/(0[1-9]|1[0-2])\/((19|20)\d\d))$/;
+ 
+        //Check whether valid dd/MM/yyyy Date Format.
+        if (regex.test(dateString)) {
+            return true;
+        } else {
+           
+            return false;
+        }
+    }
+</script>
+        <script>
+          $(document).ready(function(){
+              $('#AppointmentTime').mdtimepicker(); //Initializes the time picker
+             
+          });
+        </script>
+    <script>
+            $("#send_otp").on("click", function () {
+                var MobileNo = $("#MobileNo").val();
+               
+                if (MobileNo == "") {
+                    document.getElementById("reqMobileNo").style.display = "block";
+                    document.getElementById("reqValidMobileNo").style.display = "none";
+                }
+                else {
+                    if (MobileNo.length != 10) {
+                         document.getElementById("reqMobileNo").style.display = "none";
+                         document.getElementById("reqValidMobileNo").style.display = "block";
+                    }
+                    else {
+                        var res = null;
+                        $('#otp-field').show();
+                        $.ajax({
+                            type: "POST",
+                            url: "appointmenttest.aspx/SendOTP",
+                            contentType: "application/json; charset=utf-8",
+                            data: '{stMobileNo: "' + MobileNo + '"}',
+                            dataType: "json",
+                            async: false,
+                            success: function (response) {
+                              
+                                res = response.d;
+                            },
+                            failure: function (response) {
+                                  alert(response.d);
+                                res = response.d;
+                            }
+                        });
+                    }
+                }
+            });
+            $("#submit_otp").on("click", function () {
+                if (validateFirst()) {
+                  
+                    var otpcode = $("#otp").val();
+                    if (otpcode != "" && otpcode.length==6) {
+                        $.ajax({
+                            type: "POST",
+                            url: "appointmenttest.aspx/VerifyOtp",
+                            contentType: "application/json; charset=utf-8",
+                            data: '{stOtpCode: "' + otpcode + '"}',
+                            dataType: "json",
+                            async: false,
+                            success: function (response) {
+                                
+                                if (response.d == "Success") {
+                                    
+                                    $('#send_otp').hide();
+                                    $('#otp-field').hide();
+                                  
+                                    //otp validate
+                                    $('#second-sec-form').show();
+                                    $('#Name').attr('readonly', 'readonly');
+                                    $('#EmailId').attr('readonly', 'readonly');
+                                     $('#MobileNo').attr('readonly', 'readonly');
+                                    document.getElementById("reqOTP").style.display = "none";
+                                     document.getElementById("dvsubmtFirst").style.display = "none";
+                                     document.getElementById("dvsubmtSecond").style.display = "block";
+                                    document.getElementById("reqValidOTP").style.display = "none";
+                                      $('[id^=txtHours]').keypress(validateNumber);
+                                    $('[id^=txtMinutes]').keypress(validateNumber);
+                                }
+                                else {
+                                    $('#second-sec-form').hide();
+                                    $('#send_otp').show();
+                                    $('#otp-field').show();
+                                    document.getElementById("reqOTP").style.display = "none";
+                                     document.getElementById("reqValidOTP").style.display = "block";
+                                }
+                            },
+                            failure: function (response) {
+                               
+                                document.getElementById("reqValidOTP").style.display = "block";
+                            }
+                        });
+                        
+                       
+                    }
+                    else {
+                       
+                        if (otpcode.length != 0 && otpcode.length < 6) {
+                            document.getElementById("reqOTP").style.display = "none";
+                            document.getElementById("reqValidOTP").style.display = "block";
+                        }
+                        else {
+                             
+                            document.getElementById("reqOTP").style.display = "block";
+                            document.getElementById("reqValidOTP").style.display = "none";
+                        }
+                    }
+                }
+
+                // $('#myModal1').show(); 
+                // $('#myModal1').css('opacity', '1'); 
+                
+            });
+            $("#otpClose").on( "click", function() {
+                $('#myModal1').hide(); 
+                $('#myModal1').css('opacity', '0'); 
+            });
+            
+            
+            //trigger next modal
+            // $("#signin").on( "click", function() {
+                    
+            // });
+            // $("#close").on('click', function() {
+            //    $("#thankyou").fadeOut();
+            // });
+            </script>
+    <script>
+            $("#thankyoupop").on('click', function() {
+               $("#thankyou").fadeIn();
+               $("#bookAppointmentModal").hide();
+            });
+            $("#close").on('click', function() {
+               $("#thankyou").fadeOut();
+            });
+        </script>
+        <script>
+        function validateEmail(email) {
+            var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+            if (!emailReg.test(email)) {
+                return false;
+            } else {
+                return true;
+            }
+        }
+        function validateDate(dob) {
+            var dobReg = /^([0-9]{1,2})\/([0-9]{1,2})\/([0-9]{4})$/;
+            if (!dobReg.test(dob)) {
+                return false;
+            } else {
+                return true;
+            }
+        }
+        function validateName(e) {
+             var keyCode = e.keyCode || e.which;
+            var emailReg = /^[a-zA-Z\s.]+$/;
+            var isValid = emailReg.test(String.fromCharCode(keyCode));
+            return isValid;
+        }
+         function validateName1(e) {
+             var keyCode = e.keyCode || e.which;
+            var emailReg = /^[a-zA-Z\s]+$/;
+            var isValid = emailReg.test(String.fromCharCode(keyCode));
+            return isValid;
+        }
+        function validateNumber(event) {
+             
+                var key = window.event ? event.keyCode : event.which;
+
+                if (event.keyCode == 8 || event.keyCode == 46
+    || event.keyCode == 37 || event.keyCode == 39) {
+                    return true;
+                }
+                else if (key < 48 || key > 57) {
+                    return false;
+                }
+                else return true;
+            };
+            function validateNumber1(event) {
+
+                var key = window.event ? event.keyCode : event.which;
+               
+                if (event.keyCode == 8 || event.keyCode == 46
+                    || event.keyCode == 37 || event.keyCode == 39 || event.keyCode == 39 || event.keyCode == 47) {
+                    return true;
+                }
+                else if (key < 48 || key > 57) {
+                    return false;
+                }
+                  
+                else return true;
+        };
+        function isAlfa(evt) {
+            evt = (evt) ? evt : window.event;
+            var charCode = (evt.which) ? evt.which : evt.keyCode;
+            if (charCode > 32 && (charCode < 65 || charCode > 90) && (charCode < 97 || charCode > 122)) {
+                return false;
+            }
+            return true;
+        }
+        $(document).ready(function () {
+            Captcha();
+            $("#Department").change(function () {
+                var value = $("#Department option:selected").text();  //$(this).find(".selected").text();
+
+             
+                $("#dlDoctor option").remove();
+                 $('#dlDoctor').append('<option value="0">Select Doctor</option>'); 
+                if (value == "Urology") {
+//                  $('#dlDoctor').append('<option value="Prof. Nitin Kekre">Prof. Nitin Kekre</option>');   
+				$('#dlDoctor').append('<option value="Dr.Rohit Sethi">Dr. Rohit Sethi</option>'); 
+                // $('#dlDoctor').append('<option value="Dr.Tejaswi Shashikanth N">Dr.Tejaswi Shashikanth N</option>');                      
+                              
+               
+            }
+            else if (value == "Spine Surgery") {
+				$('#dlDoctor').append('<option value="Dr. Backiaraj D">Dr. Backiaraj D</option>'); 
+                
+                }
+                else if (value == "Rheumatology") {
+				$('#dlDoctor').append('<option value="Dr. Raja N">Dr. Raja N</option>'); 
+                
+                }
+           else if (value == "Radiology") {
+				$('#dlDoctor').append('<option value="Dr. Karthikumar B">Dr. Karthikumar B</option>'); 
+                
+                }
+                else if (value == "Psychiatry") {
+                   $('#dlDoctor').append('<option value="Dr. Shinika R">Dr. Shinika R</option>');
+                
+                }
+           else if (value == "Pulmonology") {
+                    $('#dlDoctor').append('<option value="Dr. Prince">Dr. Prince</option>'); 
+                    $('#dlDoctor').append('<option value="Dr. Rajagopal T V">Dr. Rajagopal T V</option>'); 
+                    $('#dlDoctor').append('<option value="Dr. Vimi Varghese">Dr. Vimi Varghese</option>'); 
+                
+                }
+          else if (value == "Plastic, Hand & Reconstructive surgery") {
+            $('#dlDoctor').append('<option value="Dr. Ramkumar J">Dr. Ramkumar J</option>');
+              $('#dlDoctor').append('<option value="Dr. Rohith S">Dr. Rohith S</option>');
+                   
+                }
+           else if (value == "Physical Medicine & Rehabilitation") {
+                    $('#dlDoctor').append('<option value="Dr. Chinju Babu">Dr. Chinju Babu</option>'); 
+                   
+                }
+           else if (value == "Pediatrics Intensive care") {
+                    $('#dlDoctor').append('<option value="Dr. Reshma Aramanadka">Dr. Reshma Aramanadka</option>'); 
+                    $('#dlDoctor').append('<option value="Dr. Kanagagiri  R">Dr. Kanagagiri  R</option>');
+
+                }
+           else if (value == "Paediatrics") {
+                    $('#dlDoctor').append('<option value="Dr. Soniya Mary Kurian">Dr. Soniya Mary Kurian</option>'); 
+                    $('#dlDoctor').append('<option value="Dr. Nagarajan V">Dr. Nagarajan V</option>'); 
+                    $('#dlDoctor').append('<option value="Dr. Naresh Kumar N">Dr. Naresh Kumar N</option>');
+               $('#dlDoctor').append('<option value="Dr. Yuvaraj V">Dr. Yuvaraj V</option>'); 
+               $('#dlDoctor').append('<option value="Dr. Asvatha V C">Dr. Asvatha V C</option>');
+                    
+                    
+                }
+
+
+         else if (value == "Paediatrics Clinic") {
+                    $('#dlDoctor').append('<option value="Dr. Soniya">Dr. Soniya</option>'); 
+                    $('#dlDoctor').append('<option value="Dr. Asvatha">Dr. Asvatha</option>'); 
+                    $('#dlDoctor').append('<option value="Dr. Kanagagiri">Dr. Kanagagiri</option>'); 
+                    $('#dlDoctor').append('<option value="Dr. Nagarajan">Dr. Nagarajan</option>'); 
+                    $('#dlDoctor').append('<option value="Dr. Vijaya Kumar">Dr. Vijaya  Kumar</option>');
+               $('#dlDoctor').append('<option value="Dr. Yuvaraj">Dr. Yuvaraj</option>'); 
+                    
+                    
+                }
+
+                else if (value == "Paediatric Surgery") {
+               $('#dlDoctor').append('<option value="Dr. Aravindh R">Dr. Aravindh R</option>'); 
+                    
+                    
+                }
+          else if (value == "Orthopaedics") {
+            $('#dlDoctor').append('<option value="Prof. Vernon Neville Lee">Prof. Vernon Neville Lee</option>'); 
+             // $('#dlDoctor').append('<option value="Dr. Kanniraj Marimuthu">Dr. Kanniraj Marimuthu</option>'); 
+//              $('#dlDoctor').append('<option value="Dr. Rajkumar Thangaraj ">Dr. Rajkumar Thangaraj </option>'); 
+                    $('#dlDoctor').append('<option value="Dr. Ponnilavan Jayakanthan">Dr. Ponnilavan Jayakanthan</option>'); 
+                    $('#dlDoctor').append('<option value="Dr. Manu K T ">Dr. Manu K T </option>');
+                    $('#dlDoctor').append('<option value="Dr. Manoharan M ">Dr. Manoharan M </option>');  
+             // $('#dlDoctor').append('<option value="Dr. Kanniraj ">Dr. Kanniraj </option>'); 
+                    
+                }
+         else if (value == "Oral and Maxillofacial Surgery") {
+                    $('#dlDoctor').append('<option value="Dr. Ashwin Preethem Kumar J">Dr. Ashwin Preethem Kumar J</option>'); 
+                   
+                }
+         else if (value == "Ophthalmology") {
+                    $('#dlDoctor').append('<option value="Dr. Swetha">Dr. Swetha</option>'); 
+                    $('#dlDoctor').append('<option value="Dr. Sangeetha S">Dr. Sangeetha S</option>'); 
+                   
+                }
+        else if (value == "Obstetrics & Gynaecology") {
+//                    $('#dlDoctor').append('<option value="Prof. Aruna Kekre">Prof. Aruna Kekre</option>'); 
+                    $('#dlDoctor').append('<option value="Dr. Akilasree P B">Dr. Akilasree P B</option>'); 
+                    
+                    $('#dlDoctor').append('<option value="Dr. Santosh Thomas Samuel">Dr. Santosh Thomas Samuel</option>'); 
+                     $('#dlDoctor').append('<option value="Dr. Ayswariya">Dr. Ayswariya</option>'); 
+                     $('#dlDoctor').append('<option value="Dr. Janani G D">Dr. Janani G D</option>'); 
+                     $('#dlDoctor').append('<option value="Dr. Jeyasheela Kamaraj">Dr. Jeyasheela Kamaraj</option>'); 
+                   
+                }
+            else if (value == "Neurosurgery") {
+                     
+                    // $('#dlDoctor').append('<option value="Dr.Harish">Dr.Harish</option>'); 
+                $('#dlDoctor').append('<option value="Dr. Paul Henry">Dr. Paul Henry</option>');
+                $('#dlDoctor').append('<option value="Dr. Boopesh Pugazhendi">Dr. Boopesh Pugazhendi</option>');
+                   
+                }
+                else if (value == "Neonatal Intensive Care") {
+                    $('#dlDoctor').append('<option value="Dr. Muragesan A">Dr. Muragesan A</option>'); 
+                   
+                }
+            else if (value == "Neurology") {
+                    $('#dlDoctor').append('<option value="Dr. Chitrambalam S">Dr. Chitrambalam S</option>'); 
+                   
+                }
+           else if (value == "Nephrology") {
+            $('#dlDoctor').append('<option value="Dr. Thomas Joseph">Dr. Thomas Joseph</option>'); 
+                    $('#dlDoctor').append('<option value="Dr. Krishna Chaitanya Gunda">Dr. Krishna Chaitanya Gunda</option>'); 
+                    
+                     $('#dlDoctor').append('<option value="Dr. Annamalai">Dr. Annamalai</option>'); 
+               $('#dlDoctor').append('<option value="Dr. Ganga">Dr. Ganga</option>'); 
+                }
+         else if (value == "General Surgery") {
+                    $('#dlDoctor').append('<option value="Dr. Balaji Viswanath P">Dr. Balaji Viswanath P</option>'); 
+                   $('#dlDoctor').append('<option value="Dr. Tushar Yashwant Sonavane">Dr. Tushar Yashwant Sonavane</option>');
+                   $('#dlDoctor').append('<option value="Dr. Praveen Balakrishnan">Dr. Praveen Balakrishnan</option>');
+                   $('#dlDoctor').append('<option value="Dr. Abhilasha Gloria Singh">Dr. Abhilasha Gloria Singh</option>');
+                   $('#dlDoctor').append('<option value="Dr. Mithun Raam">Dr. Mithun Raam</option>');
+                }
+            else if (value == "General Medicine") {
+                    $('#dlDoctor').append('<option value="Dr. Pranita Harshad Vanjare">Dr. Pranita Harshad Vanjare</option>'); 
+                   $('#dlDoctor').append('<option value="Dr. Asif G Ahmed">Dr. Asif G Ahmed</option>');
+                   $('#dlDoctor').append('<option value="Dr. Niranjana Sreedevi N">Dr. Niranjana Sreedevi N</option>');
+                }
+           else if (value == "Gastroenterology (Medical)") {
+                    $('#dlDoctor').append('<option value="Prof. Ashok Chacko">Prof. Ashok Chacko</option>'); 
+                   $('#dlDoctor').append('<option value="Dr. Rabindranath E">Dr. Rabindranath E</option>');
+                }
+           else if (value == "ENT") {
+                   $('#dlDoctor').append('<option value="Dr. Vikram M">Dr. Vikram M</option>');
+                //    $('#dlDoctor').append('<option value="Dr. Mohamed Abdul Kathar M">Dr. Mohamed Abdul Kathar M</option>');
+                   $('#dlDoctor').append('<option value="Dr. Nadia Fasal">Dr. Nadia Fasal</option>');
+                   $('#dlDoctor').append('<option value="Dr. Shruti Venkitachalam">Dr. Shruti Venkitachalam</option>');
+
+                }
+         else if (value == "Endocrinology") {
+                    $('#dlDoctor').append('<option value="Dr. Simon Rajaratnam">Dr. Simon Rajaratnam</option>'); 
+                   
+                }
+        else if (value == "Endocrine Surgery") {
+                    $('#dlDoctor').append('<option value="Dr. Aravindan Nair">Dr. Aravindan Nair</option>'); 
+                   
+                }
+         else if (value == "Dermatology") {
+                    $('#dlDoctor').append('<option value="Dr. Yamini M">Dr. Yamini M</option>'); 
+                   
+                }
+          else if (value == "Dental Medicine") {
+                    $('#dlDoctor').append('<option value="Dr. Surya Prakash Sharma A">Dr. Surya Prakash Sharma A</option>'); 
+                   
+                }
+         else if (value == "Critical Care & Emergency") {
+                    $('#dlDoctor').append('<option value="Dr. Muthurajan">Dr. Muthurajan</option>'); 
+                    $('#dlDoctor').append('<option value="Dr. Manchireddy Manish">Dr. Manchireddy Manish</option>'); 
+//                     $('#dlDoctor').append('<option value="Dr. Gokulakrishnan">Dr. Gokulakrishnan</option>'); 
+                }
+         else if (value == "Cardiology") {
+                    $('#dlDoctor').append('<option value="Dr. N Aravind Yuvaraj">Dr. N Aravind Yuvaraj</option>'); 
+                    $('#dlDoctor').append('<option value="Dr. Bala Vignesh S">Dr. Bala Vignesh S</option>'); 
+                 
+                }
+                else if (value == "Cardio Thoracic & Vascular Surgery") {
+                    $('#dlDoctor').append('<option value="Dr. Saravanane C">Dr. Saravanane C</option>');
+                 
+                }
+          else if (value == "Anaesthesiology & Pain Medicine") {
+                     $('#dlDoctor').append('<option value="Dr. J Jayasudha">Dr. J Jayasudha</option>'); 
+              $('#dlDoctor').append('<option value="Dr. Prabhakaran K">Dr. Prabhakaran K</option>'); 
+                    $('#dlDoctor').append('<option value="Dr. Pugalendiran T S">Dr. Pugalendiran T S</option>');
+                    $('#dlDoctor').append('<option value="Dr. Ramya Deepika D">Dr. Ramya Deepika D</option>');  
+                    $('#dlDoctor').append('<option value="Dr. Rajasekar Arumugam">Dr. Rajasekar Arumugam</option>');
+                }
+           
+        });   
+         
+           
+            $("#Name").focus();
+            $('[id^=MobileNo]').keypress(validateNumber);
+           
+           $('[id^=birthday]').keypress(validateNumber1);
+            $('[id^=Name]').keypress(isAlfa);
+                 var today = new Date();
+var dd = String(today.getDate()).padStart(2, '0');
+             var mm = String(today.getMonth() + 1).padStart(2, '0');
+             var yyyy = today.getFullYear();
+             today = dd + '/' + mm + '/' + yyyy;
+            document.getElementById("regDate").value = today.toString();
+           
+         
+                   
+           //$('#buttonsubmit').on('click', function (e) {
+           //    e.preventDefault();
+
+              
+
+           //});
+                   
+            });
+            function addform1() {
+                addform();
+                //return true;
+            }
+            function validCaptcha1(captchacode) {
+                 var ret_val = {};
+                $.ajax({
+                    type: "POST",
+                    url: "appointmenttest.aspx/verifyCaptcha",
+                    data: '{stVerify: "' + captchacode + '"}',
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    async: false,
+                    success: function (response) {
+                       
+                        if (response.d == "Success") {
+                            ret_val = true;
+                        }
+                        else {
+                            ret_val = false;
+
+                        }
+                    },
+                    failure: function (response) {
+                        ret_val = false;
+                    }
+                });
+                return ret_val;
+            }
+            function addform() {
+                  var $form = $('form#formreg'),
+   url = 'https://script.google.com/macros/s/AKfycbx36v9kBr1eJx_-Vw9pNVd-5-LPbBZf2wF_Q0hAEzLRUDeP3VQ/exec'
+                var Isvalidate = validate();
+
+               if (Isvalidate) {
+                   $("#buttonsubmit").val("Please Wait..");
+                   //$("#buttonsubmit").attr("disabled", true);
+                   document.getElementById("txtAppointmentDate").value = $("#ddlDay option:selected").text() + '/' + $("#ddlMonth option:selected").val() + '/' + $("#ddlYear option:selected").text();
+                   document.getElementById("txtAppointmentDate1").value = $("#ddlDay option:selected").text() + '/' + $("#ddlMonth option:selected").val() + '/' + $("#ddlYear option:selected").text();
+                  
+                   document.getElementById("hdnDOB").value = $("#birthday").val();
+                    document.getElementById("hdnDepartment").value = $("#Department option:selected").text();
+                   document.getElementById("hdnDoctor").value = $("#dlDoctor option:selected").text();
+                   document.getElementById("hdnConsultation").value = $("#Consultation option:selected").text();
+                   var ampm = null;
+                   if (document.getElementById('radio-one').checked) {
+                       ampm = document.getElementById('radio-one').value;
+                   }
+                   else {
+                        ampm = document.getElementById('radio-two').value;
+                   }
+                   if ($("#ddlMinutes option:selected").text() == "Minutes") {
+                       document.getElementById("hdnAppointmentTime").value = $("#ddlHours option:selected").text() + ':00' + " "+ampm;
+                       document.getElementById("hdnAppointmentTime1").value = $("#ddlHours option:selected").text() + ':00' + " "+ampm;;
+                   }
+                   else {
+                       document.getElementById("hdnAppointmentTime").value = $("#ddlHours option:selected").text() + ':' + $("#ddlMinutes option:selected").text()  + " "+ampm;;
+                       document.getElementById("hdnAppointmentTime1").value = $("#ddlHours option:selected").text() + ':' + $("#ddlMinutes option:selected").text()  + " "+ampm;;
+                   }
+                   var jqxhr = $.ajax({
+                       url: url,
+                       method: "GET",
+                       dataType: "json",
+                       data: $form.serialize(),
+                       success: function () {
+                          
+                          // $("#bookAppointmentModal").hide();
+                          // $("#thankyou").fadeIn();
+                          
+                         //  $("#buttonsubmit").text("Submit");
+                           //$("#buttonsubmit").attr("disabled", false);
+
+
+                       },
+                       error: function (XMLHttpRequest, textStatus, errorThrown) {
+                           //alert("Status: " + textStatus);
+                           //alert("Error: " + errorThrown);
+                       }
+                   })
+               }
+               else {
+                   $("#buttonsubmit").text("Submit");
+                  // $("#buttonsubmit").attr("disabled", false);
+                  
+                }
+                
+                return Isvalidate;
+            }
+            function clear() {
+                $("#Name").val("");
+                $("#EmailId").val("");  
+                $("#MobileNo").val("");
+                $("#birthday").val("");
+              
+                $("#Purpose").val("");
+                 $("#Remarks").val("");
+                $("select#ddlMonth")[0].selectedIndex = 0;
+                $("select#ddlYear")[0].selectedIndex = 0;
+                $("select#ddlDay")[0].selectedIndex = 0;
+                $("select#Department")[0].selectedIndex = 0;
+                $("select#dlDoctor")[0].selectedIndex = 0;
+                $("select#ddlMinutes")[0].selectedIndex = 0;
+                $("select#Consultation")[0].selectedIndex = 0;
+                 $("select#ddlHours")[0].selectedIndex = 0;
+              
+            }
+            function validate() {
+                var Isvalidate = true;
+
+                var Name = $("#Name").val();
+                var EmailId = $("#EmailId").val();
+                var MobileNo = $("#MobileNo").val();
+                var DOB = $("#birthday").val();
+
+                var Month = $("#ddlMonth option:selected").val();
+                var Day = $("#ddlDay option:selected").text();
+                var Year = $("#ddlYear option:selected").text();
+                var appointTime = $("#AppointmentTime").val();
+                var dept = $("#Department option:selected").text();
+                var doctor = $("#dlDoctor option:selected").text();
+                var code = $("#txtCode").val();
+                var hours = $("#ddlHours option:selected").text();
+                var minutes = $("#ddlMinutes option:selected").text();
+                var consultation = $("#Consultation option:selected").text();
+                //var purpose =$("#Purpose").val();7
+                if (Name == "" && DOB == "" && Day == "- Day -" && Month == "- Month -" && Year == "- Year -" && (appointTime == "" || appointTime == " 00:00") && dept == "Select Department" && doctor == "Select Doctor" && code == "" && hours == "Hours" && minutes == "Minutes" && consultation == "Select Consultation Type") {
+
+                    document.getElementById("reqName").style.display = "block";
+                    document.getElementById("reqEmailId").style.display = "block";
+                    document.getElementById("reqMobileNo").style.display = "block";
+                    document.getElementById("reqDOB").style.display = "block";
+                    document.getElementById("reqAppDate1").style.display = "block";
+                    //document.getElementById("reqPurpose").style.display = "block";
+                    document.getElementById("reqAppTime").style.display = "block";
+                    document.getElementById("reqDepartment").style.display = "block";
+                    document.getElementById("reqDoctor").style.display = "block";
+                    document.getElementById("reqCode").style.display = "block";
+                    document.getElementById("reqValidCode").style.display = "none";
+                    document.getElementById("reqHours").style.display = "block";
+                    document.getElementById("reqAppValidSunDay").style.display = "none";
+                    document.getElementById("reqMinutes").style.display = "block";
+                    document.getElementById("reqConsultation").style.display = "block";
+                    $("#Name").focus();
+                    Isvalidate = false;
+                } else {
+                    if (Name == "") {
+                        document.getElementById("reqName").style.display = "block";
+                        $("#Name").focus();
+                        Isvalidate = false;
+                    }
+                    else if (Name != "") {
+                        document.getElementById("reqName").style.display = "none";
+                    }
+
+                    if (DOB == "") {
+                        document.getElementById("reqDOB").style.display = "block";
+                        $("#birthday").focus();
+                        Isvalidate = false;
+                    }
+                    else {
+                        if (!validateDate(DOB)) {
+                            document.getElementById("reqDOB").style.display = "none";
+                            document.getElementById("reqValidDOB").style.display = "block";
+                            $("#birthday").focus();
+                        }
+                        else {
+                            document.getElementById("reqDOB").style.display = "none";
+                            document.getElementById("reqValidDOB").style.display = "none";
+                        }
+
+
+                    }
+                    if (Day == "- Day -" && Month == "- Month -" && Year == "- Year -") {
+                        document.getElementById("reqAppDate1").style.display = "block";
+                        $("#ddlDay").focus();
+                        Isvalidate = false;
+                    }
+                    else {
+                        document.getElementById("reqAppDate1").style.display = "none";
+                        if (Day == "- Day -") {
+                            document.getElementById("reqAppDate").style.display = "block";
+                            $("#ddlDay").focus();
+                            Isvalidate = false;
+                        }
+                        else if (Month == "- Month -") {
+                            document.getElementById("reqAppDate").style.display = "none";
+                            document.getElementById("reqAppMon").style.display = "block";
+                            $("#ddlMonth").focus();
+                            Isvalidate = false;
+                        }
+                        else if (Year == "- Year -") {
+                            document.getElementById("reqAppDate").style.display = "none";
+                            document.getElementById("reqAppMon").style.display = "none";
+                            document.getElementById("reqAppYear").style.display = "block";
+                            $("#ddlYear").focus();
+                            Isvalidate = false;
+                        }
+                        else {
+                             
+                            if (!isFutureDate(Day + "/" + Month + "/" + Year)) {
+
+                                document.getElementById("reqAppDate21").style.display = "block";
+                                Isvalidate = false;
+                            }
+                            else if ((Day == "30" || Day == "31") && Month == "02") {
+                                document.getElementById("reqAppDate21").style.display = "none";
+                                document.getElementById("reqAppValidDay").style.display = "block";
+                                Isvalidate = false;
+                            }
+                            else if (Day == "31") {
+                               
+                                document.getElementById("reqAppDate21").style.display = "none";
+                                if (!isvalidday(Month)) {
+                                    document.getElementById("reqAppValidDay").style.display = "block";
+                                    Isvalidate = false;
+                                }
+
+                            }
+                            else {
+                                var dtDate = Year + "-" + Month + "-" + Day;
+                                if (IsSunday(dtDate)) {
+                                    document.getElementById("reqAppValidSunDay").style.display = "block";
+                                    Isvalidate = false;
+                                }
+                                else {
+                                    document.getElementById("reqAppValidSunDay").style.display = "none";
+                                    document.getElementById("reqAppValidDay").style.display = "none";
+                                    document.getElementById("reqAppDate21").style.display = "none";
+                                    document.getElementById("reqAppDate1").style.display = "none";
+                                    document.getElementById("reqAppDate").style.display = "none";
+                                    document.getElementById("reqAppMon").style.display = "none";
+                                    document.getElementById("reqAppYear").style.display = "none";
+                                }
+                            }
+                        }
+                    }
+
+                    if (MobileNo == "") {
+                        document.getElementById("reqMobileNo").style.display = "block";
+                        $("#MobileNo").focus();
+                        Isvalidate = false;
+                    }
+                    else {
+                        document.getElementById("reqMobileNo").style.display = "none";
+                    }
+
+                    if (EmailId == "") {
+                        document.getElementById("reqEmailId").style.display = "block";
+                        $("#EmailId").focus();
+                        Isvalidate = false;
+                    }
+                    else {
+                        if (!validateEmail(EmailId)) {
+                            document.getElementById("reqEmailId").style.display = "none";
+                            document.getElementById("reqfvValidEmail").style.display = "block";
+                            $("#EmailId").focus();
+                            Isvalidate = false;
+                        }
+                        else {
+                            document.getElementById("reqEmailId").style.display = "none";
+                            document.getElementById("reqfvValidEmail").style.display = "none";
+                        }
+                    }
+                    if (hours == "Hours") {
+                        document.getElementById("reqHours").style.display = "block";
+                        Isvalidate = false;
+                    }
+                    else {
+                        if (hours < 1 || hours >= 13) {
+                            document.getElementById("reqHours").style.display = "none";
+                            document.getElementById("reqValidHours").style.display = "block";
+                            Isvalidate = false;
+                        }
+                        else {
+                            document.getElementById("reqValidHours").style.display = "none";
+                            document.getElementById("reqHours").style.display = "none";
+                        }
+                    }
+                    if (minutes == "Minutes") {
+                        document.getElementById("reqValidMinutes").style.display = "block";
+                        //if (minutes >= 60) {
+                        //    document.getElementById("reqValidMinutes").style.display = "block";
+                        //    $("#ddlMinutes").focus();
+                        //    Isvalidate = false;
+                        //}
+                    }
+                    else {
+                        document.getElementById("reqValidMinutes").style.display = "none";
+                    }
+
+                    if (dept == "Select Department") {
+                        document.getElementById("reqDepartment").style.display = "block";
+                        $("#Department").focus();
+                        Isvalidate = false;
+                    }
+                    else {
+                        document.getElementById("reqDepartment").style.display = "none";
+                    }
+                    if (consultation == "Select Consultation Type") {
+                        document.getElementById("reqConsultation").style.display = "block";
+                        $("#Consultation").focus();
+                        Isvalidate = false;
+                    }
+                    else {
+                        document.getElementById("reqConsultation").style.display = "none";
+                    }
+                    if (doctor == "Select Doctor") {
+                        document.getElementById("reqDoctor").style.display = "block";
+                        $("#dlDoctor").focus();
+                        Isvalidate = false;
+                    }
+                    else {
+                        document.getElementById("reqDoctor").style.display = "none";
+                    }
+                    if (code == "") {
+                        document.getElementById("reqCode").style.display = "block";
+                        document.getElementById("reqValidCode").style.display = "none";
+                        $("#txtCode").focus();
+                        Isvalidate = false;
+                    }
+                    else {
+                        document.getElementById("reqCode").style.display = "none";
+
+                        if (validCaptcha1(code) == false) {
+                            document.getElementById("reqValidCode").style.display = "block";
+                            Isvalidate = false;
+                        }
+                        else {
+                            document.getElementById("reqValidCode").style.display = "none";
+                            document.getElementById("reqCode").style.display = "none";
+                        }
+                    }
+                    //if (purpose == "") {
+                    //    document.getElementById("reqPurpose").style.display = "block";
+                    //    $("#Purpose").focus();
+                    //    Isvalidate = false;
+                    //}
+                    //else {
+                    //    document.getElementById("reqPurpose").style.display = "none";
+                    //}
+
+                    if (Isvalidate && Name != "" && DOB != "" && Month != "- Month -" && Day != "- Day -" && Year != "- Year -"
+                        && hours != "Hours" && EmailId != "" && MobileNo != "" && dept != "Select Department" && doctor != "Select Doctor" && code != "" && consultation != "Select Consultation Type" && minutes != "Minutes") {
+
+                        Isvalidate = true;
+                    }
+
+                }
+
+                return Isvalidate;
+            }
+               function validateFirst() {
+            var Isvalidate = true;
+           
+               var Name = $("#Name").val();
+               var EmailId = $("#EmailId").val();  
+                var MobileNo = $("#MobileNo").val();
+            var otp = $("#otp").val();
+                //var purpose =$("#Purpos").val();
+            if (Name == "" && EmailId=="" && MobileNo=="")
+                 {
+            
+                document.getElementById("reqName").style.display = "block";
+                document.getElementById("reqEmailId").style.display = "block";
+                document.getElementById("reqMobileNo").style.display = "block";
+                
+                $("#Name").focus();
+                Isvalidate = false;
+            } else {
+                if (Name == "") {
+                    document.getElementById("reqName").style.display = "block";
+                     $("#Name").focus();
+                    Isvalidate = false;
+                }
+                else if (Name != "")
+                {
+                    document.getElementById("reqName").style.display = "none";
+                }
+                
+                if (EmailId == "") {
+                    document.getElementById("reqEmailId").style.display = "block";
+                    $("#EmailId").focus();
+                    Isvalidate = false;
+                }
+                else {
+                    if (!validateEmail(EmailId)) {
+                        document.getElementById("reqEmailId").style.display = "none";
+                        document.getElementById("reqfvValidEmail").style.display = "block";
+                        $("#EmailId").focus();
+                        Isvalidate = false;
+                    }
+                    else {
+                        document.getElementById("reqEmailId").style.display = "none";
+                         document.getElementById("reqfvValidEmail").style.display = "none";
+                    }
+                }
+               
+                 if (MobileNo == "") {
+                    document.getElementById("reqMobileNo").style.display = "block";
+                    $("#MobileNo").focus();
+                    Isvalidate = false;
+                 }
+                 else {
+                    document.getElementById("reqMobileNo").style.display = "none";
+                }
+                
+               
+              
+                if (Isvalidate && Name != ""  && EmailId != "" && MobileNo!="")
+                {
+                    
+                    Isvalidate = true;
+                }
+            
+            }
+
+            return Isvalidate;
+            }
+            function isFutureDate(idate) {
+              
+               var date = new Date();
+               var month = date.getMonth()+1;
+               var day = date.getDate();
+                var year = date.getFullYear();
+                if ((day + "/" + month + "/" + parseInt(year)) == idate) {
+                    return true;
+                }
+                else {
+                    var today = new Date().getTime(),
+                        idate = idate.split("/");
+
+                    idate = new Date(idate[2], idate[1] - 1, idate[0]).getTime();
+                   
+                    return (today - idate) < 0;
+                }
+}
+           function isvalidday(month) {
+                if (month == "04" || month == "06" || month == "09" || month == "11") {
+                    
+                    return false;
+                }
+                else {
+                    return true;
+                }   
+            }
+            function IsSunday(Idate) {
+               
+                var dt = new Date(Idate);
+                if (dt.getDay() == 0) {
+                    return true;
+                }
+                else
+                    return false;
+            }
+           function Captcha() {
+                    var alpha = new Array('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z',
+                        'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'm', 'n', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
+                        '1', '2', '3', '4', '5', '6', '7', '8', '9');
+                    var i;
+                    for (i = 0; i < 6; i++) {
+                        var a = alpha[Math.floor(Math.random() * alpha.length)];
+                        var b = alpha[Math.floor(Math.random() * alpha.length)];
+                        var c = alpha[Math.floor(Math.random() * alpha.length)];
+                        var d = alpha[Math.floor(Math.random() * alpha.length)];
+                        var e = alpha[Math.floor(Math.random() * alpha.length)];
+                        var f = alpha[Math.floor(Math.random() * alpha.length)];
+                        var g = alpha[Math.floor(Math.random() * alpha.length)];
+                    }
+                    var code = a + ' ' + b + ' ' + ' ' + c + ' ' + d + ' ' + e + ' ' + f + ' ' + g;
+                    //document.getElementById("mainCaptcha").innerHTML = code
+                    //document.getElementById("mainCaptcha").value = code
+                }
+                function removeSpaces(string) {
+                    return string.split(' ').join('');
+                }
+                function ValidCaptcha() {
+                    var string1 = removeSpaces(document.getElementById('mainCaptcha').value);
+                    var string2 = removeSpaces(document.getElementById('txtCode').value);
+        
+                    if (string1 == string2) {
+                        return true;
+                    } else {
+                        return false;
+                    }
+                }
+           </script>
+         <script type="text/javascript">
+        function onlyNumbersWithColon(e) {
+            var charCode;
+            if (e.keyCode > 0) {
+                charCode = e.which || e.keyCode;
+            }
+            else if (typeof (e.charCode) != "undefined") {
+                charCode = e.which || e.keyCode;
+            }
+            if (charCode == 58)
+                return true
+            if (charCode > 31 && (charCode < 48 || charCode > 57))
+                return false;
+            return true;
+             }
+               </script>
+</body>
+</html>
