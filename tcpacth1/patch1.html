@@ -1,0 +1,1972 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <title>Naruvi Hospitals</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/hover.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="icon" type="image/x-icon" href="image/fav-icon.png" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Raleway:300,400,500,600,700|Roboto+Condensed:300,400|Poppins:300,400,500,600,700,800,900"
+        rel="stylesheet" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113714538-1"></script>
+
+
+<link rel="stylesheet" href="css/new.css" />
+<link rel="stylesheet" type="text/css" href="css/slider.css" />
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+<link rel="stylesheet" href="css/jquery-ui.css">
+<link href="css/mdtimepicker.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery.js"></script>
+<style>
+    .form-control[readonly] {
+      cursor: pointer !important;
+      background: transparent !important;
+    }
+  </style>
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-113714538-1');
+    </script>
+    <style>
+.form-control[readonly] {
+  cursor: pointer !important;
+  background: transparent !important;
+}
+ .error {
+  font-size: 12px;
+  color: red;
+}
+        .nav-home > .right {
+    width: 25%;
+        }
+        @media (max-width:804px) {
+            .nav-home > .right
+	{
+		width: 43%;
+	}
+        }
+        @media (max-width:674px) {
+            .nav-home > .right
+	{
+		width: 55%;
+	}
+        }
+</style>
+</head>
+<body>
+    <form id="formreg" runat="server">
+         <header>
+        <div class="n-header">
+            <div class="headerLeft">
+                <div class="logo1">
+                    <a href="/"><img src="image/naruvi-logo-new.png" alt="logo" /></a>
+                  </div>
+                  <!-- <div class="logo2">
+                    <a href="/"><img src="image/naruvi-sb-logo.jpg" alt="logo" /></a>
+                  </div> -->
+            </div>
+            <div class="headerRight">
+                <div class="nav-home d-flex justify-content-end">
+                    <div class="insurance-menu"><a href="http://www.naruvihospitals.com/contact.aspx">Contact</a></div>
+                    <div class="right">
+                        <div class="bg">
+                            <ul class="nav-right">
+                                <!-- <li><a href="careers.aspx">Career</a></li> -->
+                                <li><a data-toggle="modal" data-target="#myModal" class="text-white">Quick Appointment</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="nav-wrap">
+                    <div class="mobileIcon">☰ Menu</div>
+                    <ul class="menuBar hvr-underline-from-center">
+                        <li><a href="/">Home</a></li>
+                        <li class="dropDownHover">
+                            <a class="active" href="javascript:void(0);">About</a><span class="dropicon"><i
+                                    class="fa fa-angle-down" aria-hidden="true"></i></span>
+                            <ul class="dropDown hvr-sweep-to-bottom">
+                                <li><span><img src="image/arrow.png"></span><a href="about-naruvi.aspx">Naruvi</a></li>
+                                <li><span><img src="image/arrow.png"></span><a href="the-board.aspx">The Board</a></li>
+                                <li><span><img src="image/arrow.png"></span><a href="about-hfhs.aspx">Henry Ford Health
+                                        System</a></li>
+                                <li><span><img src="image/arrow.png"></span><a href="about-vellore.aspx">Vellore</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropDownHover">
+                            <a href="javascript:void(0);">Departments</a><span class="dropicon"><i class="fa fa-angle-down"
+                                aria-hidden="true"></i></span>
+                            <ul class="dropDown hvr-sweep-to-bottom">
+                              <li>
+                                <span><img src="image/arrow.png" /></span><a href="clinical-departments.aspx">Clinical Departments</a>
+                              </li>
+                              <li>
+                                <span><img src="image/arrow.png" /></span><a href="nonclinical-departments.aspx">Non-Clinical Departments</a>
+                              </li>
+                           
+                            </ul>
+                          </li>                        <li><span></span><a href="doctors.aspx">Doctors</a></li>
+                        <li><a href="/#news-pg">News update</a></li>
+
+                        <li class="dropDownHover1">
+                            <a href="javascript:void(0);">Gallery</a><span class="dropicon"><i class="fa fa-angle-down"
+                                    aria-hidden="true"></i></span>
+                            <ul class="dropDown1 gdown hvr-sweep-to-bottom">
+                                <li><span><img src="image/arrow.png"></span><a href="photos.aspx">Photos</a></li>
+                                <li><span><img src="image/arrow.png"></span><a href="videos.aspx">Videos</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="insurance.aspx">Insurance</a></li>
+                        <!-- <li class="mbl"><a href="careers.aspx">Career</a></li> 
+                        <li class="mbl"><a href="contact.aspx">Contact</a></li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="clear"></div>
+    <section class="divClear">
+        <div class="innerBanner career"></div>
+        <div class="container">
+            <div class="pageContainer">
+                <div class="pageTitle">
+                    <h2 class="wow fadeInDown" data-wow-duration="1.3s" data-wow-delay="0.3s">Terms and Conditions
+
+              </h2>
+                </div>         
+<div class="row">
+<div class="col-12 col-lg-10 offset-lg-1">
+
+
+            
+            
+            <p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><strong><span style='font-size:32px;font-family:"Times New Roman",serif;'>Terms and Conditions</span></strong></p>
+Introduction</span></strong></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>Welcome to www.naruvihospitals.com/default.aspx (the &quot;Website&quot;).&nbsp;</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>These Terms and Conditions (&quot;Agreement&quot;) are a legal agreement that explain the terms and conditions that all visitors, users, clients and customers (&quot;You&quot;, or &quot;Your&quot;) must comply with when using the Website. By using the Website, You agree to abide by all of the terms and conditions in this Agreement.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>This Agreements incorporates Our&nbsp;</span><a href="https://www.naruvihospitals.com/privacy.aspx"><span style='font-size:16px;font-family:"Times New Roman",serif;color:blue;'>Privacy Policy</span></a><span style='font-size:16px;font-family:"Times New Roman",serif;'>&nbsp;and Disclaimer.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>These Terms and Conditions outline the rules and regulations for the use of www.naruvihospitals.com/default.aspx. <strong>PLEASE READ THIS AGREEMENT CAREFULLY because it affects Your rights and liabilities under the law. By using or accessing the Website, You confirm that You have read and agreed to be bound by this Agreement. If You do not agree with this Agreement, You cannot use or access the Website.</strong>&nbsp;</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>These Terms and conditions are governed by the law of India</span></p>
+Contents</span></strong></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>Click below to jump to any section</span></p>
+<ol type='1'>
+
+
+<li><a href='#Definitions'><strong>1.Definitions</strong></a>&#13;&#10;</li>&#13;&#10; 
+	<li><a href='#UserRights'><strong>2.User Rights and Responsibility </strong></a>&#13;&#10; <ol>&#13;&#10;
+	<li><a href='#personaldata'>Acceptable user</a></li>&#13;&#10; 
+	<li><a href='#ProhibitedUser'>Prohibited User</a></li>&#13;&#10;</ol>&#13;&#10;
+	  </li>&#13;&#10; <li><a href='#OurContent' ><strong>3.Our Content </strong></a>&#13;&#10;</li>&#13;&#10; 
+	<li><a href='#Trademarks'><strong>4.	Trademarks/ No Endorsement </strong></a>&#13;&#10;</li>&#13;&#10; 
+	     <li><a href='#YourAccount'><strong>5.Your Account </strong></a>&#13;&#10;</li>&#13;&#10;
+	     
+	     <li><a href='#Ecommerce'><strong>6.Ecommerce </strong></a>&#13;&#10;
+	     </li>&#13;&#10; <li><a href='#WebsiteInformation'><strong>7.Website Information </strong></a>&#13;&#10; <ol>&#13;&#10; 
+	     <li><a href='#Security'>8.Security </a></li>&#13;&#10; </ol>&#13;&#10;</li>&#13;&#10;
+	    <li><a href='#links'><strong>9.Links to this Website </strong></a>&#13;&#10;</li>&#13;&#10; 
+        <li><a href='#third'><strong>10.Third Party Links </strong></a>&#13;&#10;</li>&#13;&#10;
+	    <li><a href='#Intellectual'><strong>11.Intellectual Property Rights </strong></a>&#13;&#10;</li>&#13;&#10; 
+	   <li><a href='#Copyright'><strong>12.Copyright Notice </strong></a>&#13;&#10;</li>&#13;&#10;
+	    <li><a href='#Disclaimers'><strong>13.Disclaimers </strong></a>&#13;&#10;</li>&#13;&#10; 
+	    <li><a href='#Limitation'><strong>14.Limitation of Liability </strong></a>&#13;&#10;</li>&#13;&#10;
+	    <li><a href='#Indemnity'><strong>15.Indemnity </strong></a>&#13;&#10;</li>&#13;&#10; 
+         <li><a href='#Release'><strong>16.Release </strong></a>&#13;&#10;</li>&#13;&#10;
+        <li><a href='#Communication'><strong>17.Communication </strong></a>&#13;&#10;</li>&#13;&#10; 
+        <li><a href='#Dispute'><strong>18.Dispute Resolution and Arbitration </strong></a>&#13;&#10;</li>&#13;&#10;
+	    <li><a href='#Termination'><strong>19.Termination </strong></a>&#13;&#10;</li>&#13;&#10; 
+	    <li><a href='#Consequences'><strong>20.Consequences of Termination or Expiration </strong></a>&#13;&#10;</li>&#13;&#10;
+	    <li><a href='#Revisions'><strong>21.Revisions </strong></a>&#13;&#10;</li>&#13;&#10;
+	     <li><a href='#Force'><strong>22.Force Majeure</strong></a>&#13;&#10;</li>&#13;&#10;
+	    <li><a href='#Minimum'><strong>23.Minimum Age Requirements </strong></a>&#13;&#10;</li>&#13;&#10; 
+	    <li><a href='#General'><strong>24.General</strong></a>&#13;&#10;</li>&#13;&#10;
+	    <li><a href='#user'><strong>25.User Feedback </strong></a>&#13;&#10;</li>&#13;&#10;
+	    <li><a href='#Contact'><strong>26.Contact Us </strong></a>&#13;&#10;</li>&#13;&#10;
+</ol>
+    
+    
+<h2 id='Definitions'>1 Definitions</h2>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>The following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer Notice and any or all agreements:</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>&quot;<strong>Company</strong>,&quot; &quot;<strong>Us</strong>,&quot; &quot;<strong>We</strong>,&quot; and &quot;<strong>Our</strong>&quot; refers to NARUVI Hospitals.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>&quot;<strong>Content</strong>&quot; is the information displayed at the Website including without limitation text, data, code, images, photographs, graphics, software, designs and any other materials that are available at the Website.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>&quot;<strong>Goods</strong>&quot; means all goods that We supply and make available to You as detailed in the Invoice.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>&quot;<strong>Invoice</strong>&quot; is a list of the Goods sent or the Services We provide to You, detailing individual amounts of Goods or Services plus a sum total.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>&quot;<strong>Party</strong>&quot; refer to either You, or Us, or any other party to this Agreement. &quot;<strong>Parties</strong>&quot; refer to both You and Us.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>&quot;<strong>Services</strong>&quot; refer to any work We perform for You.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>&quot;<strong>Supply</strong>&quot; means to provide the Goods or Services as per the Invoice.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>&quot;<strong>You</strong>&quot; and &quot;<strong>Your</strong>&quot; refer to the visitor, user, client, customer or person accessing the Website and thus accepting this Agreement.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><a href="#tableofcontents"><span style='font-size:16px;font-family:"Times New Roman",serif;color:blue;'>Back to table of contents</span></a></p>
+
+
+
+
+
+<h2 id='UserRights'>User Rights and Responsibility</h2>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><strong><span style='font-size:18px;font-family:"Times New Roman",serif;'>2.1 Acceptable use</span></strong></p>
+<ul style="margin-bottom:0cm;" type="disc">
+    <li style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>NARUVI Hospitals will not be held liable should the website be unavailable for any amount of time.</span></li>
+    <li style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>You are responsible for the safety and confidentiality of your passwords and usernames. NARUVI Hospitals has the right to terminate or suspend your username and password should we suspect non compliance by you.</span></li>
+    <li style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>You are not a minor in the jurisdiction in which you reside.</span></li>
+    <li style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>You will not use any meta tags or any other &quot;hidden text&quot; utilizing Our name or trademarks without Our express written consent.</span></li>
+    <li style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>The Website and/or any portion of the Website may not be reproduced, sold, resold, visited or otherwise exploited for any commercial purpose without Our express written consent.</span></li>
+    <li style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>Your use and access of the Website does not include any right of resale or commercial use of the Website or its Contents; any collection and use of any product listings, descriptions, or prices; any derivative use of the Website or its Contents; any downloading or copying of account information for the benefit of another merchant; or any use of data mining, robots, or similar data gathering and extraction tools.</span></li>
+    <li style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>You must use our website for lawful purposes only.</span></li>
+</ul>
+
+
+<h2 id='#UserRights'>User Rights and Responsibility</h2>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>While using our service the following terms must be adhered to:</span></p>
+<ul style="margin-bottom:0cm;" type="disc">
+    <li style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>to transmit or send unsolicited or unauthorized advertising or promotional material in any form.</span></li>
+    <li style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>Disrupt or attempt to disrupt Our servers in any way that could cause harm to the Website.</span></li>
+    <li style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>Distribute any material that contains software viruses or any other computer code, files, or programs that are designed or intended to: (a) disrupt, damage, or limit the functioning of the Website, any software, hardware, or telecommunications equipment used in connection therewith; or (b) damage or obtain unauthorized access to any data or other information of any third party.&nbsp;</span></li>
+    <li style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>Harass, abuse, threaten or incite violence towards any individual or group.&nbsp;</span></li>
+    <li style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>in any way that breaks or breaches applicable local, national or international laws or regulations.&nbsp;</span></li>
+    <li style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>in any way which is fraudulent or unlawful.&nbsp;</span></li>
+    <li style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>Hold Yourself out as sponsored by, endorsed by, or affiliated with Us or the Website.</span></li>
+    <li style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>Interfere with any other person&apos;s use of or the proper functioning of the Website.&nbsp;</span></li>
+    <li style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>Misrepresent Your identity or impersonate any person.</span></li>
+    <li style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>Modify, translate, adapt, edit, decompile, disassemble, or reverse engineer any software programs used by Us.</span></li>
+    <li style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>Provide any information that is false, misleading or inaccurate.</span></li>
+    <li style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>Use any portion of the Website for any unlawful purpose or otherwise fail to comply with all applicable domestic and international laws, statutes, ordinances and regulations.</span></li>
+    <li style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>Use any portion of the Website for uploading, posting, e-mailing, transmitting or otherwise making available User Content that infringes any patent, trademark, trade secret, copyright or other proprietary rights of any party.</span></li>
+    <li style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>Use any portion of the Website for uploading, posting, e-mailing, transmitting or otherwise making available User Content that is harmful to minors in any way, harassing, harmful, threatening, abusive, vulgar, obscene, defamatory, libelous, hateful, or racially, ethnically or otherwise objectionable.</span></li>
+    <li style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>Use any portion of the Website for uploading, posting, e-mailing, transmitting or otherwise making available junk mail, commercial advertisements, or any other form of commercial solicitation.</span></li>
+    <li style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>Violate the privacy of any third party, this includes, but is not confined to, posting personal information about another person or entity without consent.</span></li>
+</ul>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><a href="#tableofcontents"><span style='font-size:16px;font-family:"Times New Roman",serif;color:blue;'>Back to table of contents</span></a></p>
+
+
+
+
+
+<h2 id='OurContent'>3 Our Content</h2>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>Except for User Content as defined in User Content clause below, all of the content featured or displayed on the Website, including, without limitation, text, graphics, photographs, images, moving images, sound, and illustrations (&quot;Our Content&quot;), are owned by Us, Our licensors, vendors, agents and/or Our content providers. All elements of the Website, including without limitation the general design and Our Content, are protected by trade dress, copyright, moral rights, trademark and other laws relating to intellectual property rights.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>The Website, Our Content and all related rights shall remain Our exclusive property or of Our licensors unless otherwise expressly agreed.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>You will not remove any copyright, trademark or other proprietary notices from material found on the Website.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>Except as may be otherwise indicated in specific documents within the Website or as permitted by copyright law, You are authorized to view, play, print and download copyrighted documents, audio and video found on Our Website for personal, informational, and noncommercial purposes only.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>Except as permitted by copyright law, You may not modify any of the materials and You may not copy, distribute, transmit, display, perform, reproduce, publish, license, create derivative works from, transfer or sell any information or work contained on the Website.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><a href="#tableofcontents"><span style='font-size:16px;font-family:"Times New Roman",serif;color:blue;'>Back to table of contents</span></a></p>
+
+
+
+<h2 id='Trademarks'>4 Trademarks/ No Endorsement</p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>All of Our trademarks, service marks and trade names used herein (including but not limited to: the NARUVI Hospitals name, NARUVI Hospitals logo, the Website name, the Website design, and any logos) (collectively &quot;Marks&quot;) are Our trademarks or registered trademarks or of Our affiliates, partners, vendors or licensors. You may not use, copy, reproduce, republish, upload, post, transmit, distribute, or modify Our trademarks in any way, including in advertising or publicity pertaining to distribution of materials on the Website, without Our prior written consent. The use of Our trademarks on any other site or network computer environment is not allowed. We prohibit the use of Our trademarks as a &quot;hot&quot; link on or to any other site, unless We have approved in advance the establishment of such a link. You shall not use Our name or any language, pictures or symbols which could, in Our judgment, imply Our endorsement in any (i) written or oral advertising or presentation, or (ii) brochure, newsletter, book, or other written material of whatever nature, without prior written consent.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><a href="#tableofcontents"><span style='font-size:16px;font-family:"Times New Roman",serif;color:blue;'>Back to table of contents</span></a></p>
+
+
+
+<h2 id='YourAccount'>5 Your Account</p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>In consideration of Your use of the Website, You will:</span></p>
+<ul style="margin-bottom:0cm;" type="disc">
+    <li style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>provide true, accurate, current and complete information about Yourself as prompted by the Website&apos;s registration page (such information being the &ldquo;<strong>Account Data</strong>&rdquo;); and</span></li>
+    <li style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>maintain and promptly update the Account Data to keep it true, accurate, current and complete.</span></li>
+</ul>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>You are entirely responsible for the security and confidentiality of Your password and Account. You will not share Your Account Data or Your username and password with any third party or permit any third party to login to the Website using Your Account Data. Furthermore, You are entirely responsible for any and all activities that occur under Your Account. You are responsible for taking precautions and providing security measures best suited for Your situation and intended use of the Services and Website.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>You agree to immediately notify Us of any unauthorized use of Your Account or any other breach of security of which You become aware.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>The Website may also include a tool that allows You to sign in or register using information from Your accounts in third party services, such as Facebook, Twitter, Google, Yahoo, or LinkedIn. These third-party services are not related to the Website, and Your use of such third-party services is subject to the terms and policies of those services.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>For more information on how We collect, store, use, and share Your Account Data, please check Our&nbsp;</span><a href="https://www.naruvihospitals.com/privacy.aspx"><span style='font-size:16px;font-family:"Times New Roman",serif;color:blue;'>Privacy Policy</span></a></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><a href="#tableofcontents"><span style='font-size:16px;font-family:"Times New Roman",serif;color:blue;'>Back to table of contents</span></a></p>
+
+
+
+<h2 id='Ecommerce'>6 Ecommerce</p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><strong><span style='font-size:18px;font-family:"Times New Roman",serif;'>6.1 Billing</span></strong></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>We have engaged the services of ICICI Bank (&ldquo;<strong>Payment Processor</strong>&rdquo;) to collect and manage Your payments. You acknowledge and agree that the Payment Processor will perform the following for Us:</span></p>
+<ul style="margin-bottom:0cm;" type="disc">
+    <li style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>credit and background verification of Our potential customers</span></li>
+    <li style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>access updated payment reports;</span></li>
+    <li style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>credit administration, management and collection;</span></li>
+    <li style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>legal assistance in credit recovery;</span></li>
+    <li style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>assessment of Our customers&rsquo; dependability; and</span></li>
+    <li style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>receive, facilitate and assign Your credit that is due to Us;</span></li>
+</ul>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>The Payment Processor is responsible and We shall not be liable for any matter in connection with the processing of Your payments.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>You agree to notify Us or the Payment Processor about any billing problems or discrepancies within 60 days after they first appear on Your Account statement. If You do not do so within 60 days, You agree that You waive Your right to dispute such problems or discrepancies.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>We may partner with and use other third party payment service providers to handle all payments. We will notify You of such change by e-mail not less than 30 days before it takes effect.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><strong><span style='font-size:18px;font-family:"Times New Roman",serif;'>6.2 Payments</span></strong></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>You agree to provide updated information regarding Your credit card or payment method at any time the information is needed.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>You give Us and the Payment Processor the pre-authorization to verify if Your credit card or payment method account is valid and has the necessary funds or credit available to cover Your payments.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>You authorize such credit card to pay any amount described herein.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>You confirm that Your credited card has sufficient funds, credit facilities and valid expiry date to cover the payment.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>You will receive an electronic invoice for Your payments. This electronic invoice shall serve as Your official receipt.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>In case of payment delay, You will not able to use any chargeable features of Our Services until the payment in due have been fully paid.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>Upon delay with any payments, You may be required to pay interest on the delay (penalty for late payment) for the period as of the time the payment obligation falls due until conforming performance is rendered. We reserve the right to assess reasonable interest charges on any amounts not paid by the date such payments are due.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>You are solely responsible for any and all fees charged to Your credit card by the issuer, bank, or financial institution including, but not limited to, subscription, overdraft, insufficient funds, and over the credit limit fees.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>All orders are subject to Our credit approval. We reserve the right to withhold shipment or to require other adequate assurances of performance of Your payment obligations as We, in Our discretion, may require, notwithstanding any order confirmation issued by Us.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>All payments shall be paid in INR. You may have to incur costs for conversion and transfer of money if applied by Your financial service provider.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>All prices exclude GST at current legal rate in India, unless stated otherwise in this Agreement. You are responsible for all other applicable taxes, and We shall charge taxes when required to do so.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>Other payment methods are accepted only if provided on Our Website.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><strong><span style='font-size:18px;font-family:"Times New Roman",serif;'>6.3 Refunds</span></strong></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>Amounts payable under this Agreement are <strong>non-refundable</strong>.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>No refunds shall be granted for discounts, vouchers, or coupons availed as part of the Service.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><a href="#tableofcontents"><span style='font-size:16px;font-family:"Times New Roman",serif;color:blue;'>Back to table of contents</span></a></p>
+
+
+
+<h2 id='WebsiteInformation'>7 Website Information</p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>We attempt to ensure that information on the Website is complete, accurate and current. Despite Our efforts, the information on the Website may occasionally be inaccurate, incomplete or out of date. We make no representation as to the completeness, accuracy or currency of any information on the Website.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>Through Your use of the Website, You may be exposed to content that You may find offensive, objectionable, harmful, inaccurate or deceptive. By using Our Website, You assume all associated risks.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><a href="#tableofcontents"><span style='font-size:16px;font-family:"Times New Roman",serif;color:blue;'>Back to table of contents</span></a></p>
+
+
+
+<h2 id='Security'>8 Security</p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>Information provided by you through www.naruvihospitals.com/default.aspx is stored on a secured private server. While we have taken reasonable precautions to protect your personal information, no security system is impenetrable and we cannot guarantee the security of information that you provide to us via the Internet, through our Website, through online ordering, or in databases stored on our servers.&nbsp;</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>Our online ordering functionality employs Secure Sockets Layer (SSL) software, the industry standard and among the best software available today for secure commerce transactions. It encrypts all of your personal information. Please see our&nbsp;</span><a href="https://www.naruvihospitals.com/privacy.aspx"><span style='font-size:16px;font-family:"Times New Roman",serif;color:blue;'>Privacy Policy</span></a><span style='font-size:16px;font-family:"Times New Roman",serif;'>&nbsp;for full details on security.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><a href="#tableofcontents"><span style='font-size:16px;font-family:"Times New Roman",serif;color:blue;'>Back to table of contents</span></a></p>
+
+
+
+<h2 id='Links'>9 Links to this Website</p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>Running or displaying the Website or any information or material displayed on the Website in frames or through similar means on another site without Our prior written permission is prohibited.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>We grant You a nonexclusive right to display at Your site any link that would permit any user to go from Your site to Our Website. You obtain no rights other than the right to link to Our Website. Further, We do not guarantee, approve, or endorse the information or products available on Your site.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>You agree to not use and display the links in such a manner that is misleading, defamatory, infringing, libelous, disparaging, obscene, or otherwise objectionable to Us. You agree to not use the links in any manner that is likely to reduce, diminish or damage the goodwill, value or reputation associated with Us. You warrant that Your site does not include any material, and does not contain links to sites displaying any material, which is harmful, pornographic, abusive, hateful, obscene threatening, defamatory, or which encourages illegal activity. Upon notice from Us, You shall promptly remove the links.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>If Your wish to obtain written consent from Us, please contact us using our&nbsp;</span><a href="https://www.naruvihospitals.com/contact.aspx"><span style='font-size:16px;font-family:"Times New Roman",serif;color:blue;'>contact page</span></a></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><a href="#tableofcontents"><span style='font-size:16px;font-family:"Times New Roman",serif;color:blue;'>Back to table of contents</span></a></p>
+
+
+
+<h2 id='Third'>10 Third Party Links</p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>From time to time, the Website may contain links to sites that We and Our affiliates do not own, operate nor control. All such links are provided solely for Your convenience. If You use these links, You will leave the Website. Neither We nor any of Our respective affiliates are responsible for any content, material or other information located on or accessible from any other site. Neither We nor any of Our respective affiliates endorse, guarantee, or make any representations or warranties regarding any other site, or any content, materials or other information located or accessible from any other site, or the results that You may obtain from using any other site.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>We do not control, endorse, sponsor or approve of the third parties or their content not do We take any responsibility for any aspect of these websites or their content. If You decide to access any other site linked to or from this Website, You do so entirely at Your own risk. You agree to be aware when You leave the Website and to read the privacy statements of these sites. You will evaluate the security and trustworthiness of any site connected to or accessed through the Website before disclosing any personal information to them. We do not accept any responsibility for any loss or damage in whatever manner, howsoever caused, resulting from Your disclosure of personal information to those third-party sites.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><a href="#tableofcontents"><span style='font-size:16px;font-family:"Times New Roman",serif;color:blue;'>Back to table of contents</span></a></p>
+
+
+
+<h2 id='Intellectual'>11 Intellectual Property Rights</p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>We claim copyright and all other intellectual property rights to all the material on the Website, including, but not limited to the words, information, graphics, designs, logos, trademarks, photographs, icons, drawings and text.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>Our intellectual property is protected under copyright, trademark and other intellectual property laws.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>As part of this Agreement, You agree to not reproduce, distribute, sell, publish or broadcast any of the material found on this Website without Our prior written consent.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><a href="#tableofcontents"><span style='font-size:16px;font-family:"Times New Roman",serif;color:blue;'>Back to table of contents</span></a></p>
+
+
+
+
+<h2 id='Copyright'>12 Copyright Notice</p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>All Website design, graphics, text selections, arrangements, and all software are of Copyright &copy; 2022, NARUVI Hospitals or its licensors. ALL RIGHTS RESERVED.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><a href="#tableofcontents"><span style='font-size:16px;font-family:"Times New Roman",serif;color:blue;'>Back to table of contents</span></a></p>
+
+
+
+
+<h2 id='Disclaimers'>13 Disclaimers</p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><strong><span style='font-size:16px;font-family:"Times New Roman",serif;'>YOUR USE OF THE WEBSITE IS AT YOUR OWN RISK. THE INFORMATION, MATERIALS AND SERVICES PROVIDED ON OR THROUGH THE WEBSITE ARE PROVIDED AS IS WITHOUT ANY WARRANTIES OF ANY KIND INCLUDING WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, SECURITY OR NON-INFRINGEMENT OF INTELLECTUAL PROPERTY. NEITHER WE NOR ANY OF OUR AFFILIATES WARRANT THE ACCURACY OR COMPLETENESS OF THE INFORMATION, MATERIALS OR SERVICES PROVIDED ON OR THROUGH THE WEBSITE. THE INFORMATION, MATERIALS AND SERVICES PROVIDED ON OR THROUGH THE WEBSITE MAY BE OUT OF DATE, AND NEITHER US, NOR ANY OF OUR AFFILIATES MAKE ANY COMMITMENT OR ASSUME ANY DUTY TO UPDATE SUCH INFORMATION, MATERIALS OR SERVICES. THE FOREGOING EXCLUSIONS OF IMPLIED WARRANTIES DO NOT APPLY TO THE EXTENT PROHIBITED BY LAW. PLEASE REFER TO YOUR LOCAL LAWS FOR ANY SUCH PROHIBITIONS.</span></strong></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><strong><span style='font-size:16px;font-family:"Times New Roman",serif;'>NO ADVICE OR INFORMATION, WHETHER ORAL OR WRITTEN, OBTAINED FROM THE WEBSITE OR THROUGH OUR SERVICES WILL CREATE ANY WARRANTY NOT EXPRESSLY MADE HEREIN.</span></strong></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><a href="#tableofcontents"><span style='font-size:16px;font-family:"Times New Roman",serif;color:blue;'>Back to table of contents</span></a></p>
+
+
+
+
+
+<h2 id='Limitation'>14 Limitation of Liability</p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>We do not assume any responsibility, or will be liable, for any damages to, or any viruses that may infect Your computer, telecommunication equipment, or other property caused by or arising from Your access to, use of, or browsing the Website, or Your downloading of any information or materials from this Website. <strong>IN NO EVENT WILL WE, OR ANY OF OUR OFFICERS, DIRECTORS, EMPLOYEES, SHAREHOLDERS, AFFILIATES, AGENTS, SUCCESSORS OR ASSIGNS, NOR ANY PARTY INVOLVED IN THE CREATION, PRODUCTION OR TRANSMISSION OF THE WEBSITE, BE LIABLE TO YOU OR ANYONE ELSE FOR ANY INDIRECT, SPECIAL, PUNITIVE, INCIDENTAL OR CONSEQUENTIAL DAMAGES (INCLUDING, WITHOUT LIMITATION, THOSE RESULTING FROM LOST PROFITS, LOST DATA OR BUSINESS INTERRUPTION) ARISING OUT OF THE USE, INABILITY TO USE, OR THE RESULTS OF USE OF THE WEBSITE, ANY WEBSITES LINKED TO THE WEBSITE, OR THE MATERIALS, INFORMATION OR SERVICES CONTAINED ON ANY OR ALL SUCH WEBSITE, WHETHER BASED ON WARRANTY, CONTRACT, TORT OR ANY OTHER LEGAL THEORY AND WHETHER OR NOT ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. YOU SPECIFICALLY ACKNOWLEDGE THAT WE SHALL NOT BE LIABLE FOR USER SUBMISSIONS OR THE DEFAMATORY, OFFENSIVE, OR ILLEGAL CONDUCT OF ANY THIRD PARTY, AND THAT THE RISK OF HARM OR DAMAGE FROM THE FOREGOING RESTS ENTIRELY WITH YOU. THE FOREGOING LIMITATIONS OF LIABILITY DO NOT APPLY TO THE EXTENT PROHIBITED BY LAW. PLEASE REFER TO YOUR LOCAL LAWS FOR ANY SUCH PROHIBITIONS.</strong></span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><strong><span style='font-size:16px;font-family:"Times New Roman",serif;'>IN THE EVENT OF ANY PROBLEM WITH THE WEBSITE OR ANY CONTENT, YOU AGREE THAT YOUR SOLE REMEDY IS TO CEASE USING THE WEBSITE. IN THE EVENT OF ANY PROBLEM WITH THE PRODUCTS OR SERVICES THAT YOU HAVE PURCHASED ON OR THROUGH THE WEBSITE, YOU AGREE THAT YOUR SOLE REMEDY, IF ANY, IS FROM THE MANUFACTURER OF SUCH PRODUCTS OR SUPPLIER OF SUCH SERVICES, IN ACCORDANCE WITH SUCH MANUFACTURER&apos;S OR SUPPLIER&apos;S WARRANTY, OR TO SEEK A RETURN AND REFUND FOR SUCH PRODUCT OR SERVICES IN ACCORDANCE WITH THE RETURNS AND REFUNDS POLICIES POSTED ON THE WEBSITE. IN NO EVENT SHALL OUR TOTAL LIABILITY TO YOU FOR ALL DAMAGES, LOSSES, AND CAUSES OF ACTION WHETHER IN CONTRACT, TORT (INCLUDING, BUT NOT LIMITED TO, NEGLIGENCE), OR OTHERWISE EXCEED THE GREATER OF (A) ONE HUNDRED DOLLARS ($100) OR (B) THE VALUE OF YOUR SUBSCRIPTION OR PURCHASE MADE ON THE WEBSITE.</span></strong></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><a href="#tableofcontents"><span style='font-size:16px;font-family:"Times New Roman",serif;color:blue;'>Back to table of contents</span></a></p>
+
+
+
+
+<h2 id='Indemnity'>15 Indemnity</p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>You agree to defend, indemnify and hold Us and any of Our affiliated company or individual harmless from any and all liabilities, costs, and expenses, including reasonable attorneys&rsquo; fees, related to or in connection with (a) the use of the Website or the internet or Your placement or transmission of any message or information on this Website by You or Your authorized users; (b) Your violation of any term of this Agreement, including without limitation, Your breach of any of the Representations and Warranties above; (c) Your violation of any third party right, including without limitation any right of privacy, publicity rights or Intellectual Property Rights; (d) Your violation of any law, rule or regulation of India or any other country; (e) any claim or damages that arise as a result of any User Content that You provide to Us; or (f) any other party&rsquo;s access and use of the Website with Your unique username, password or other appropriate security code.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><a href="#tableofcontents"><span style='font-size:16px;font-family:"Times New Roman",serif;color:blue;'>Back to table of contents</span></a></p>
+
+
+
+
+<h2 id='Release'>16 Release</p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>In the event that You have a dispute with one or more other visitors, users, customers, or clients of the Website, You release Us (and Our officers, directors, agents, subsidiaries, joint ventures and employees) from claims, demands and damages (actual and consequential) of every kind and nature, known and unknown, suspected and unsuspected, disclosed and undisclosed, arising out of or in any way connected with such disputes.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><a href="#tableofcontents"><span style='font-size:16px;font-family:"Times New Roman",serif;color:blue;'>Back to table of contents</span></a></p>
+
+
+
+
+
+<h2 id='Communication'>17 Communication</p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>We reserve the right to send You an electronic mail for the purpose of informing You of changes or additions to the Website or this Agreement.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>Except as disclosed in Our&nbsp;</span><a href="https://www.naruvihospitals.com/privacy.aspx"><span style='font-size:16px;font-family:"Times New Roman",serif;color:blue;'>Privacy Policy</span></a><span style='font-size:16px;font-family:"Times New Roman",serif;'>, We will not monitor, edit, or disclose the contents of Your e-mail, unless required in the course of normal maintenance of the Website and its systems, or unless required to do so by law or in the good-faith belief that such action is necessary to: (a) comply with the law or comply with legal process served on Us or the Website; (b) protect and defend Our rights or property of, the Website, or the users of the Website; or (c) act in an emergency to protect the personal safety of Our guests, the Website, or the public.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><a href="#tableofcontents"><span style='font-size:16px;font-family:"Times New Roman",serif;color:blue;'>Back to table of contents</span></a></p>
+
+
+
+
+<h2 id='Dispute'>18 Dispute Resolution and Arbitration</p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>You and We agree to the following dispute resolution process for any legal controversy or legal claim arising out of or relating to this Agreement, the Website, any subscription to the Website or any other aspect of Our relationship (&ldquo;<strong>Subject Legal Claim</strong>&rdquo;).</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>To help resolve any issues between Us promptly and directly, You and We agree to begin any arbitration within 15 days after a Subject Legal Claim arises; otherwise, the Subject Legal Claim is waived.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>In an attempt to find the quickest and most efficient resolution of Our issues, You and We agree to first discuss any issue informally for at least 15 days. To do that, please send Your full name and contact information, Your concern and Your proposed solution by email to Us at cpv@prasannalawfirm.com. If We should need to discuss an issue with You, We will contact You using the email or mailing address on Your Account.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>If We do not reach an agreed upon solution after Our discussions for at least 15 days, You and We agree that any Subject Legal Claim that either of Us may have must be resolved through binding individual arbitration in India.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>There are two limited exceptions to this Dispute Resolution and Arbitration provision: (a) either Party may pursue in small claims court any action that is within that jurisdiction, as long as the case proceeds on an individual basis only; (b) either Party may seek to enforce its patents, trademarks, copyrights or trade secrets in an appropriate state or federal court.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>You and Us also agree to arbitrate in each of Our individual capacities only, not as a representative or member of a class, and each of Us expressly waives any right to file a class action or seek relief on a class basis.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><a href="#tableofcontents"><span style='font-size:16px;font-family:"Times New Roman",serif;color:blue;'>Back to table of contents</span></a></p>
+
+
+
+
+<h2 id='Termination'>19 Termination</p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>We may terminate this Agreement:</span></p>
+<ul style="margin-bottom:0cm;" type="disc">
+    <li style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>for any or no reason during any free use of the Websites or Services;</span></li>
+    <li style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>if You breach any of the terms of this Agreement, and that breach is not remediable;</span></li>
+    <li style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>if You breach any of these terms of this Agreement and that breach is not remedied within 0 of receiving written notice of the breach;</span></li>
+    <li style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>if You have failed to pay any due charges by the stated date.</span></li>
+</ul>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>We may also block Your access to Our Website in the event that:</span></p>
+<ul style="margin-bottom:0cm;" type="disc">
+    <li style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>You breach this Agreement;</span></li>
+    <li style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>We are unable to verify or authenticate any information You provide to Us; or</span></li>
+    <li style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>We believe that Your actions may cause financial loss or legal liability for You, Our users or Us.</span></li>
+</ul>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>You may terminate Your use of the Website or the Services by contacting Us through our contact details in this policy. The termination request will be subject to Our verification of Your ownership of the Account.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>In terminating Your Account, You shall be liable to pay all fees and charges that have accrued up until the termination takes place. You are personally liable for any orders placed or charges incurred through Your Account prior to termination.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>Either Party may terminate the Agreement:</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>Upon 0 days&apos; written notice to the other party of a material breach, if such breach remains uncured at the expiration of such period;</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>If the other party becomes the subject of petition in bankruptcy or any proceeding relating to insolvency, receivership, liquidation or assignment for the benefit of creditors.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><a href="#tableofcontents"><span style='font-size:16px;font-family:"Times New Roman",serif;color:blue;'>Back to table of contents</span></a></p>
+
+
+
+
+<h2 id='Consequences'>20 Consequences of Termination or Expiration</p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>Upon the effective date of termination or expiration of this Agreement:</span></p>
+<ul style="margin-bottom:0cm;" type="disc">
+    <li style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>All rights, Subscriptions and licenses granted to You shall be terminated immediately.</span></li>
+    <li style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>You will immediately cease use of and/or access to the Account, Website, and the Services.</span></li>
+    <li style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>We will suspend or terminate Your access to the Website and Services.</span></li>
+    <li style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>We will suspend or terminate access to any or all of the data to the extent permitted by law</span></li>
+</ul>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>The termination or expiry of this Agreement shall not affect any of Our accrued rights and liabilities at any time up until the date of termination.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><a href="#tableofcontents"><span style='font-size:16px;font-family:"Times New Roman",serif;color:blue;'>Back to table of contents</span></a></p>
+
+
+
+
+<h2 id='Revisions'>21 Revisions</p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>This Agreement is subject to Our revision and changes from time to time. Your continued use of the Website after the revision and changes will mean that You agree, without qualification, to the revised Agreement.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>If You are not a registered Subscriber of the Website, then You can review revisions to this Agreement by regularly checking this page.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>Material revisions to this Agreement will be indicated by an updated effective date at the top left corner of this page and by a notice posted on the homepage of the Website.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>It is Your responsibility to remain apprised of any revisions to this Agreement and to remain in compliance therewith.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>Should You object to any such revisions to this Agreement or become dissatisfied with the Website in any way, Your only recourse is to immediately terminate Your membership or discontinue use of the Website. Otherwise, continuing to use, visit, access or use the Website after the effective date means that You agree to be bound by any and all revisions.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><a href="#tableofcontents"><span style='font-size:16px;font-family:"Times New Roman",serif;color:blue;'>Back to table of contents</span></a></p>
+
+
+
+
+<h2 id='Force'>22 Force Majeure</p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>We shall not be responsible for damages or for delays or failures in performance resulting from acts or occurrences beyond Our reasonable control, including, without limitation: fire, lightning, explosion, power surge or failure, water, acts of God, war, revolution, civil commotion or acts of civil or military authorities or public enemies; epidemics, pandemics; any law, order, regulation, ordinance, or requirement of any government or legal body or any representative of any such government or legal body; or labor unrest, including without limitation, strikes, slowdowns, picketing, or boycotts; inability to secure raw materials, transportation facilities, fuel or energy shortages, or acts or omissions of other common carriers.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><a href="#tableofcontents"><span style='font-size:16px;font-family:"Times New Roman",serif;color:blue;'>Back to table of contents</span></a></p>
+
+
+
+
+<h2 id='Minimum'>23 Minimum Age Requirements</p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>Our Website is not directed to children. Access to and use of Our Website is only for those who are at least at the age of <strong>13 years in the USA</strong> or <strong>16 years in the European Union</strong> or otherwise capable of entering into and performing legal agreements. If You are younger than this, You may not register for or use Our Website.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>Any person who registers as a user or provides their personal information to Our Website represents that they are at least at the age of <strong>13 years in the USA</strong> or <strong>16 years in the European Union</strong> or otherwise capable of entering into and performing legal agreements.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>In agreeing with this Agreement, You represent and warrant that You are at least at the age of <strong>13 years in the USA</strong> or <strong>16 years in the European Union</strong> or otherwise capable of entering into and performing legal agreements.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><a href="#tableofcontents"><span style='font-size:16px;font-family:"Times New Roman",serif;color:blue;'>Back to table of contents</span></a></p>
+
+
+
+
+<h2 id='General'>24 General</p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><strong><span style='font-size:16px;font-family:"Times New Roman",serif;'>Jurisdiction and Choice of Law</span></strong><span style='font-size:16px;font-family:"Times New Roman",serif;'>. Any claim relating to, and the use of, this Website and the materials contained herein is governed by the laws of the state of India. You consent to the exclusive jurisdiction of the state and federal courts located in Vellore, India.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><strong><span style='font-size:16px;font-family:"Times New Roman",serif;'>Entire Agreement</span></strong><span style='font-size:16px;font-family:"Times New Roman",serif;'>. This Agreement and the other agreements stipulated to be incorporated herein are the entire agreement between You and Us and supersede any prior understandings or agreements (written or oral).</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>A printed version of this Agreement will be admissible in judicial and administrative proceedings based upon or relating to this Agreement to the same extent and subject to the same conditions as other business documents and records originally generated and maintained in printed form.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><strong><span style='font-size:16px;font-family:"Times New Roman",serif;'>Severability</span></strong><span style='font-size:16px;font-family:"Times New Roman",serif;'>. If any provision of this Agreement is held to be invalid or unenforceable, such provision shall be struck and the remaining provisions shall be enforced.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><strong><span style='font-size:16px;font-family:"Times New Roman",serif;'>Assignment</span></strong><span style='font-size:16px;font-family:"Times New Roman",serif;'>. You agree that this Agreement and all incorporated agreements may be automatically assigned by Us in Our sole discretion. You cannot assign this Agreement without Our written consent.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><strong><span style='font-size:16px;font-family:"Times New Roman",serif;'>Headings</span></strong><span style='font-size:16px;font-family:"Times New Roman",serif;'>. Headings are for reference purposes only and in no way define, limit, construe or describe the scope or extent of such section.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><strong><span style='font-size:16px;font-family:"Times New Roman",serif;'>No Waiver</span></strong><span style='font-size:16px;font-family:"Times New Roman",serif;'>. Our failure to act with respect to Your or others&rsquo; breach does not waive Our right to act with respect to subsequent or similar breaches.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><strong><span style='font-size:16px;font-family:"Times New Roman",serif;'>Survival</span></strong><span style='font-size:16px;font-family:"Times New Roman",serif;'>. Clauses &ldquo;Trademarks/No Endorsement&rdquo;, &ldquo;Advertising Rights&rdquo;, &ldquo;Intellectual Property Rights&rdquo;, &ldquo;DISCLAIMERS&rdquo;, &ldquo;LIMITATIONS OF LIABILITY&rdquo;, &ldquo;Indemnity&rdquo;, &ldquo;Release&rdquo;, &ldquo;Communications&rdquo;, and &ldquo;Dispute Resolution and Arbitration&rdquo; shall survive any termination or expiration of this Agreement.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><a href="#tableofcontents"><span style='font-size:16px;font-family:"Times New Roman",serif;color:blue;'>Back to table of contents</span></a></p>
+
+
+
+
+<h2 id='OurContent'>25 User Feedback</p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>We welcome and encourage You to provide feedback, comments, and suggestions for improvements of the Website (&ldquo;<strong>Feedback</strong>&rdquo;). You may submit Feedback by emailing Us at naruvi@naruvihospitals.com. You acknowledge and agree that if You submit any Feedback to Us, You hereby grant to Us a non-exclusive, worldwide, perpetual, irrevocable, fully-paid, royalty-free, sub-licensable (through several tiers) and transferable license under any and all intellectual property rights that You own or control in relation to the Feedback to use, reproduce, view, communicate to the public by any means, print, copy (whether onto hard disk or other media), edit, translate, perform and display (publicly or otherwise), distribute, redistribute, modify, adapt, make, sell, offer to sell, transmit, license, transfer, stream, broadcast, create derivative works from, and otherwise use and exploit the Feedback for any purpose.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><a href="#tableofcontents"><span style='font-size:16px;font-family:"Times New Roman",serif;color:blue;'>Back to table of contents</span></a></p>
+
+
+
+
+<h2 id='Contact'>26 Contact Us</p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Times New Roman",serif;'>If You do not understand any of the foregoing terms and conditions or if You have any questions or comments, please contact Us through NARUVI Hospitals, naruvi@naruvihospitals.com</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><a href="#tableofcontents"><span style='font-size:16px;font-family:"Times New Roman",serif;color:blue;'>Back to table of contents</span></a></p>
+
+
+
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><strong><span style='font-size:16px;font-family:"Times New Roman",serif;'>YOU ACKNOWLEDGE THAT YOU HAVE READ THESE TERMS, UNDERSTAND THE TERMS, AND WILL BE BOUND BY THESE TERMS. YOU FURTHER ACKNOWLEDGE THAT THESE TERMS TOGETHER WITH THE PRIVACY POLICY REPRESENT THE COMPLETE AND EXCLUSIVE STATEMENT OF THE AGREEMENT BETWEEN US AND THAT IT SUPERSEDES ANY PROPOSAL OR PRIOR AGREEMENT ORAL OR WRITTEN, AND ANY OTHER COMMUNICATIONS BETWEEN US RELATING TO THE SUBJECT MATTER OF THIS AGREEMENT.</span></strong></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
+
+       
+         
+         
+                   
+                   
+                   
+                   
+                   
+        </div>
+        </div>
+        </div>
+        </div>
+        
+    </section>
+    <div class="clearfix"></div>
+    <section class="divClear">
+        <div class="footerBlack">
+            <div class="fter-txt">
+                <p>
+                    <i class="fa fa-map-marker l-icn"></i> <span>
+                        72/1B2, Collector Office Road,
+                        Bangalore - Chennai National Highway (NH 48),
+                        Vellore – 632 004.
+                    </span> <a href="#"> <i class="fa fa-envelope m-icn"></i> <span>info@naruvi.com</span> </a>
+                </p>
+            </div>
+        </div>
+    </section>
+        <div class="clear"></div>
+    <div class="social-icon-section my-5 mx-auto">
+            <h4>Stay Connected</h4>
+            <ul class="p-0 mx-auto mb-auto mt-3 socialIcon">
+                <li><a href="https://www.facebook.com/naruvihospital" target="_blank"><i class="fa fa-facebook facebook"></i> </a></li>
+                <li><a href="https://www.instagram.com/naruvi_hospitals/" target="_blank"><i class="fa fa-instagram instagram"></i> </a></li>
+                <li><a href="https://twitter.com/NaruviHospitals" target="_blank"><i class="fa fa-twitter twitter"></i> </a></li>
+                <li><a href="https://www.youtube.com/c/NaruviHospitals" target="_blank"><i class="fa fa-youtube-play youtube"></i> </a></li>
+                <li><a href="https://www.linkedin.com/company/naruvi-hospitals" target="_blank"><i class="fa fa-linkedin linkedin"></i></a></li>
+            </ul>
+        </div>
+        <div class="h-fter">
+            <div class="container-page">
+                <div class="wid-50">
+                    <p><span>&#169;</span>
+							<script type="text/javascript">
+								var today = new Date()
+								var year = today.getFullYear()
+								document.write(year)
+							</script> Naruvi Hospitals</p>
+                </div>
+                <div class="wid-50 Rgt">
+                     <p><a href="pdf/BMW.pdf" target="_blank" class="letterSpacing">BMW Report</a></p>
+                </div>
+            </div>
+        </div>
+
+
+<!--============ BOOK AN APPOINTMENT FORM =============-->
+
+<!-- <input type="button" value="Book an Appointment" data-toggle="modal" data-target="#bookAppointmentModal"
+    class="appointment btn"> -->
+       <div class=" modal fade" id="myModal" style="background: rgba(0,0,0,.7);">
+            <div class="modal-dialog" style="border: 5px solid #1576de;">
+              <div class="modal-content">
+              <input type="hidden" id="regDate" name="Registered Date" />
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h6 class="modal-title font-weight-bold text-dark">- Book an Appointment -</h6>
+                  <button type="button" class="close" data-dismiss="modal" style="position: unset;">&times;</button>
+                </div>
+                
+                <!-- Modal body -->
+                <div class="modal-body px-4">
+                    <div class="form-group">
+                         <label for="name">Name <span style="color: red;font-size: 13px;">*</span></label>
+                          <asp:TextBox ID="Name" class="form-control text-capitalize" name="Name" runat="server"></asp:TextBox>
+                         <span class="error" id="reqName" style="display:none;">Enter your name</span> 
+                      </div>
+                      <div class="form-group">
+                         <label for="email">Email ID <span style="color: red;font-size: 13px;">*</span></label>
+                             <asp:TextBox id ="EmailId" name="Email Id" class="form-control" runat="server"></asp:TextBox>
+                           <span class="error" id="reqEmailId" style="display:none;">Enter your email id</span>
+                            <span class="error" id="reqfvValidEmail" style="display:none;">Enter your Valid email id</span>
+                    </div> 
+                    <div class="form-group">
+                        <label for="phonenumber">Mobile Number <span style="font-size:12px;">(without country code)</span><span style="color: red;font-size: 13px;">*</span></label>
+                        <div class="form-inline">
+                             <asp:TextBox id="MobileNo" name="Mobile No" class="form-control" runat="server" clientidmode="static" MaxLength="10" style="width: 96%;"></asp:TextBox>
+                             <input type="button" id="send_otp" class="btn btn-primary w-auto pb-4 pt-0" value="Send OTP" style="position: absolute; right: 8%; height: 37px;
+                            line-height: 34px;">
+                        </div>
+                        <span class="error" id="reqMobileNo" style="display:none;">Enter your mobile number</span>
+                        <span class="error" id="reqValidMobileNo" style="display:none;">Enter valid mobile number</span>
+                    </div>  
+                    <div class="form-group" id="otp-field" style="display: none;">
+                        <input type="text" class="form-control" id="otp" maxlength="6" placeholder="Enter your OTP">
+                         <span class="error" id="reqOTP" style="display:none;">Enter OTP Code</span>
+                             <span class="error" id="reqValidOTP" style="display:none;">Enter valid OTP code</span>
+                    </div>
+                    <div class="second-sec-form" id="second-sec-form" style="display: none;">
+                        <div class="form-group">
+                            
+                            <%--<div class="row mt-0" style="position: relative; top: 0px;">--%>
+                                 <label for="birthday">Date of Birth <span style="color: red;font-size: 13px;">*</span></label>
+                            <input type="text" class="form-control py-2" placeholder="dd/mm/yyyy" id="birthday"  name="DOB" autocomplete="off">
+                             <input type="hidden" id="hdnDOB" runat="server" />
+                         
+                           <%-- </div>--%>
+                             <span class="error"  id="reqDOB" style="display:none;">Enter your date of birth</span> 
+                            <span class="error" id="reqValidDOB" style="display:none;">Enter date of birth in dd/mm/yyyy format ONLY.</span>
+                        </div>
+                        <div class="form-group">
+                            <select class="custom-select" id="Consultation" name="Consultationtype">
+                                <option selected>Select Consultation Type</option>
+                                <option>Telemedicine Consultation</option>
+                                <option>Out-patient Consultation</option>
+                            </select>
+                             <span class="error" style="display:none;" id="reqConsultation">Select Consultation</span>
+                            <input type="hidden" id="hdnConsultation" runat="server" />
+                        </div>
+                        <div class="form-group">
+                            <select class="custom-select" id="Department" name="Department">
+                                <option selected>Select Department</option>
+                                <option value="Anaesthesiology & Pain Medicine">Anaesthesiology & Pain Medicine</option>
+                                <option value="Cardiology">Cardiology</option>
+                                <option value="Cardio Thoracic & Vascular Surgery">Cardio Thoracic & Vascular Surgery</option>
+                                <option value="Critical Care & Emergency">Critical Care & Emergency</option>
+                                <option value="Dental Medicine">Dental Medicine</option>
+                                <option value="Dermatology">Dermatology</option>
+                                <option value="Endocrine Surgery">Endocrine Surgery</option>
+                                <option value="Endocrinology">Endocrinology</option>
+                                <option value="ENT">ENT</option>
+                                <option value="Gastroenterology (Medical)">Gastroenterology (Medical)</option>
+                                <option value="General Medicine">General Medicine</option>
+                                <option value="General Surgery">General Surgery</option>
+                                <option value="Nephrology">Nephrology</option>
+                                <option value="Neurology">Neurology</option>
+                                <option value="Neurosurgery">Neurosurgery</option>
+                                <option value="Obstetrics & Gynaecology">Obstetrics & Gynaecology</option>
+                                 <option value="Ophthalmology">Ophthalmology</option>
+                                 <option value="Oral and Maxillofacial Surgery">Oral and Maxillofacial Surgery</option>
+                                <option value="Orthopaedics">Orthopaedics</option>
+                                <option value="Paediatrics">Paediatrics</option>
+				<option value="Paediatrics Clinic">Paediatrics Clinic</option>
+                                <option value="Pediatrics Intensive care">Pediatrics Intensive care</option>
+                                <option value="Paediatric Surgery">Paediatric Surgery</option>
+                                <option value="Physical Medicine & Rehabilitation">Physical Medicine & Rehabilitation</option>
+                                <option value="Plastic, Hand & Reconstructive surgery">Plastic, Hand & Reconstructive surgery</option>
+                                <option value="Psychiatry">Psychiatry</option>
+                                <option value="Pulmonology">Pulmonology</option>
+                                <option value="Radiology">Radiology</option>
+                                <option value="Rheumatology">Rheumatology</option>
+                                 <option value="Spine Surgery">Spine Surgery</option>
+                                <option value="Urology">Urology</option>
+                            </select>
+                            <input type="hidden" id="hdnDepartment" runat="server" />
+                            <span class="error" style="display:none;" id="reqDepartment">Select department</span>
+                        </div>
+                        <div class="form-group">
+                            <select class="custom-select" id="dlDoctor" name="Doctor">
+                                <option selected>Select Doctor</option>
+<!--
+                                <option value="Dr. Rohit Sethi">Dr. Rohit Sethi</option>
+                                <option value="Dr. N. Tejaswi Shashikanth">Dr. N. Tejaswi Shashikanth</option>
+-->
+<!--                                <option value="Prof. Nitin Kekre">Prof. Nitin Kekre</option>-->
+                            </select>
+                             <input type="hidden" id="hdnDoctor" runat="server" />
+                            <span class="error" style="display:none;" id="reqDoctor">Select doctor</span>
+                        </div>
+                        <div class="form-group">
+                            <input type="hidden" id="txtAppointmentDate" name="Appointment Date" />
+                             <input type="hidden" id="txtAppointmentDate1" runat="server" />
+                            <label for="appointmentDate">Appointment Date <span style="color: red;font-size: 13px;">*</span></label>
+                            <div class="row mt-0" style="position: relative; top: 0px;">
+                                <div class="col-md-4 py-md-0 py-2">
+                                    <asp:DropDownList ID="ddlDay" runat="server" CssClass="custom-select">
+                                       <asp:ListItem>- Day -</asp:ListItem>
+                                        <asp:ListItem value="1">1</asp:ListItem>
+                                        <asp:ListItem value="2">2</asp:ListItem>
+                                       <asp:ListItem value="3">3</asp:ListItem>
+                                       <asp:ListItem value="4">4</asp:ListItem>
+                                       <asp:ListItem value="5">5</asp:ListItem>
+                                       <asp:ListItem value="6">6</asp:ListItem>
+                                       <asp:ListItem value="7">7</asp:ListItem>
+                                       <asp:ListItem value="8">8</asp:ListItem>
+                                       <asp:ListItem value="9">9</asp:ListItem>
+                                       <asp:ListItem value="10">10</asp:ListItem>
+                                       <asp:ListItem value="11">11</asp:ListItem>
+                                       <asp:ListItem value="12">12</asp:ListItem>
+                                       <asp:ListItem value="13">13</asp:ListItem>
+                                       <asp:ListItem value="14">14</asp:ListItem>
+                                       <asp:ListItem value="15">15</asp:ListItem>
+                                       <asp:ListItem value="16">16</asp:ListItem>
+                                       <asp:ListItem value="17">17</asp:ListItem>
+                                       <asp:ListItem value="18">18</asp:ListItem>
+                                       <asp:ListItem value="19">19</asp:ListItem>
+                                       <asp:ListItem value="20">20</asp:ListItem>
+                                       <asp:ListItem value="21">21</asp:ListItem>
+                                       <asp:ListItem value="22">22</asp:ListItem>
+                                       <asp:ListItem value="23">23</asp:ListItem>
+                                       <asp:ListItem value="24">24</asp:ListItem>
+                                       <asp:ListItem value="25">25</asp:ListItem>
+                                       <asp:ListItem value="26">26</asp:ListItem>
+                                       <asp:ListItem value="27">27</asp:ListItem>
+                                       <asp:ListItem value="28">28</asp:ListItem>
+                                       <asp:ListItem value="29">29</asp:ListItem>
+                                       <asp:ListItem value="30">30</asp:ListItem>
+                                       <asp:ListItem value="31">31</asp:ListItem>
+                                    </asp:DropDownList>
+                                    <%--<select class="custom-select" id="ddlDay">
+                                       <asp:ListItem>- Day -</asp:ListItem>
+                                       <asp:ListItem value="1">1</asp:ListItem>
+                                       <asp:ListItem value="2">2</asp:ListItem>
+                                       <asp:ListItem value="3">3</asp:ListItem>
+                                       <asp:ListItem value="4">4</asp:ListItem>
+                                       <asp:ListItem value="5">5</asp:ListItem>
+                                       <asp:ListItem value="6">6</asp:ListItem>
+                                       <asp:ListItem value="7">7</asp:ListItem>
+                                       <asp:ListItem value="8">8</asp:ListItem>
+                                       <asp:ListItem value="9">9</asp:ListItem>
+                                       <asp:ListItem value="10">10</asp:ListItem>
+                                       <asp:ListItem value="11">11</asp:ListItem>
+                                       <asp:ListItem value="12">12</asp:ListItem>
+                                       <asp:ListItem value="13">13</asp:ListItem>
+                                       <asp:ListItem value="14">14</asp:ListItem>
+                                       <asp:ListItem value="15">15</asp:ListItem>
+                                       <asp:ListItem value="16">16</asp:ListItem>
+                                       <asp:ListItem value="17">17</asp:ListItem>
+                                       <asp:ListItem value="18">18</asp:ListItem>
+                                       <asp:ListItem value="19">19</asp:ListItem>
+                                       <asp:ListItem value="20">20</asp:ListItem>
+                                       <asp:ListItem value="21">21</asp:ListItem>
+                                       <asp:ListItem value="22">22</asp:ListItem>
+                                       <asp:ListItem value="23">23</asp:ListItem>
+                                       <asp:ListItem value="24">24</asp:ListItem>
+                                       <asp:ListItem value="25">25</asp:ListItem>
+                                       <asp:ListItem value="26">26</asp:ListItem>
+                                       <asp:ListItem value="27">27</asp:ListItem>
+                                       <asp:ListItem value="28">28</asp:ListItem>
+                                       <asp:ListItem value="29">29</asp:ListItem>
+                                       <asp:ListItem value="30">30</asp:ListItem>
+                                       <asp:ListItem value="31">31</asp:ListItem>
+                                    </select>--%>
+                                    <span class="error"  id="reqAppDate" style="display:none;">choose appointment date</span> 
+                                     <span class="error"  id="reqAppValidDay" style="display:none;">Enter the valid day</span> 
+                                </div>
+                            <div class="col-md-4 py-md-0 py-2">
+                                 <asp:DropDownList ID="ddlMonth" runat="server" CssClass="custom-select">
+                                       <asp:ListItem>- Month -</asp:ListItem>
+                                     
+                                   <asp:ListItem value="01">January</asp:ListItem>
+                                   <asp:ListItem value="02">Febuary</asp:ListItem>
+                                   <asp:ListItem value="03">March</asp:ListItem>
+                                   <asp:ListItem value="04">April</asp:ListItem>
+                                   <asp:ListItem value="05">May</asp:ListItem>
+                                   <asp:ListItem value="06">June</asp:ListItem>
+                                   <asp:ListItem value="07">July</asp:ListItem>
+                                   <asp:ListItem value="08">August</asp:ListItem>
+                                   <asp:ListItem value="09">September</asp:ListItem>
+                                   <asp:ListItem value="10">October</asp:ListItem>
+                                   <asp:ListItem value="11">November</asp:ListItem>
+                                   <asp:ListItem value="12">December</asp:ListItem>
+                                    </asp:DropDownList>
+                               
+                                   <span class="error"  id="reqAppMon" style="display:none;">choose appointment month</span> 
+                                </div>
+                                <div class="col-md-4 py-md-0 py-2">
+                                      <asp:DropDownList ID="ddlYear" runat="server" CssClass="custom-select">
+                                       <asp:ListItem>- Year -</asp:ListItem>
+                                      
+                                       <asp:ListItem value="2022">2022</asp:ListItem>
+                                    </asp:DropDownList>
+                                 <%--   <select class="custom-select" id="ddlYear">
+                                       <asp:ListItem>- Year -</asp:ListItem>
+                                       <asp:ListItem value="2021">2020</asp:ListItem>
+                                       <asp:ListItem value="2022">2022</asp:ListItem>
+                                    </select>--%>
+                                       <span class="error"  id="reqAppYear" style="display:none;">choose appointment year</span> 
+                                </div>
+                            </div>
+                           <span class="error"  id="reqAppDate1" style="display:none;">Choose your appointment date</span> 
+                            <span class="error"  id="reqAppDate21" style="display:none;">Enter valid appointment date</span>
+                             <span class="error"  id="reqAppValidSunDay" style="display:none;">Sorry, No appointments on Sunday. Pls choose another day</span> 
+                        </div>
+                        <div class="form-group">
+                            <label for="appointmentTime">Appointment Time <span style="color: red;font-size: 13px;">*</span></label>
+                             <input type="hidden" id="hdnAppointmentTime" name="Appointment Time" />
+                              <input type="hidden" id="hdnAppointmentTime1" runat="server" />
+                            <div class="row mt-0" style="position: relative; top: 0px;">
+                                <div class="col-md-4 col-4 py-md-0 py-2 pr-0">
+                                    <select class="custom-select" style="height: 50px;" id="ddlHours">
+                                        <option selected>Hours</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                        <option>9</option>
+                                        <option>10</option>
+                                        <option>11</option>
+                                        <option>12</option>
+                                    </select>
+<!--                                        <input type="text" class="form-control py-2 text-center" placeholder="Hours" id="txtHours" maxlength="2" style="height: 50px;">-->
+                                 <span class="error" id="reqHours" style="display:none;">Enter Hours</span>
+                                     <span class="error" id="reqValidHours" style="display:none;">Enter valid hours</span>
+                                </div>
+                                
+                                <div class="col-md-4 col-4 py-md-0 py-2 pr-0">
+                                     <select class="custom-select" style="height: 50px;" id="ddlMinutes">
+                                        <option selected>Minutes</option>
+                                        <option>00</option>
+                                        <option>30</option>
+                                    </select>
+<!--                                    <input type="text" class="form-control py-2 text-center" id="txtMinutes" placeholder="Minutes" maxlength="2"  style="height: 50px;">-->
+                                <span class="error"  id="reqValidMinutes"  style="display:none;">Enter Minutes</span>
+                                    </div>
+<!--
+                                <div class="col-md-2 col-4 py-md-0 py-2 pr-0">
+                                    <input type="text" class="form-control py-2 text-center" id="" placeholder="00" maxlength="2"  style="height: 50px;">
+                                <span class="error"  id=""  style="display:none;">Enter Minutes</span>
+                                    </div>
+-->
+                                <div class="col-md-4 col-4 py-md-0 py-2">
+                                    <div class="switch-field">
+                                        <input type="radio" id="radio-one" name="switch-one" value="AM" checked/>
+                                        <label for="radio-one">AM</label>
+                                        <input type="radio" id="radio-two" name="switch-one" value="PM" />
+                                        <label for="radio-two">PM</label>
+                                    </div>
+                                </div> 
+                            </div>
+                           
+                        </div>
+                        <div class="form-group">
+                            <label for="appointment">Purpose of appointment <span></span></label>
+                              <asp:TextBox id="Purpose" class="form-control py-2" runat="server"></asp:TextBox>
+                           <%-- <input type="text" class="form-control text-capitalize" id="txtPurpose" name="Purpose">--%>
+                           <span class="error" id="reqPurpose" style="display:none;">Enter your purpose of appointment</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="remarks">Remarks</label>
+                              <asp:TextBox id="Remarks"  class="form-control py-2" runat="server"></asp:TextBox>
+                          <%--  <input type="text" class="form-control text-capitalize" id="txtremarks" name="Remarks">--%>
+                  
+                    </div>
+                        <div class="form-group">
+                        <div class="col-lg-12 p-0 captcha d-flex">
+                              <img src="/Captcha2.aspx" id="imgCaptcha" width="120px" height="29px" /><button style="background-color:white;border: none;box-shadow:none" onclick="javascript:RefreshCaptcha();return false;"><img src="image/refreshicon.png"></button>
+                        </div>
+                        <div class="col-lg-12 px-0">
+                             <asp:TextBox ID="txtCode" CssClass="form-control" runat="server" placeholder="Verification Code"  clientidmode="static" autocomplete="off" style="text-transform: none;"></asp:TextBox>
+<%--                            <input type="text" class="form-control" placeholder="Verification Code" id="txtCode" runat="server" clientidmode="static" style="text-transform: none;">--%>
+                            <span class="error" id="reqCode" style="display:none;">Enter verification code</span>
+                            <span class="error" id="reqValidCode" style="display:none;">Enter valid verification code</span>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="mt-2 mb-3 mx-auto" id="dvsubmtFirst">
+                   <input type="button" id="submit_otp" class="btn btn-primary w-auto pb-4 pt-0" value="Submit">
+                </div>
+                   <div class="mt-2 mb-3 mx-auto" id="dvsubmtSecond" style="display:none">
+                   <asp:Button ID="buttonsubmit" runat="server" CssClass="btn btn-submit w-auto" Text="submit" OnClientClick="return addform();"
+                                                    OnClick="btnSend_Click" ClientIDMode="Static"/>
+                </div>
+                <!-- Modal footer -->
+                <!-- <div class="mt-2 mb-3 mx-auto">
+                <input type="button" id="send_otp" class="btn btn-primary w-auto pb-4 pt-0" value="Send OTP">
+                </div> -->
+               
+                
+              </div>
+            </div>
+          </div>
+        <div id="thankyou" class="overlay">
+        <div class="book-appointment-thank">
+            
+           <a class="close" id="close" href="#">&times;</a>
+            <div class="content" style="padding-top:5px">
+            Thank you for your appointment request. We will get back to you on the status of your appointment.
+             
+            </div>
+        </div>
+    </div> 
+<!--============ END OF BOOK AN APPOINTMENT FORM =============-->
+    </form>
+     <script type="text/javascript" src="https://use.fontawesome.com/5ecf78f4a4.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/comman.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/owl.carousel.js"></script>
+<script type="text/javascript" src="js/SmoothScroll.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+<script type="text/javascript" src="js/popper.min.js"></script>
+<script src="js/jquery.counterup.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/mdtimepicker.js"></script>
+   <script type="text/javascript">
+function RefreshCaptcha() {
+var img = document.getElementById("imgCaptcha");
+img.src = "/Captcha2.aspx?query=" + Math.random();
+}
+</script>
+<script>
+        //Put our input DOM element into a jQuery Object
+        var $jqDate = jQuery('input[name="DOB"]');
+
+        //Bind keyup/keydown to the input
+        $jqDate.bind('keyup','keydown', function(e){
+
+          //To accomdate for backspacing, we detect which key was pressed - if backspace, do nothing:
+            if(e.which !== 8) {	
+                var numChars = $jqDate.val().length;
+                if(numChars === 2 || numChars === 5){
+                    var thisVal = $jqDate.val();
+                    thisVal += '/';
+                    $jqDate.val(thisVal);
+                }
+          }
+        });
+    </script>
+
+<script>
+    var stateObject = {
+      "India": {
+        "Delhi": ["new Delhi", "North Delhi"],
+        "Kerala": ["Thiruvananthapuram", "Palakkad"],
+        "Goa": ["North Goa", "South Goa"],
+      },
+      "Australia": {
+        "South Australia": ["Dunstan", "Mitchell"],
+        "Victoria": ["Altona", "Euroa"]
+      }, "Canada": {
+        "Alberta": ["Acadia", "Bighorn"],
+        "Columbia": ["Washington", ""]
+      },
+    }
+    window.onload = function () {
+      var countySel = document.getElementById("countySel"),
+        stateSel = document.getElementById("stateSel"),
+        districtSel = document.getElementById("districtSel");
+      for (var country in stateObject) {
+        countySel.options[countySel.options.length] = new Option(country, country);
+      }
+      countySel.onchange = function () {
+        stateSel.length = 1; // remove all options bar first
+        districtSel.length = 1; // remove all options bar first
+        if (this.selectedIndex < 1) return; // done 
+        for (var state in stateObject[this.value]) {
+          stateSel.options[stateSel.options.length] = new Option(state, state);
+        }
+      }
+      countySel.onchange(); // reset in case page is reloaded
+      stateSel.onchange = function () {
+        districtSel.length = 1; // remove all options bar first
+        if (this.selectedIndex < 1) return; // done 
+        var district = stateObject[countySel.value][this.value];
+        for (var i = 0; i < district.length; i++) {
+          districtSel.options[districtSel.options.length] = new Option(district[i], district[i]);
+        }
+      }
+    }
+  </script>
+ 
+  <script>
+    function PopUp(hideOrshow) {
+      if (hideOrshow == 'hide') document.getElementById('ac-wrapper').style.display = "none";
+      else document.getElementById('ac-wrapper').removeAttribute('style');
+    }
+    window.onload = function () {
+      setTimeout(function () {
+        PopUp('show');
+      }, 1000);
+    }
+  </script>
+  <script>
+    $(window).load(function () {
+      $(".noti").addClass("right0");
+    });
+
+    /*	$(document).on("click",".simplePopupClose",function(e){
+                $(".noti").addClass("right0");
+              
+                });*/
+    $(document).on("click", ".noti", function (e) { $(this).removeClass("right0"); });
+
+    jQuery(document).ready(function ($) {
+      $('.counter').counterUp({
+        delay: 10,
+        time: 1000
+      });
+
+
+
+    });
+  </script>
+  <script>
+    $(function () {
+      "use strict";
+      $('#clients').owlCarousel({
+        loop: false,
+        margin: 10,
+        smartSpeed: 800,
+        nav: true,
+        autoplay: false,
+        responsive: {
+          0: {
+            items: 1
+          },
+          510: {
+            items: 2
+          },
+
+          600: {
+            items: 3
+          },
+
+          1030: {
+            items: 4
+          },
+          1680: {
+            items: 5
+          }
+        }
+      });
+
+
+    });
+  </script>
+  <script type="text/javascript">
+    function ValidateDOB() {
+      
+        //Get the date from the TextBox.
+        var dateString = document.getElementById("birthday").value;
+        var regex = /(((0|1)[0-9]|2[0-9]|3[0-1])\/(0[1-9]|1[0-2])\/((19|20)\d\d))$/;
+ 
+        //Check whether valid dd/MM/yyyy Date Format.
+        if (regex.test(dateString)) {
+            return true;
+        } else {
+           
+            return false;
+        }
+    }
+</script>
+        <script>
+          $(document).ready(function(){
+              $('#AppointmentTime').mdtimepicker(); //Initializes the time picker
+             
+          });
+        </script>
+    <script>
+            $("#send_otp").on("click", function () {
+                var MobileNo = $("#MobileNo").val();
+               
+                if (MobileNo == "") {
+                    document.getElementById("reqMobileNo").style.display = "block";
+                    document.getElementById("reqValidMobileNo").style.display = "none";
+                }
+                else {
+                    if (MobileNo.length != 10) {
+                         document.getElementById("reqMobileNo").style.display = "none";
+                         document.getElementById("reqValidMobileNo").style.display = "block";
+                    }
+                    else {
+                        var res = null;
+                        $('#otp-field').show();
+                        $.ajax({
+                            type: "POST",
+                            url: "appointmenttest.aspx/SendOTP",
+                            contentType: "application/json; charset=utf-8",
+                            data: '{stMobileNo: "' + MobileNo + '"}',
+                            dataType: "json",
+                            async: false,
+                            success: function (response) {
+                              
+                                res = response.d;
+                            },
+                            failure: function (response) {
+                                  alert(response.d);
+                                res = response.d;
+                            }
+                        });
+                    }
+                }
+            });
+            $("#submit_otp").on("click", function () {
+                if (validateFirst()) {
+                  
+                    var otpcode = $("#otp").val();
+                    if (otpcode != "" && otpcode.length==6) {
+                        $.ajax({
+                            type: "POST",
+                            url: "appointmenttest.aspx/VerifyOtp",
+                            contentType: "application/json; charset=utf-8",
+                            data: '{stOtpCode: "' + otpcode + '"}',
+                            dataType: "json",
+                            async: false,
+                            success: function (response) {
+                                
+                                if (response.d == "Success") {
+                                    
+                                    $('#send_otp').hide();
+                                    $('#otp-field').hide();
+                                  
+                                    //otp validate
+                                    $('#second-sec-form').show();
+                                    $('#Name').attr('readonly', 'readonly');
+                                    $('#EmailId').attr('readonly', 'readonly');
+                                     $('#MobileNo').attr('readonly', 'readonly');
+                                    document.getElementById("reqOTP").style.display = "none";
+                                     document.getElementById("dvsubmtFirst").style.display = "none";
+                                     document.getElementById("dvsubmtSecond").style.display = "block";
+                                    document.getElementById("reqValidOTP").style.display = "none";
+                                      $('[id^=txtHours]').keypress(validateNumber);
+                                    $('[id^=txtMinutes]').keypress(validateNumber);
+                                }
+                                else {
+                                    $('#second-sec-form').hide();
+                                    $('#send_otp').show();
+                                    $('#otp-field').show();
+                                    document.getElementById("reqOTP").style.display = "none";
+                                     document.getElementById("reqValidOTP").style.display = "block";
+                                }
+                            },
+                            failure: function (response) {
+                               
+                                document.getElementById("reqValidOTP").style.display = "block";
+                            }
+                        });
+                        
+                       
+                    }
+                    else {
+                       
+                        if (otpcode.length != 0 && otpcode.length < 6) {
+                            document.getElementById("reqOTP").style.display = "none";
+                            document.getElementById("reqValidOTP").style.display = "block";
+                        }
+                        else {
+                             
+                            document.getElementById("reqOTP").style.display = "block";
+                            document.getElementById("reqValidOTP").style.display = "none";
+                        }
+                    }
+                }
+
+                // $('#myModal1').show(); 
+                // $('#myModal1').css('opacity', '1'); 
+                
+            });
+            $("#otpClose").on( "click", function() {
+                $('#myModal1').hide(); 
+                $('#myModal1').css('opacity', '0'); 
+            });
+            
+            
+            //trigger next modal
+            // $("#signin").on( "click", function() {
+                    
+            // });
+            // $("#close").on('click', function() {
+            //    $("#thankyou").fadeOut();
+            // });
+            </script>
+    <script>
+            $("#thankyoupop").on('click', function() {
+               $("#thankyou").fadeIn();
+               $("#bookAppointmentModal").hide();
+            });
+            $("#close").on('click', function() {
+               $("#thankyou").fadeOut();
+            });
+        </script>
+        <script>
+        function validateEmail(email) {
+            var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+            if (!emailReg.test(email)) {
+                return false;
+            } else {
+                return true;
+            }
+        }
+        function validateDate(dob) {
+            var dobReg = /^([0-9]{1,2})\/([0-9]{1,2})\/([0-9]{4})$/;
+            if (!dobReg.test(dob)) {
+                return false;
+            } else {
+                return true;
+            }
+        }
+        function validateName(e) {
+             var keyCode = e.keyCode || e.which;
+            var emailReg = /^[a-zA-Z\s.]+$/;
+            var isValid = emailReg.test(String.fromCharCode(keyCode));
+            return isValid;
+        }
+         function validateName1(e) {
+             var keyCode = e.keyCode || e.which;
+            var emailReg = /^[a-zA-Z\s]+$/;
+            var isValid = emailReg.test(String.fromCharCode(keyCode));
+            return isValid;
+        }
+        function validateNumber(event) {
+             
+                var key = window.event ? event.keyCode : event.which;
+
+                if (event.keyCode == 8 || event.keyCode == 46
+    || event.keyCode == 37 || event.keyCode == 39) {
+                    return true;
+                }
+                else if (key < 48 || key > 57) {
+                    return false;
+                }
+                else return true;
+            };
+            function validateNumber1(event) {
+
+                var key = window.event ? event.keyCode : event.which;
+               
+                if (event.keyCode == 8 || event.keyCode == 46
+                    || event.keyCode == 37 || event.keyCode == 39 || event.keyCode == 39 || event.keyCode == 47) {
+                    return true;
+                }
+                else if (key < 48 || key > 57) {
+                    return false;
+                }
+                  
+                else return true;
+        };
+        function isAlfa(evt) {
+            evt = (evt) ? evt : window.event;
+            var charCode = (evt.which) ? evt.which : evt.keyCode;
+            if (charCode > 32 && (charCode < 65 || charCode > 90) && (charCode < 97 || charCode > 122)) {
+                return false;
+            }
+            return true;
+        }
+        $(document).ready(function () {
+            Captcha();
+            $("#Department").change(function () {
+                var value = $("#Department option:selected").text();  //$(this).find(".selected").text();
+
+             
+                $("#dlDoctor option").remove();
+                 $('#dlDoctor').append('<option value="0">Select Doctor</option>'); 
+                if (value == "Urology") {
+//                  $('#dlDoctor').append('<option value="Prof. Nitin Kekre">Prof. Nitin Kekre</option>');   
+				$('#dlDoctor').append('<option value="Dr.Rohit Sethi">Dr. Rohit Sethi</option>'); 
+                // $('#dlDoctor').append('<option value="Dr.Tejaswi Shashikanth N">Dr.Tejaswi Shashikanth N</option>');                      
+                              
+               
+            }
+            else if (value == "Spine Surgery") {
+				$('#dlDoctor').append('<option value="Dr. Backiaraj D">Dr. Backiaraj D</option>'); 
+                
+                }
+                else if (value == "Rheumatology") {
+				$('#dlDoctor').append('<option value="Dr. Raja N">Dr. Raja N</option>'); 
+                
+                }
+           else if (value == "Radiology") {
+				$('#dlDoctor').append('<option value="Dr. Karthikumar B">Dr. Karthikumar B</option>'); 
+                
+                }
+                else if (value == "Psychiatry") {
+                   $('#dlDoctor').append('<option value="Dr. Shinika R">Dr. Shinika R</option>');
+                
+                }
+           else if (value == "Pulmonology") {
+                    $('#dlDoctor').append('<option value="Dr. Prince">Dr. Prince</option>'); 
+                    $('#dlDoctor').append('<option value="Dr. Rajagopal T V">Dr. Rajagopal T V</option>'); 
+                    $('#dlDoctor').append('<option value="Dr. Vimi Varghese">Dr. Vimi Varghese</option>'); 
+                
+                }
+          else if (value == "Plastic, Hand & Reconstructive surgery") {
+            $('#dlDoctor').append('<option value="Dr. Ramkumar J">Dr. Ramkumar J</option>');
+              $('#dlDoctor').append('<option value="Dr. Rohith S">Dr. Rohith S</option>');
+                   
+                }
+           else if (value == "Physical Medicine & Rehabilitation") {
+                    $('#dlDoctor').append('<option value="Dr. Chinju Babu">Dr. Chinju Babu</option>'); 
+                   
+                }
+           else if (value == "Pediatrics Intensive care") {
+                    $('#dlDoctor').append('<option value="Dr. Reshma Aramanadka">Dr. Reshma Aramanadka</option>'); 
+                    $('#dlDoctor').append('<option value="Dr. Kanagagiri  R">Dr. Kanagagiri  R</option>');
+
+                }
+           else if (value == "Paediatrics") {
+                    $('#dlDoctor').append('<option value="Dr. Soniya Mary Kurian">Dr. Soniya Mary Kurian</option>'); 
+                    $('#dlDoctor').append('<option value="Dr. Nagarajan V">Dr. Nagarajan V</option>'); 
+                    $('#dlDoctor').append('<option value="Dr. Naresh Kumar N">Dr. Naresh Kumar N</option>');
+               $('#dlDoctor').append('<option value="Dr. Yuvaraj V">Dr. Yuvaraj V</option>'); 
+               $('#dlDoctor').append('<option value="Dr. Asvatha V C">Dr. Asvatha V C</option>');
+                    
+                    
+                }
+
+
+         else if (value == "Paediatrics Clinic") {
+                    $('#dlDoctor').append('<option value="Dr. Soniya">Dr. Soniya</option>'); 
+                    $('#dlDoctor').append('<option value="Dr. Asvatha">Dr. Asvatha</option>'); 
+                    $('#dlDoctor').append('<option value="Dr. Kanagagiri">Dr. Kanagagiri</option>'); 
+                    $('#dlDoctor').append('<option value="Dr. Nagarajan">Dr. Nagarajan</option>'); 
+                    $('#dlDoctor').append('<option value="Dr. Vijaya Kumar">Dr. Vijaya  Kumar</option>');
+               $('#dlDoctor').append('<option value="Dr. Yuvaraj">Dr. Yuvaraj</option>'); 
+                    
+                    
+                }
+
+                else if (value == "Paediatric Surgery") {
+               $('#dlDoctor').append('<option value="Dr. Aravindh R">Dr. Aravindh R</option>'); 
+                    
+                    
+                }
+          else if (value == "Orthopaedics") {
+            $('#dlDoctor').append('<option value="Prof. Vernon Neville Lee">Prof. Vernon Neville Lee</option>'); 
+             // $('#dlDoctor').append('<option value="Dr. Kanniraj Marimuthu">Dr. Kanniraj Marimuthu</option>'); 
+//              $('#dlDoctor').append('<option value="Dr. Rajkumar Thangaraj ">Dr. Rajkumar Thangaraj </option>'); 
+                    $('#dlDoctor').append('<option value="Dr. Ponnilavan Jayakanthan">Dr. Ponnilavan Jayakanthan</option>'); 
+                    $('#dlDoctor').append('<option value="Dr. Manu K T ">Dr. Manu K T </option>');
+                    $('#dlDoctor').append('<option value="Dr. Manoharan M ">Dr. Manoharan M </option>');  
+             // $('#dlDoctor').append('<option value="Dr. Kanniraj ">Dr. Kanniraj </option>'); 
+                    
+                }
+         else if (value == "Oral and Maxillofacial Surgery") {
+                    $('#dlDoctor').append('<option value="Dr. Ashwin Preethem Kumar J">Dr. Ashwin Preethem Kumar J</option>'); 
+                   
+                }
+         else if (value == "Ophthalmology") {
+                    $('#dlDoctor').append('<option value="Dr. Swetha">Dr. Swetha</option>'); 
+                    $('#dlDoctor').append('<option value="Dr. Sangeetha S">Dr. Sangeetha S</option>'); 
+                   
+                }
+        else if (value == "Obstetrics & Gynaecology") {
+//                    $('#dlDoctor').append('<option value="Prof. Aruna Kekre">Prof. Aruna Kekre</option>'); 
+                    $('#dlDoctor').append('<option value="Dr. Akilasree P B">Dr. Akilasree P B</option>'); 
+                    
+                    $('#dlDoctor').append('<option value="Dr. Santosh Thomas Samuel">Dr. Santosh Thomas Samuel</option>'); 
+                     $('#dlDoctor').append('<option value="Dr. Ayswariya">Dr. Ayswariya</option>'); 
+                     $('#dlDoctor').append('<option value="Dr. Janani G D">Dr. Janani G D</option>'); 
+                     $('#dlDoctor').append('<option value="Dr. Jeyasheela Kamaraj">Dr. Jeyasheela Kamaraj</option>'); 
+                   
+                }
+            else if (value == "Neurosurgery") {
+                     
+                    // $('#dlDoctor').append('<option value="Dr.Harish">Dr.Harish</option>'); 
+                $('#dlDoctor').append('<option value="Dr. Paul Henry">Dr. Paul Henry</option>');
+                $('#dlDoctor').append('<option value="Dr. Boopesh Pugazhendi">Dr. Boopesh Pugazhendi</option>');
+                   
+                }
+                else if (value == "Neonatal Intensive Care") {
+                    $('#dlDoctor').append('<option value="Dr. Muragesan A">Dr. Muragesan A</option>'); 
+                   
+                }
+            else if (value == "Neurology") {
+                    $('#dlDoctor').append('<option value="Dr. Chitrambalam S">Dr. Chitrambalam S</option>'); 
+                   
+                }
+           else if (value == "Nephrology") {
+            $('#dlDoctor').append('<option value="Dr. Thomas Joseph">Dr. Thomas Joseph</option>'); 
+                    $('#dlDoctor').append('<option value="Dr. Krishna Chaitanya Gunda">Dr. Krishna Chaitanya Gunda</option>'); 
+                    
+                     $('#dlDoctor').append('<option value="Dr. Annamalai">Dr. Annamalai</option>'); 
+               $('#dlDoctor').append('<option value="Dr. Ganga">Dr. Ganga</option>'); 
+                }
+         else if (value == "General Surgery") {
+                    $('#dlDoctor').append('<option value="Dr. Balaji Viswanath P">Dr. Balaji Viswanath P</option>'); 
+                   $('#dlDoctor').append('<option value="Dr. Tushar Yashwant Sonavane">Dr. Tushar Yashwant Sonavane</option>');
+                   $('#dlDoctor').append('<option value="Dr. Praveen Balakrishnan">Dr. Praveen Balakrishnan</option>');
+                   $('#dlDoctor').append('<option value="Dr. Abhilasha Gloria Singh">Dr. Abhilasha Gloria Singh</option>');
+                   $('#dlDoctor').append('<option value="Dr. Mithun Raam">Dr. Mithun Raam</option>');
+                }
+            else if (value == "General Medicine") {
+                    $('#dlDoctor').append('<option value="Dr. Pranita Harshad Vanjare">Dr. Pranita Harshad Vanjare</option>'); 
+                   $('#dlDoctor').append('<option value="Dr. Asif G Ahmed">Dr. Asif G Ahmed</option>');
+                   $('#dlDoctor').append('<option value="Dr. Niranjana Sreedevi N">Dr. Niranjana Sreedevi N</option>');
+                }
+           else if (value == "Gastroenterology (Medical)") {
+                    $('#dlDoctor').append('<option value="Prof. Ashok Chacko">Prof. Ashok Chacko</option>'); 
+                   $('#dlDoctor').append('<option value="Dr. Rabindranath E">Dr. Rabindranath E</option>');
+                }
+           else if (value == "ENT") {
+                   $('#dlDoctor').append('<option value="Dr. Vikram M">Dr. Vikram M</option>');
+                //    $('#dlDoctor').append('<option value="Dr. Mohamed Abdul Kathar M">Dr. Mohamed Abdul Kathar M</option>');
+                   $('#dlDoctor').append('<option value="Dr. Nadia Fasal">Dr. Nadia Fasal</option>');
+                   $('#dlDoctor').append('<option value="Dr. Shruti Venkitachalam">Dr. Shruti Venkitachalam</option>');
+
+                }
+         else if (value == "Endocrinology") {
+                    $('#dlDoctor').append('<option value="Dr. Simon Rajaratnam">Dr. Simon Rajaratnam</option>'); 
+                   
+                }
+        else if (value == "Endocrine Surgery") {
+                    $('#dlDoctor').append('<option value="Dr. Aravindan Nair">Dr. Aravindan Nair</option>'); 
+                   
+                }
+         else if (value == "Dermatology") {
+                    $('#dlDoctor').append('<option value="Dr. Yamini M">Dr. Yamini M</option>'); 
+                   
+                }
+          else if (value == "Dental Medicine") {
+                    $('#dlDoctor').append('<option value="Dr. Surya Prakash Sharma A">Dr. Surya Prakash Sharma A</option>'); 
+                   
+                }
+         else if (value == "Critical Care & Emergency") {
+                    $('#dlDoctor').append('<option value="Dr. Muthurajan">Dr. Muthurajan</option>'); 
+                    $('#dlDoctor').append('<option value="Dr. Manchireddy Manish">Dr. Manchireddy Manish</option>'); 
+//                     $('#dlDoctor').append('<option value="Dr. Gokulakrishnan">Dr. Gokulakrishnan</option>'); 
+                }
+         else if (value == "Cardiology") {
+                    $('#dlDoctor').append('<option value="Dr. N Aravind Yuvaraj">Dr. N Aravind Yuvaraj</option>'); 
+                    $('#dlDoctor').append('<option value="Dr. Bala Vignesh S">Dr. Bala Vignesh S</option>'); 
+                 
+                }
+                else if (value == "Cardio Thoracic & Vascular Surgery") {
+                    $('#dlDoctor').append('<option value="Dr. Saravanane C">Dr. Saravanane C</option>');
+                 
+                }
+          else if (value == "Anaesthesiology & Pain Medicine") {
+                     $('#dlDoctor').append('<option value="Dr. J Jayasudha">Dr. J Jayasudha</option>'); 
+              $('#dlDoctor').append('<option value="Dr. Prabhakaran K">Dr. Prabhakaran K</option>'); 
+                    $('#dlDoctor').append('<option value="Dr. Pugalendiran T S">Dr. Pugalendiran T S</option>');
+                    $('#dlDoctor').append('<option value="Dr. Ramya Deepika D">Dr. Ramya Deepika D</option>');  
+                    $('#dlDoctor').append('<option value="Dr. Rajasekar Arumugam">Dr. Rajasekar Arumugam</option>');
+                }
+           
+        });   
+         
+           
+            $("#Name").focus();
+            $('[id^=MobileNo]').keypress(validateNumber);
+           
+           $('[id^=birthday]').keypress(validateNumber1);
+            $('[id^=Name]').keypress(isAlfa);
+                 var today = new Date();
+var dd = String(today.getDate()).padStart(2, '0');
+             var mm = String(today.getMonth() + 1).padStart(2, '0');
+             var yyyy = today.getFullYear();
+             today = dd + '/' + mm + '/' + yyyy;
+            document.getElementById("regDate").value = today.toString();
+           
+         
+                   
+           //$('#buttonsubmit').on('click', function (e) {
+           //    e.preventDefault();
+
+              
+
+           //});
+                   
+            });
+            function addform1() {
+                addform();
+                //return true;
+            }
+            function validCaptcha1(captchacode) {
+                 var ret_val = {};
+                $.ajax({
+                    type: "POST",
+                    url: "appointmenttest.aspx/verifyCaptcha",
+                    data: '{stVerify: "' + captchacode + '"}',
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    async: false,
+                    success: function (response) {
+                       
+                        if (response.d == "Success") {
+                            ret_val = true;
+                        }
+                        else {
+                            ret_val = false;
+
+                        }
+                    },
+                    failure: function (response) {
+                        ret_val = false;
+                    }
+                });
+                return ret_val;
+            }
+            function addform() {
+                  var $form = $('form#formreg'),
+   url = 'https://script.google.com/macros/s/AKfycbx36v9kBr1eJx_-Vw9pNVd-5-LPbBZf2wF_Q0hAEzLRUDeP3VQ/exec'
+                var Isvalidate = validate();
+
+               if (Isvalidate) {
+                   $("#buttonsubmit").val("Please Wait..");
+                   //$("#buttonsubmit").attr("disabled", true);
+                   document.getElementById("txtAppointmentDate").value = $("#ddlDay option:selected").text() + '/' + $("#ddlMonth option:selected").val() + '/' + $("#ddlYear option:selected").text();
+                   document.getElementById("txtAppointmentDate1").value = $("#ddlDay option:selected").text() + '/' + $("#ddlMonth option:selected").val() + '/' + $("#ddlYear option:selected").text();
+                  
+                   document.getElementById("hdnDOB").value = $("#birthday").val();
+                    document.getElementById("hdnDepartment").value = $("#Department option:selected").text();
+                   document.getElementById("hdnDoctor").value = $("#dlDoctor option:selected").text();
+                   document.getElementById("hdnConsultation").value = $("#Consultation option:selected").text();
+                   var ampm = null;
+                   if (document.getElementById('radio-one').checked) {
+                       ampm = document.getElementById('radio-one').value;
+                   }
+                   else {
+                        ampm = document.getElementById('radio-two').value;
+                   }
+                   if ($("#ddlMinutes option:selected").text() == "Minutes") {
+                       document.getElementById("hdnAppointmentTime").value = $("#ddlHours option:selected").text() + ':00' + " "+ampm;
+                       document.getElementById("hdnAppointmentTime1").value = $("#ddlHours option:selected").text() + ':00' + " "+ampm;;
+                   }
+                   else {
+                       document.getElementById("hdnAppointmentTime").value = $("#ddlHours option:selected").text() + ':' + $("#ddlMinutes option:selected").text()  + " "+ampm;;
+                       document.getElementById("hdnAppointmentTime1").value = $("#ddlHours option:selected").text() + ':' + $("#ddlMinutes option:selected").text()  + " "+ampm;;
+                   }
+                   var jqxhr = $.ajax({
+                       url: url,
+                       method: "GET",
+                       dataType: "json",
+                       data: $form.serialize(),
+                       success: function () {
+                          
+                          // $("#bookAppointmentModal").hide();
+                          // $("#thankyou").fadeIn();
+                          
+                         //  $("#buttonsubmit").text("Submit");
+                           //$("#buttonsubmit").attr("disabled", false);
+
+
+                       },
+                       error: function (XMLHttpRequest, textStatus, errorThrown) {
+                           //alert("Status: " + textStatus);
+                           //alert("Error: " + errorThrown);
+                       }
+                   })
+               }
+               else {
+                   $("#buttonsubmit").text("Submit");
+                  // $("#buttonsubmit").attr("disabled", false);
+                  
+                }
+                
+                return Isvalidate;
+            }
+            function clear() {
+                $("#Name").val("");
+                $("#EmailId").val("");  
+                $("#MobileNo").val("");
+                $("#birthday").val("");
+              
+                $("#Purpose").val("");
+                 $("#Remarks").val("");
+                $("select#ddlMonth")[0].selectedIndex = 0;
+                $("select#ddlYear")[0].selectedIndex = 0;
+                $("select#ddlDay")[0].selectedIndex = 0;
+                $("select#Department")[0].selectedIndex = 0;
+                $("select#dlDoctor")[0].selectedIndex = 0;
+                $("select#ddlMinutes")[0].selectedIndex = 0;
+                $("select#Consultation")[0].selectedIndex = 0;
+                 $("select#ddlHours")[0].selectedIndex = 0;
+              
+            }
+            function validate() {
+                var Isvalidate = true;
+
+                var Name = $("#Name").val();
+                var EmailId = $("#EmailId").val();
+                var MobileNo = $("#MobileNo").val();
+                var DOB = $("#birthday").val();
+
+                var Month = $("#ddlMonth option:selected").val();
+                var Day = $("#ddlDay option:selected").text();
+                var Year = $("#ddlYear option:selected").text();
+                var appointTime = $("#AppointmentTime").val();
+                var dept = $("#Department option:selected").text();
+                var doctor = $("#dlDoctor option:selected").text();
+                var code = $("#txtCode").val();
+                var hours = $("#ddlHours option:selected").text();
+                var minutes = $("#ddlMinutes option:selected").text();
+                var consultation = $("#Consultation option:selected").text();
+                //var purpose =$("#Purpose").val();7
+                if (Name == "" && DOB == "" && Day == "- Day -" && Month == "- Month -" && Year == "- Year -" && (appointTime == "" || appointTime == " 00:00") && dept == "Select Department" && doctor == "Select Doctor" && code == "" && hours == "Hours" && minutes == "Minutes" && consultation == "Select Consultation Type") {
+
+                    document.getElementById("reqName").style.display = "block";
+                    document.getElementById("reqEmailId").style.display = "block";
+                    document.getElementById("reqMobileNo").style.display = "block";
+                    document.getElementById("reqDOB").style.display = "block";
+                    document.getElementById("reqAppDate1").style.display = "block";
+                    //document.getElementById("reqPurpose").style.display = "block";
+                    document.getElementById("reqAppTime").style.display = "block";
+                    document.getElementById("reqDepartment").style.display = "block";
+                    document.getElementById("reqDoctor").style.display = "block";
+                    document.getElementById("reqCode").style.display = "block";
+                    document.getElementById("reqValidCode").style.display = "none";
+                    document.getElementById("reqHours").style.display = "block";
+                    document.getElementById("reqAppValidSunDay").style.display = "none";
+                    document.getElementById("reqMinutes").style.display = "block";
+                    document.getElementById("reqConsultation").style.display = "block";
+                    $("#Name").focus();
+                    Isvalidate = false;
+                } else {
+                    if (Name == "") {
+                        document.getElementById("reqName").style.display = "block";
+                        $("#Name").focus();
+                        Isvalidate = false;
+                    }
+                    else if (Name != "") {
+                        document.getElementById("reqName").style.display = "none";
+                    }
+
+                    if (DOB == "") {
+                        document.getElementById("reqDOB").style.display = "block";
+                        $("#birthday").focus();
+                        Isvalidate = false;
+                    }
+                    else {
+                        if (!validateDate(DOB)) {
+                            document.getElementById("reqDOB").style.display = "none";
+                            document.getElementById("reqValidDOB").style.display = "block";
+                            $("#birthday").focus();
+                        }
+                        else {
+                            document.getElementById("reqDOB").style.display = "none";
+                            document.getElementById("reqValidDOB").style.display = "none";
+                        }
+
+
+                    }
+                    if (Day == "- Day -" && Month == "- Month -" && Year == "- Year -") {
+                        document.getElementById("reqAppDate1").style.display = "block";
+                        $("#ddlDay").focus();
+                        Isvalidate = false;
+                    }
+                    else {
+                        document.getElementById("reqAppDate1").style.display = "none";
+                        if (Day == "- Day -") {
+                            document.getElementById("reqAppDate").style.display = "block";
+                            $("#ddlDay").focus();
+                            Isvalidate = false;
+                        }
+                        else if (Month == "- Month -") {
+                            document.getElementById("reqAppDate").style.display = "none";
+                            document.getElementById("reqAppMon").style.display = "block";
+                            $("#ddlMonth").focus();
+                            Isvalidate = false;
+                        }
+                        else if (Year == "- Year -") {
+                            document.getElementById("reqAppDate").style.display = "none";
+                            document.getElementById("reqAppMon").style.display = "none";
+                            document.getElementById("reqAppYear").style.display = "block";
+                            $("#ddlYear").focus();
+                            Isvalidate = false;
+                        }
+                        else {
+                             
+                            if (!isFutureDate(Day + "/" + Month + "/" + Year)) {
+
+                                document.getElementById("reqAppDate21").style.display = "block";
+                                Isvalidate = false;
+                            }
+                            else if ((Day == "30" || Day == "31") && Month == "02") {
+                                document.getElementById("reqAppDate21").style.display = "none";
+                                document.getElementById("reqAppValidDay").style.display = "block";
+                                Isvalidate = false;
+                            }
+                            else if (Day == "31") {
+                               
+                                document.getElementById("reqAppDate21").style.display = "none";
+                                if (!isvalidday(Month)) {
+                                    document.getElementById("reqAppValidDay").style.display = "block";
+                                    Isvalidate = false;
+                                }
+
+                            }
+                            else {
+                                var dtDate = Year + "-" + Month + "-" + Day;
+                                if (IsSunday(dtDate)) {
+                                    document.getElementById("reqAppValidSunDay").style.display = "block";
+                                    Isvalidate = false;
+                                }
+                                else {
+                                    document.getElementById("reqAppValidSunDay").style.display = "none";
+                                    document.getElementById("reqAppValidDay").style.display = "none";
+                                    document.getElementById("reqAppDate21").style.display = "none";
+                                    document.getElementById("reqAppDate1").style.display = "none";
+                                    document.getElementById("reqAppDate").style.display = "none";
+                                    document.getElementById("reqAppMon").style.display = "none";
+                                    document.getElementById("reqAppYear").style.display = "none";
+                                }
+                            }
+                        }
+                    }
+
+                    if (MobileNo == "") {
+                        document.getElementById("reqMobileNo").style.display = "block";
+                        $("#MobileNo").focus();
+                        Isvalidate = false;
+                    }
+                    else {
+                        document.getElementById("reqMobileNo").style.display = "none";
+                    }
+
+                    if (EmailId == "") {
+                        document.getElementById("reqEmailId").style.display = "block";
+                        $("#EmailId").focus();
+                        Isvalidate = false;
+                    }
+                    else {
+                        if (!validateEmail(EmailId)) {
+                            document.getElementById("reqEmailId").style.display = "none";
+                            document.getElementById("reqfvValidEmail").style.display = "block";
+                            $("#EmailId").focus();
+                            Isvalidate = false;
+                        }
+                        else {
+                            document.getElementById("reqEmailId").style.display = "none";
+                            document.getElementById("reqfvValidEmail").style.display = "none";
+                        }
+                    }
+                    if (hours == "Hours") {
+                        document.getElementById("reqHours").style.display = "block";
+                        Isvalidate = false;
+                    }
+                    else {
+                        if (hours < 1 || hours >= 13) {
+                            document.getElementById("reqHours").style.display = "none";
+                            document.getElementById("reqValidHours").style.display = "block";
+                            Isvalidate = false;
+                        }
+                        else {
+                            document.getElementById("reqValidHours").style.display = "none";
+                            document.getElementById("reqHours").style.display = "none";
+                        }
+                    }
+                    if (minutes == "Minutes") {
+                        document.getElementById("reqValidMinutes").style.display = "block";
+                        //if (minutes >= 60) {
+                        //    document.getElementById("reqValidMinutes").style.display = "block";
+                        //    $("#ddlMinutes").focus();
+                        //    Isvalidate = false;
+                        //}
+                    }
+                    else {
+                        document.getElementById("reqValidMinutes").style.display = "none";
+                    }
+
+                    if (dept == "Select Department") {
+                        document.getElementById("reqDepartment").style.display = "block";
+                        $("#Department").focus();
+                        Isvalidate = false;
+                    }
+                    else {
+                        document.getElementById("reqDepartment").style.display = "none";
+                    }
+                    if (consultation == "Select Consultation Type") {
+                        document.getElementById("reqConsultation").style.display = "block";
+                        $("#Consultation").focus();
+                        Isvalidate = false;
+                    }
+                    else {
+                        document.getElementById("reqConsultation").style.display = "none";
+                    }
+                    if (doctor == "Select Doctor") {
+                        document.getElementById("reqDoctor").style.display = "block";
+                        $("#dlDoctor").focus();
+                        Isvalidate = false;
+                    }
+                    else {
+                        document.getElementById("reqDoctor").style.display = "none";
+                    }
+                    if (code == "") {
+                        document.getElementById("reqCode").style.display = "block";
+                        document.getElementById("reqValidCode").style.display = "none";
+                        $("#txtCode").focus();
+                        Isvalidate = false;
+                    }
+                    else {
+                        document.getElementById("reqCode").style.display = "none";
+
+                        if (validCaptcha1(code) == false) {
+                            document.getElementById("reqValidCode").style.display = "block";
+                            Isvalidate = false;
+                        }
+                        else {
+                            document.getElementById("reqValidCode").style.display = "none";
+                            document.getElementById("reqCode").style.display = "none";
+                        }
+                    }
+                    //if (purpose == "") {
+                    //    document.getElementById("reqPurpose").style.display = "block";
+                    //    $("#Purpose").focus();
+                    //    Isvalidate = false;
+                    //}
+                    //else {
+                    //    document.getElementById("reqPurpose").style.display = "none";
+                    //}
+
+                    if (Isvalidate && Name != "" && DOB != "" && Month != "- Month -" && Day != "- Day -" && Year != "- Year -"
+                        && hours != "Hours" && EmailId != "" && MobileNo != "" && dept != "Select Department" && doctor != "Select Doctor" && code != "" && consultation != "Select Consultation Type" && minutes != "Minutes") {
+
+                        Isvalidate = true;
+                    }
+
+                }
+
+                return Isvalidate;
+            }
+               function validateFirst() {
+            var Isvalidate = true;
+           
+               var Name = $("#Name").val();
+               var EmailId = $("#EmailId").val();  
+                var MobileNo = $("#MobileNo").val();
+            var otp = $("#otp").val();
+                //var purpose =$("#Purpos").val();
+            if (Name == "" && EmailId=="" && MobileNo=="")
+                 {
+            
+                document.getElementById("reqName").style.display = "block";
+                document.getElementById("reqEmailId").style.display = "block";
+                document.getElementById("reqMobileNo").style.display = "block";
+                
+                $("#Name").focus();
+                Isvalidate = false;
+            } else {
+                if (Name == "") {
+                    document.getElementById("reqName").style.display = "block";
+                     $("#Name").focus();
+                    Isvalidate = false;
+                }
+                else if (Name != "")
+                {
+                    document.getElementById("reqName").style.display = "none";
+                }
+                
+                if (EmailId == "") {
+                    document.getElementById("reqEmailId").style.display = "block";
+                    $("#EmailId").focus();
+                    Isvalidate = false;
+                }
+                else {
+                    if (!validateEmail(EmailId)) {
+                        document.getElementById("reqEmailId").style.display = "none";
+                        document.getElementById("reqfvValidEmail").style.display = "block";
+                        $("#EmailId").focus();
+                        Isvalidate = false;
+                    }
+                    else {
+                        document.getElementById("reqEmailId").style.display = "none";
+                         document.getElementById("reqfvValidEmail").style.display = "none";
+                    }
+                }
+               
+                 if (MobileNo == "") {
+                    document.getElementById("reqMobileNo").style.display = "block";
+                    $("#MobileNo").focus();
+                    Isvalidate = false;
+                 }
+                 else {
+                    document.getElementById("reqMobileNo").style.display = "none";
+                }
+                
+               
+              
+                if (Isvalidate && Name != ""  && EmailId != "" && MobileNo!="")
+                {
+                    
+                    Isvalidate = true;
+                }
+            
+            }
+
+            return Isvalidate;
+            }
+            function isFutureDate(idate) {
+              
+               var date = new Date();
+               var month = date.getMonth()+1;
+               var day = date.getDate();
+                var year = date.getFullYear();
+                if ((day + "/" + month + "/" + parseInt(year)) == idate) {
+                    return true;
+                }
+                else {
+                    var today = new Date().getTime(),
+                        idate = idate.split("/");
+
+                    idate = new Date(idate[2], idate[1] - 1, idate[0]).getTime();
+                   
+                    return (today - idate) < 0;
+                }
+}
+           function isvalidday(month) {
+                if (month == "04" || month == "06" || month == "09" || month == "11") {
+                    
+                    return false;
+                }
+                else {
+                    return true;
+                }   
+            }
+            function IsSunday(Idate) {
+               
+                var dt = new Date(Idate);
+                if (dt.getDay() == 0) {
+                    return true;
+                }
+                else
+                    return false;
+            }
+           function Captcha() {
+                    var alpha = new Array('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z',
+                        'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'm', 'n', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
+                        '1', '2', '3', '4', '5', '6', '7', '8', '9');
+                    var i;
+                    for (i = 0; i < 6; i++) {
+                        var a = alpha[Math.floor(Math.random() * alpha.length)];
+                        var b = alpha[Math.floor(Math.random() * alpha.length)];
+                        var c = alpha[Math.floor(Math.random() * alpha.length)];
+                        var d = alpha[Math.floor(Math.random() * alpha.length)];
+                        var e = alpha[Math.floor(Math.random() * alpha.length)];
+                        var f = alpha[Math.floor(Math.random() * alpha.length)];
+                        var g = alpha[Math.floor(Math.random() * alpha.length)];
+                    }
+                    var code = a + ' ' + b + ' ' + ' ' + c + ' ' + d + ' ' + e + ' ' + f + ' ' + g;
+                    //document.getElementById("mainCaptcha").innerHTML = code
+                    //document.getElementById("mainCaptcha").value = code
+                }
+                function removeSpaces(string) {
+                    return string.split(' ').join('');
+                }
+                function ValidCaptcha() {
+                    var string1 = removeSpaces(document.getElementById('mainCaptcha').value);
+                    var string2 = removeSpaces(document.getElementById('txtCode').value);
+        
+                    if (string1 == string2) {
+                        return true;
+                    } else {
+                        return false;
+                    }
+                }
+           </script>
+         <script type="text/javascript">
+        function onlyNumbersWithColon(e) {
+            var charCode;
+            if (e.keyCode > 0) {
+                charCode = e.which || e.keyCode;
+            }
+            else if (typeof (e.charCode) != "undefined") {
+                charCode = e.which || e.keyCode;
+            }
+            if (charCode == 58)
+                return true
+            if (charCode > 31 && (charCode < 48 || charCode > 57))
+                return false;
+            return true;
+             }
+               </script>
+</body>
+</html>
