@@ -17,5 +17,6 @@ http://localhost:8080/NaruviWeb/Doctors-demo.html
 http://localhost:8080/NaruviWeb/blogpost.html
 
 
+SIMS hospital Surat
 
-
+ZYDUS Hospital Ahmedbad
